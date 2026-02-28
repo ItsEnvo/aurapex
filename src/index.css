@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-luxury-black text-white font-modern;
+  }
+  
+  /* Custom scrollbar styles would go here */
+}
+
+@layer components {
+  .luxury-button {
+    @apply bg-gradient-to-r from-luxury-gold to-gold-400 text-luxury-black font-semibold py-3 px-8 rounded-md hover:shadow-lg hover:shadow-gold-400/25 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .luxury-button-outline {
+    @apply border-2 border-luxury-gold text-luxury-gold font-semibold py-3 px-8 rounded-md hover:bg-luxury-gold hover:text-luxury-black transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  
+  .glass-effect {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-luxury-gold to-gold-400 bg-clip-text text-transparent;
+  }
+  
+  .luxury-card {
+    @apply bg-gradient-to-br from-luxury-charcoal to-gray-900 p-6 rounded-xl border border-white/10 hover:border-luxury-gold/30 transition-all duration-300 hover:shadow-xl hover:shadow-luxury-gold/10;
+  }
+}
