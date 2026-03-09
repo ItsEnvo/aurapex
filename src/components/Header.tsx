@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,10 +16,15 @@ const Header: React.FC = () => {
   }, [])
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setIsMenuOpen(false)
+    if (location.pathname === '/') {
+      const element = document.getElementById(id)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+        setIsMenuOpen(false)
+      }
+    } else {
+      // Navigate to home first, then scroll
+      window.location.href = `/#${id}`
     }
   }
 
@@ -28,7 +35,7 @@ const Header: React.FC = () => {
       <div className="container-max section-padding">
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-br from-luxury-gold to-gold-400 rounded-lg flex items-center justify-center">
               <span className="text-luxury-black font-bold text-xl font-luxury">A</span>
             </div>
@@ -38,16 +45,34 @@ const Header: React.FC = () => {
               </h1>
               <p className="text-xs text-gray-400 -mt-1">RENTALS</p>
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <button 
-              onClick={() => scrollToSection('fleet')}
+            <Link 
+              to="/cars"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
-              Fleet
-            </button>
+              Cars
+            </Link>
+            <Link 
+              to="/yachts"
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Yachts
+            </Link>
+            <Link 
+              to="/villas"
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Villas
+            </Link>
+            <Link 
+              to="/jet-skis"
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Jet Skis
+            </Link>
             <button 
               onClick={() => scrollToSection('how-it-works')}
               className="text-white hover:text-luxury-gold transition-colors duration-300"
@@ -86,12 +111,34 @@ const Header: React.FC = () => {
           isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         } overflow-hidden`}>
           <nav className="py-4 space-y-4 border-t border-white/10">
-            <button 
-              onClick={() => scrollToSection('fleet')}
+            <Link 
+              to="/cars"
+              onClick={() => setIsMenuOpen(false)}
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
             >
-              Fleet
-            </button>
+              Cars
+            </Link>
+            <Link 
+              to="/yachts"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Yachts
+            </Link>
+            <Link 
+              to="/villas"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Villas
+            </Link>
+            <Link 
+              to="/jet-skis"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Jet Skis
+            </Link>
             <button 
               onClick={() => scrollToSection('how-it-works')}
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"

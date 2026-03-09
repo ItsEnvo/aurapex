@@ -1,177 +1,129 @@
 import React, { useState } from 'react'
-import { Star, Users, Zap, Calendar } from 'lucide-react'
+import { Star, Users, Zap, Calendar, ArrowRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { getFeaturedItems } from '../data/inventory'
 
-interface Vehicle {
-  id: number
+interface DisplayVehicle {
+  id: string
   name: string
-  category: 'cars' | 'yachts' | 'jetskis'
+  category: 'cars' | 'yachts' | 'villas' | 'jetSkis'
   image: string
-  price: number
+  price: string
   passengers?: number
   features: string[]
   rating: number
   popular?: boolean
+  slug: string
 }
 
 const Fleet: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<'cars' | 'yachts' | 'jetskis'>('cars')
-
-  const vehicles: Vehicle[] = [
-    // Cars
-    {
-      id: 1,
-      name: 'Lamborghini Huracán',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop',
-      price: 1500,
-      passengers: 2,
-      features: ['V10 Engine', '630 HP', '0-60 in 3.2s', 'All-Wheel Drive'],
-      rating: 5.0,
-      popular: true
-    },
-    {
-      id: 2,
-      name: 'Rolls-Royce Phantom',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1563720223185-11003d516935?w=800&h=600&fit=crop',
-      price: 1200,
-      passengers: 4,
-      features: ['V12 Engine', 'Chauffeur Available', 'Starlight Ceiling', 'Ultimate Luxury'],
-      rating: 5.0
-    },
-    {
-      id: 3,
-      name: 'Ferrari F8 Tributo',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&h=600&fit=crop',
-      price: 1300,
-      passengers: 2,
-      features: ['V8 Twin-Turbo', '710 HP', '0-60 in 2.9s', 'Italian Excellence'],
-      rating: 4.9
-    },
-    {
-      id: 4,
-      name: 'Mercedes S-Class',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&h=600&fit=crop',
-      price: 500,
-      passengers: 5,
-      features: ['Luxury Interior', 'Massage Seats', 'Executive Class', 'Business Ready'],
-      rating: 4.8
-    },
-    {
-      id: 5,
-      name: 'McLaren 720S',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop',
-      price: 1400,
-      passengers: 2,
-      features: ['V8 Twin-Turbo', '720 HP', 'Carbon Fiber', 'Track Ready'],
+  const [activeCategory, setActiveCategory] = useState<'cars' | 'yachts' | 'villas' | 'jetSkis'>('cars')
+  
+  // Get featured inventory items
+  const featured = getFeaturedItems()
+  
+  // Convert inventory to display format
+  const vehicles: DisplayVehicle[] = [
+    // Featured cars
+    ...featured.cars.slice(0, 3).map(car => ({
+      id: car.id,
+      name: car.title,
+      category: 'cars' as const,
+      image: car.image,
+      price: car.priceDisplay,
+      passengers: 2, // Default for most luxury cars
+      features: [
+        car.subcategory.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
+        'Premium Interior',
+        'Advanced Tech',
+        'Luxury Experience'
+      ],
       rating: 4.9,
-      popular: true
-    },
-    {
-      id: 6,
-      name: 'BMW i8',
-      category: 'cars',
-      image: 'https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&h=600&fit=crop',
-      price: 800,
-      passengers: 2,
-      features: ['Hybrid Power', 'Gullwing Doors', 'Futuristic Design', 'Eco-Luxury'],
-      rating: 4.7
-    },
-
-    // Yachts
-    {
-      id: 7,
-      name: 'Azimut 60 Flybridge',
-      category: 'yachts',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop',
-      price: 3500,
-      passengers: 12,
-      features: ['60ft Luxury', '3 Staterooms', 'Full Crew', 'Flybridge'],
-      rating: 5.0,
-      popular: true
-    },
-    {
-      id: 8,
-      name: 'Sunseeker Manhattan 52',
-      category: 'yachts',
-      image: 'https://images.unsplash.com/photo-1540946485063-a40da27545f8?w=800&h=600&fit=crop',
-      price: 2800,
-      passengers: 10,
-      features: ['52ft Cruiser', '2 Cabins', 'Spacious Deck', 'Premium Amenities'],
-      rating: 4.9
-    },
-    {
-      id: 9,
-      name: 'Sea Ray Sundancer 320',
-      category: 'yachts',
-      image: 'https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=800&h=600&fit=crop',
-      price: 1500,
-      passengers: 8,
-      features: ['32ft Sport Yacht', '1 Cabin', 'Entertainment System', 'Water Sports Ready'],
-      rating: 4.8
-    },
-    {
-      id: 10,
-      name: 'Princess V40',
-      category: 'yachts',
-      image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&h=600&fit=crop',
-      price: 2200,
-      passengers: 10,
-      features: ['40ft Sport Cruiser', '2 Cabins', 'High Performance', 'British Luxury'],
-      rating: 4.9
-    },
-
-    // Jet Skis
-    {
-      id: 11,
-      name: 'Sea-Doo GTX 300',
-      category: 'jetskis',
-      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=800&h=600&fit=crop',
-      price: 400,
-      passengers: 3,
-      features: ['300 HP', 'Luxury Touring', 'GPS Navigation', 'Premium Audio'],
+      popular: car.dailyPrice >= 1000,
+      slug: car.slug
+    })),
+    
+    // Featured yachts
+    ...featured.yachts.slice(0, 3).map(yacht => ({
+      id: yacht.id,
+      name: yacht.title,
+      category: 'yachts' as const,
+      image: yacht.image,
+      price: yacht.priceDisplay,
+      passengers: yacht.maxGuests,
+      features: [
+        `${yacht.maxGuests} Guests Max`,
+        'Full Crew Included',
+        'Premium Amenities',
+        'Water Sports Ready'
+      ],
+      rating: 4.9,
+      popular: yacht.startingPrice >= 2000,
+      slug: yacht.slug
+    })),
+    
+    // Featured villas
+    ...featured.villas.slice(0, 3).map(villa => ({
+      id: villa.id,
+      name: villa.title,
+      category: 'villas' as const,
+      image: villa.image,
+      price: villa.priceDisplay,
+      passengers: villa.sleeps,
+      features: [
+        `${villa.bedrooms} Bedrooms`,
+        `${villa.bathrooms} Bathrooms`,
+        `Sleeps ${villa.sleeps}`,
+        'Luxury Amenities'
+      ],
       rating: 4.8,
-      popular: true
-    },
-    {
-      id: 12,
-      name: 'Yamaha VX Cruiser',
-      category: 'jetskis',
-      image: 'https://images.unsplash.com/photo-1530961371816-eb43933e95bf?w=800&h=600&fit=crop',
-      price: 300,
-      passengers: 3,
-      features: ['Comfortable Cruising', 'Fuel Efficient', 'Easy Handling', 'Family Friendly'],
-      rating: 4.7
-    },
-    {
-      id: 13,
-      name: 'Kawasaki Ultra 310X',
-      category: 'jetskis',
-      image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
-      price: 450,
-      passengers: 2,
-      features: ['310 HP', 'High Performance', 'Racing Capable', 'Supercharged'],
-      rating: 4.9
-    }
+      popular: villa.nightlyPrice >= 4000,
+      slug: villa.slug
+    })),
+    
+    // Featured jet skis
+    ...featured.jetSkis.slice(0, 3).map(jetski => ({
+      id: jetski.id,
+      name: jetski.title,
+      category: 'jetSkis' as const,
+      image: jetski.image,
+      price: jetski.priceDisplay,
+      passengers: 3, // Default for jet skis
+      features: [
+        'High Performance',
+        'Easy Handling',
+        'Water Sports',
+        'Adventure Ready'
+      ],
+      rating: 4.7,
+      popular: jetski.hourlyPrice >= 150,
+      slug: jetski.slug
+    }))
   ]
 
   const filteredVehicles = vehicles.filter(vehicle => vehicle.category === activeCategory)
 
   const categories = [
-    { key: 'cars' as const, label: 'Exotic Cars', count: vehicles.filter(v => v.category === 'cars').length },
-    { key: 'yachts' as const, label: 'Luxury Yachts', count: vehicles.filter(v => v.category === 'yachts').length },
-    { key: 'jetskis' as const, label: 'Jet Skis', count: vehicles.filter(v => v.category === 'jetskis').length }
+    { key: 'cars' as const, label: 'Exotic Cars', count: featured.cars.length, route: '/cars' },
+    { key: 'yachts' as const, label: 'Luxury Yachts', count: featured.yachts.length, route: '/yachts' },
+    { key: 'villas' as const, label: 'Luxury Villas', count: featured.villas.length, route: '/villas' },
+    { key: 'jetSkis' as const, label: 'Jet Skis', count: featured.jetSkis.length, route: '/jet-skis' }
   ]
 
   const getCategoryTitle = () => {
     switch(activeCategory) {
       case 'cars': return 'Exotic Car Collection'
       case 'yachts': return 'Luxury Yacht Fleet'
-      case 'jetskis': return 'High-Performance Jet Skis'
+      case 'villas': return 'Premium Villa Collection'
+      case 'jetSkis': return 'High-Performance Jet Skis'
       default: return 'Our Fleet'
+    }
+  }
+  
+  const getCategoryRoute = (category: string) => {
+    switch(category) {
+      case 'jetSkis': return '/jet-skis'
+      default: return `/${category}`
     }
   }
 
@@ -209,9 +161,16 @@ const Fleet: React.FC = () => {
 
         {/* Category Title */}
         <div className="text-center mb-12">
-          <h3 className="text-2xl md:text-3xl font-luxury font-semibold text-white">
+          <h3 className="text-2xl md:text-3xl font-luxury font-semibold text-white mb-4">
             {getCategoryTitle()}
           </h3>
+          <Link 
+            to={getCategoryRoute(activeCategory)}
+            className="luxury-button-outline inline-flex items-center space-x-2"
+          >
+            <span>View All {categories.find(c => c.key === activeCategory)?.label}</span>
+            <ArrowRight size={16} />
+          </Link>
         </div>
 
         {/* Vehicle Grid */}
@@ -247,16 +206,15 @@ const Fleet: React.FC = () => {
                         <>
                           <span>•</span>
                           <Users className="w-4 h-4" />
-                          <span>{vehicle.passengers} passengers</span>
+                          <span>{vehicle.passengers} {vehicle.category === 'villas' ? 'sleeps' : vehicle.category === 'yachts' ? 'guests' : 'passengers'}</span>
                         </>
                       )}
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-luxury-gold">
-                      ${vehicle.price.toLocaleString()}
+                    <div className="text-lg font-bold text-luxury-gold">
+                      {vehicle.price}
                     </div>
-                    <div className="text-sm text-gray-400">per day</div>
                   </div>
                 </div>
 
@@ -270,14 +228,14 @@ const Fleet: React.FC = () => {
                   ))}
                 </div>
 
-                {/* Reserve Button */}
-                <button 
-                  onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+                {/* View Details Button */}
+                <Link
+                  to={`${getCategoryRoute(vehicle.category)}/${vehicle.slug}`}
                   className="w-full luxury-button flex items-center justify-center space-x-2"
                 >
-                  <Calendar size={16} />
-                  <span>Reserve Now</span>
-                </button>
+                  <span>View Details</span>
+                  <ArrowRight size={16} />
+                </Link>
               </div>
             </div>
           ))}

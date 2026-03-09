@@ -1,0 +1,1242 @@
+{
+  "project": "AuraPex Rentals",
+  "database_version": "v1",
+  "purpose": "Structured fleet dataset for Theo / website / booking operations",
+  "notes": [
+    "This JSON is the current structured source of truth for known inventory.",
+    "Use partner_name on every asset so operations can contact the correct source quickly.",
+    "Retail prices are the current AuraPex asking prices discussed in this thread.",
+    "Yacht broker prices came from the uploaded Boat Miami Now PDF.",
+    "Availability should default to manual confirmation with the partner."
+  ],
+  "global_policies": {
+    "cars": {
+      "requirements": [
+        "Valid driver's license required",
+        "Insurance required unless waived",
+        "Security deposit required",
+        "Weekend and holiday rates may vary",
+        "Delivery available in Miami / Fort Lauderdale"
+      ],
+      "insurance_waiver_option": {
+        "available": true,
+        "price_per_day": 100
+      }
+    },
+    "yachts": {
+      "default_partner": "Boat Miami Now",
+      "default_max_guests": 13,
+      "crew_included": true,
+      "fuel_included": true,
+      "gratuity_policy": "Appreciated",
+      "pickup_location_included_in_listing": true
+    },
+    "jet_skis": {
+      "retail_pricing_rules": {
+        "fort_lauderdale_deerfield_hourly": "100-120",
+        "miami_hourly": 150
+      }
+    }
+  },
+  "partners": [
+    {
+      "partner_id": "P001",
+      "partner_name": "PluggOfMiami",
+      "categories": [
+        "cars"
+      ]
+    },
+    {
+      "partner_id": "P002",
+      "partner_name": "Za",
+      "categories": [
+        "cars",
+        "jet_skis"
+      ]
+    },
+    {
+      "partner_id": "P003",
+      "partner_name": "Alex",
+      "categories": [
+        "villas"
+      ]
+    },
+    {
+      "partner_id": "P004",
+      "partner_name": "Boat Miami Now",
+      "categories": [
+        "yachts"
+      ]
+    },
+    {
+      "partner_id": "P005",
+      "partner_name": "Jonathan",
+      "categories": [
+        "jet_skis"
+      ]
+    }
+  ],
+  "inventory": {
+    "cars": [
+      {
+        "asset_id": "CAR001",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "luxury_coupe",
+        "title": "Lexus LC500",
+        "location": "Miami",
+        "cost_per_day": 280,
+        "retail_price_per_day": 399,
+        "profit_per_day": 119
+      },
+      {
+        "asset_id": "CAR002",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "luxury_suv",
+        "title": "Mercedes GLE AMG53",
+        "location": "Miami",
+        "cost_per_day": 280,
+        "retail_price_per_day": 399,
+        "profit_per_day": 119
+      },
+      {
+        "asset_id": "CAR003",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "performance_suv",
+        "title": "BMW X6M",
+        "location": "Miami",
+        "cost_per_day": 280,
+        "retail_price_per_day": 399,
+        "profit_per_day": 119
+      },
+      {
+        "asset_id": "CAR004",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "luxury_suv",
+        "title": "Range Rover SVR",
+        "location": "Miami",
+        "cost_per_day": 320,
+        "retail_price_per_day": 449,
+        "profit_per_day": 129
+      },
+      {
+        "asset_id": "CAR005",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "luxury_sedan",
+        "title": "Mercedes S Class",
+        "location": "Miami",
+        "cost_per_day": 320,
+        "retail_price_per_day": 449,
+        "profit_per_day": 129
+      },
+      {
+        "asset_id": "CAR006",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "luxury_suv",
+        "title": "Cadillac Escalade",
+        "location": "Miami",
+        "cost_per_day": 320,
+        "retail_price_per_day": 449,
+        "profit_per_day": 129
+      },
+      {
+        "asset_id": "CAR007",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "exotic_suv",
+        "title": "Mercedes G550 AMG",
+        "location": "Miami",
+        "cost_per_day": 400,
+        "retail_price_per_day": 549,
+        "profit_per_day": 149
+      },
+      {
+        "asset_id": "CAR008",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "performance_sedan",
+        "title": "BMW M5 (900HP)",
+        "location": "Miami",
+        "cost_per_day": 480,
+        "retail_price_per_day": 699,
+        "profit_per_day": 219
+      },
+      {
+        "asset_id": "CAR009",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "ultra_luxury_suv",
+        "title": "Maybach GLS",
+        "location": "Miami",
+        "cost_per_day": 800,
+        "retail_price_per_day": 1199,
+        "profit_per_day": 399
+      },
+      {
+        "asset_id": "CAR010",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "exotic_suv",
+        "title": "Lamborghini Urus",
+        "location": "Miami",
+        "cost_per_day": 800,
+        "retail_price_per_day": 1299,
+        "profit_per_day": 499
+      },
+      {
+        "asset_id": "CAR011",
+        "partner_name": "PluggOfMiami",
+        "category": "exotic_luxury_car",
+        "subcategory": "ultra_luxury_suv",
+        "title": "Rolls Royce Cullinan",
+        "location": "Miami",
+        "cost_per_day": 1080,
+        "retail_price_per_day": 1499,
+        "profit_per_day": 419
+      },
+      {
+        "asset_id": "CAR012",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "daily",
+        "title": "BMW 335i",
+        "location": "Miami",
+        "cost_per_day": 120,
+        "retail_price_per_day": 179,
+        "profit_per_day": 59
+      },
+      {
+        "asset_id": "CAR013",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "luxury_daily",
+        "title": "BMW 740i",
+        "location": "Miami",
+        "cost_per_day": 140,
+        "retail_price_per_day": 199,
+        "profit_per_day": 59
+      },
+      {
+        "asset_id": "CAR014",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "specialty",
+        "title": "Polaris Slingshot",
+        "location": "Miami",
+        "cost_per_day": 160,
+        "retail_price_per_day": 229,
+        "profit_per_day": 69
+      },
+      {
+        "asset_id": "CAR015",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "daily_luxury",
+        "title": "Mercedes C300",
+        "location": "Miami",
+        "cost_per_day": 160,
+        "retail_price_per_day": 229,
+        "profit_per_day": 69
+      },
+      {
+        "asset_id": "CAR016",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "performance_daily",
+        "title": "Lexus RC F",
+        "location": "Miami",
+        "cost_per_day": 200,
+        "retail_price_per_day": 279,
+        "profit_per_day": 79
+      },
+      {
+        "asset_id": "CAR017",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "luxury_suv",
+        "title": "Porsche Macan S",
+        "location": "Miami",
+        "cost_per_day": 200,
+        "retail_price_per_day": 279,
+        "profit_per_day": 79
+      },
+      {
+        "asset_id": "CAR018",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "performance_daily",
+        "title": "Cadillac CT4-V",
+        "location": "Miami",
+        "cost_per_day": 200,
+        "retail_price_per_day": 279,
+        "profit_per_day": 79
+      },
+      {
+        "asset_id": "CAR019",
+        "partner_name": "PluggOfMiami",
+        "category": "daily_car",
+        "subcategory": "daily_luxury",
+        "title": "BMW 330i M Package",
+        "location": "Miami",
+        "cost_per_day": 200,
+        "retail_price_per_day": 279,
+        "profit_per_day": 79
+      },
+      {
+        "asset_id": "CAR020",
+        "partner_name": "Za",
+        "category": "exotic_luxury_car",
+        "subcategory": "performance_exotic",
+        "title": "Corvette Stingray C8",
+        "location": "South Florida",
+        "cost_per_day": 200,
+        "retail_price_per_day": 325,
+        "profit_per_day": 125
+      }
+    ],
+    "jet_skis": [
+      {
+        "asset_id": "JETSKI001",
+        "partner_name": "Za",
+        "title": "Yamaha Jet Ski",
+        "locations": [
+          "Fort Lauderdale",
+          "Deerfield",
+          "Miami"
+        ],
+        "cost_per_hour": 60,
+        "retail_price_per_hour_ftl_deerfield": "100-120",
+        "retail_price_per_hour_miami": 150
+      },
+      {
+        "asset_id": "JETSKI002",
+        "partner_name": "Za",
+        "title": "Yamaha Jet Ski",
+        "locations": [
+          "Fort Lauderdale",
+          "Deerfield",
+          "Miami"
+        ],
+        "cost_per_hour": 60,
+        "retail_price_per_hour_ftl_deerfield": "100-120",
+        "retail_price_per_hour_miami": 150
+      },
+      {
+        "asset_id": "JETSKI003",
+        "partner_name": "Za",
+        "title": "2 Yamaha Jet Skis Full Day Package",
+        "location": "South Florida",
+        "cost_per_day": 350,
+        "retail_price_per_day": 650,
+        "profit_per_day": 300
+      },
+      {
+        "asset_id": "JETSKI004",
+        "partner_name": "Jonathan",
+        "title": "Yamaha Jet Ski",
+        "locations": [
+          "Fort Lauderdale",
+          "Deerfield",
+          "Miami"
+        ],
+        "cost_per_hour": 75,
+        "retail_price_per_hour_ftl_deerfield": "100-120",
+        "retail_price_per_hour_miami": 150
+      },
+      {
+        "asset_id": "JETSKI005",
+        "partner_name": "Jonathan",
+        "title": "Yamaha Jet Ski",
+        "locations": [
+          "Fort Lauderdale",
+          "Deerfield",
+          "Miami"
+        ],
+        "cost_per_hour": 75,
+        "retail_price_per_hour_ftl_deerfield": "100-120",
+        "retail_price_per_hour_miami": 150
+      }
+    ],
+    "villas": [
+      {
+        "asset_id": "VILLA001",
+        "partner_name": "Alex",
+        "title": "Villa Ruby",
+        "location": "North Miami Beach",
+        "bedrooms": 9,
+        "bathrooms": 9,
+        "sleeps": 20,
+        "base_cost_per_night": 3500,
+        "retail_price_per_night": 4200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA002",
+        "partner_name": "Alex",
+        "title": "Villa Emerald",
+        "location": "North Miami Beach",
+        "bedrooms": 9,
+        "bathrooms": 7.5,
+        "sleeps": 20,
+        "base_cost_per_night": 3500,
+        "retail_price_per_night": 4200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA003",
+        "partner_name": "Alex",
+        "title": "Villa Maya",
+        "location": "North Miami Beach",
+        "bedrooms": 5,
+        "bathrooms": 4.5,
+        "sleeps": 12,
+        "base_cost_per_night": 2500,
+        "retail_price_per_night": 3200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA004",
+        "partner_name": "Alex",
+        "title": "Villa Summercrest",
+        "location": "Miami Shores",
+        "bedrooms": 6,
+        "bathrooms": 4.5,
+        "sleeps": 12,
+        "base_cost_per_night": 2500,
+        "retail_price_per_night": 3200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA005",
+        "partner_name": "Alex",
+        "title": "Villa Sapphire",
+        "location": "North Miami Beach",
+        "bedrooms": 8,
+        "bathrooms": 8.5,
+        "sleeps": 18,
+        "base_cost_per_night": 3500,
+        "retail_price_per_night": 4200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA006",
+        "partner_name": "Alex",
+        "title": "Villa Onyx",
+        "location": "North Miami Beach",
+        "bedrooms": 8,
+        "bathrooms": 8.5,
+        "sleeps": 18,
+        "base_cost_per_night": 3500,
+        "retail_price_per_night": 4200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA007",
+        "partner_name": "Alex",
+        "title": "Villa Calabassa",
+        "location": "Miami Beach",
+        "bedrooms": 10,
+        "bathrooms": 8.5,
+        "sleeps": 22,
+        "base_cost_per_night": 5500,
+        "retail_price_per_night": 6500,
+        "profit_per_night": 1000
+      },
+      {
+        "asset_id": "VILLA008",
+        "partner_name": "Alex",
+        "title": "Villa Pointe",
+        "location": "Bay Point",
+        "bedrooms": 7,
+        "bathrooms": 7.5,
+        "sleeps": 14,
+        "base_cost_per_night": null,
+        "retail_price_per_night": null,
+        "pricing_notes": "Custom / inquire"
+      },
+      {
+        "asset_id": "VILLA009",
+        "partner_name": "Alex",
+        "title": "Villa Jasper",
+        "location": "North Miami Beach",
+        "bedrooms": 9,
+        "bathrooms": 9.5,
+        "sleeps": 18,
+        "base_cost_per_night": 3500,
+        "retail_price_per_night": 4200,
+        "profit_per_night": 700
+      },
+      {
+        "asset_id": "VILLA010",
+        "partner_name": "Alex",
+        "title": "Villa Reverie",
+        "location": "Miami Shores",
+        "bedrooms": 7,
+        "bathrooms": 6.5,
+        "sleeps": 12,
+        "base_cost_per_night": 5500,
+        "retail_price_per_night": 6500,
+        "profit_per_night": 1000
+      }
+    ],
+    "yachts": [
+      {
+        "asset_id": "YACHT001",
+        "partner_name": "Boat Miami Now",
+        "title": "26ft Searay Sundeck",
+        "departure": "201 NW South River Dr Miami FL 33128",
+        "max_guests": 11,
+        "pricing": {
+          "broker": {
+            "all_week_hourly_except_saturday": 105,
+            "saturday_hourly": 110,
+            "starting_4hr": 420
+          },
+          "aurapex": {
+            "starting_4hr": 670
+          }
+        }
+      },
+      {
+        "asset_id": "YACHT002",
+        "partner_name": "Boat Miami Now",
+        "title": "36ft Regal",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 495,
+              "4hr": 620,
+              "5hr": 745,
+              "6hr": 870,
+              "8hr": 995
+            },
+            "fri_sun": {
+              "4hr": 640,
+              "5hr": 715,
+              "6hr": 890,
+              "8hr": 1015
+            },
+            "sat": {
+              "4hr": 690,
+              "5hr": 815,
+              "6hr": 940,
+              "8hr": 1140
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT003",
+        "partner_name": "Boat Miami Now",
+        "title": "37ft Monterey (White)",
+        "departure": "201 NW South River Dr Miami FL 33128",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 335,
+              "3hr": 470,
+              "4hr": 580,
+              "5hr": 764,
+              "6hr": 875,
+              "8hr": 1170
+            },
+            "fri_sun": {
+              "2hr": 360,
+              "3hr": 495,
+              "4hr": 630,
+              "5hr": 790,
+              "6hr": 900,
+              "8hr": 1170
+            },
+            "sat": {
+              "2hr": 385,
+              "3hr": 520,
+              "4hr": 656,
+              "5hr": 790,
+              "6hr": 925,
+              "8hr": 1196
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT004",
+        "partner_name": "Boat Miami Now",
+        "title": "37ft Monterey (Blue)",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 470,
+              "4hr": 580,
+              "5hr": 764,
+              "6hr": 875,
+              "8hr": 1170
+            },
+            "fri_sun": {
+              "3hr": 495,
+              "4hr": 630,
+              "5hr": 790,
+              "6hr": 900,
+              "8hr": 1170
+            },
+            "sat": {
+              "3hr": 520,
+              "4hr": 656,
+              "5hr": 790,
+              "6hr": 925,
+              "8hr": 1196
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT005",
+        "partner_name": "Boat Miami Now",
+        "title": "37ft Cruiser",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 470,
+              "4hr": 580,
+              "5hr": 764,
+              "6hr": 875,
+              "8hr": 1170
+            },
+            "fri_sun": {
+              "3hr": 495,
+              "4hr": 630,
+              "5hr": 790,
+              "6hr": 900,
+              "8hr": 1170
+            },
+            "sat": {
+              "3hr": 520,
+              "4hr": 656,
+              "5hr": 790,
+              "6hr": 925,
+              "8hr": 1196
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT006",
+        "partner_name": "Boat Miami Now",
+        "title": "37ft Sundancer",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 370,
+              "3hr": 505,
+              "4hr": 640,
+              "5hr": 775,
+              "6hr": 910,
+              "8hr": 1055
+            },
+            "fri_sun": {
+              "2hr": 390,
+              "3hr": 525,
+              "4hr": 660,
+              "5hr": 745,
+              "6hr": 930,
+              "8hr": 1075
+            },
+            "sat": {
+              "2hr": 440,
+              "3hr": 575,
+              "4hr": 710,
+              "5hr": 845,
+              "6hr": 980,
+              "8hr": 1200
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT007",
+        "partner_name": "Boat Miami Now",
+        "title": "40ft Formula",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 535,
+              "4hr": 665,
+              "5hr": 796,
+              "6hr": 925,
+              "8hr": 1160
+            },
+            "fri_sun": {
+              "3hr": 560,
+              "4hr": 690,
+              "5hr": 820,
+              "6hr": 950,
+              "8hr": 1185
+            },
+            "sat": {
+              "3hr": 610,
+              "4hr": 760,
+              "5hr": 870,
+              "6hr": 1000,
+              "8hr": 1310
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT008",
+        "partner_name": "Boat Miami Now",
+        "title": "40ft Axopar",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 575,
+              "3hr": 825,
+              "4hr": 875,
+              "5hr": 1125,
+              "6hr": 1225
+            },
+            "fri_sun": {
+              "2hr": 625,
+              "3hr": 825,
+              "4hr": 875,
+              "5hr": 1125,
+              "6hr": 1225
+            },
+            "sat": {
+              "2hr": 625,
+              "3hr": 825,
+              "4hr": 875,
+              "5hr": 1125,
+              "6hr": 1225
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT009",
+        "partner_name": "Boat Miami Now",
+        "title": "42ft Regal",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 570,
+              "3hr": 650,
+              "4hr": 770,
+              "5hr": 945,
+              "6hr": 1120
+            },
+            "fri": {
+              "3hr": 750,
+              "4hr": 870,
+              "5hr": 1045,
+              "6hr": 1195
+            },
+            "sat": {
+              "3hr": 820,
+              "4hr": 940,
+              "5hr": 1070,
+              "6hr": 1220
+            },
+            "sun": {
+              "3hr": 750,
+              "4hr": 870,
+              "5hr": 1045,
+              "6hr": 1195
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT010",
+        "partner_name": "Boat Miami Now",
+        "title": "42ft Doral Hawaii",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 430,
+              "3hr": 550,
+              "4hr": 720,
+              "5hr": 865,
+              "6hr": 1010,
+              "8hr": 1300
+            },
+            "fri_sun": {
+              "2hr": 460,
+              "3hr": 660,
+              "4hr": 745,
+              "5hr": 900,
+              "6hr": 1045,
+              "8hr": 1360
+            },
+            "sat": {
+              "2hr": 510,
+              "3hr": 660,
+              "4hr": 770,
+              "5hr": 950,
+              "6hr": 1120,
+              "8hr": 1460
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT011",
+        "partner_name": "Boat Miami Now",
+        "title": "44ft Sundancer 2",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "notes": "Plus 30 minutes free Monday-Thursday.",
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 430,
+              "3hr": 550,
+              "4hr": 720,
+              "5hr": 865,
+              "6hr": 1010,
+              "8hr": 1300
+            },
+            "fri": {
+              "2hr": 460,
+              "3hr": 660,
+              "4hr": 745,
+              "5hr": 900,
+              "6hr": 1045,
+              "8hr": 1360
+            },
+            "sat": {
+              "2hr": 510,
+              "3hr": 660,
+              "4hr": 770,
+              "5hr": 950,
+              "6hr": 1120,
+              "8hr": 1460
+            },
+            "sun": {
+              "2hr": 460,
+              "3hr": 660,
+              "4hr": 745,
+              "5hr": 900,
+              "6hr": 1045,
+              "8hr": 1360
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT012",
+        "partner_name": "Boat Miami Now",
+        "title": "45ft Tempest",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 700,
+              "4hr": 870,
+              "5hr": 1030,
+              "6hr": 1190,
+              "8hr": 1500
+            },
+            "fri_sun": {
+              "3hr": 820,
+              "4hr": 970,
+              "5hr": 1130,
+              "6hr": 1310,
+              "8hr": 1620
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT013",
+        "partner_name": "Boat Miami Now",
+        "title": "45ft Azimut",
+        "departure": "2215 NW 14th St, Miami, FL 33125",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 980,
+              "4hr": 1120,
+              "5hr": 1260,
+              "6hr": 1290
+            },
+            "fri_sun": {
+              "3hr": 1000,
+              "4hr": 1170,
+              "5hr": 1340,
+              "6hr": 1510
+            },
+            "sat": {
+              "3hr": 1100,
+              "4hr": 1270,
+              "5hr": 1440,
+              "6hr": 1610
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT014",
+        "partner_name": "Boat Miami Now",
+        "title": "46ft Maxum",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 570,
+              "3hr": 695,
+              "4hr": 803,
+              "5hr": 988,
+              "6hr": 1173,
+              "8hr": 1492
+            },
+            "fri": {
+              "3hr": 746,
+              "4hr": 854,
+              "5hr": 1039,
+              "6hr": 1225,
+              "8hr": 1595
+            },
+            "sat": {
+              "3hr": 849,
+              "4hr": 957,
+              "5hr": 1117,
+              "6hr": 1276,
+              "8hr": 1595
+            },
+            "sun": {
+              "3hr": 746,
+              "4hr": 854,
+              "5hr": 1039,
+              "6hr": 1225,
+              "8hr": 1492
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT015",
+        "partner_name": "Boat Miami Now",
+        "title": "48ft Cranchi",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 450,
+              "3hr": 575,
+              "4hr": 680,
+              "5hr": 810,
+              "6hr": 950
+            },
+            "fri": {
+              "2hr": 485,
+              "3hr": 625,
+              "4hr": 760,
+              "5hr": 885,
+              "6hr": 1010
+            },
+            "sat": {
+              "2hr": 525,
+              "3hr": 685,
+              "4hr": 810,
+              "5hr": 930,
+              "6hr": 1060
+            },
+            "sun": {
+              "2hr": 485,
+              "3hr": 625,
+              "4hr": 760,
+              "5hr": 885,
+              "6hr": 1010
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT016",
+        "partner_name": "Boat Miami Now",
+        "title": "48ft Silverton Flybridge",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 750,
+              "4hr": 875,
+              "5hr": 1000,
+              "6hr": 1125,
+              "8hr": 1475
+            },
+            "fri_sun": {
+              "3hr": 825,
+              "4hr": 950,
+              "5hr": 1175,
+              "6hr": 1200,
+              "8hr": 1550
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT017",
+        "partner_name": "Boat Miami Now",
+        "title": "48ft Silverton Sportbridge",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 725,
+              "4hr": 833,
+              "5hr": 1018,
+              "6hr": 1203,
+              "8hr": 1522
+            },
+            "fri": {
+              "3hr": 776,
+              "4hr": 884,
+              "5hr": 1069,
+              "6hr": 1255,
+              "8hr": 1625
+            },
+            "sat": {
+              "3hr": 879,
+              "4hr": 987,
+              "5hr": 1147,
+              "6hr": 1306,
+              "8hr": 1625
+            },
+            "sun": {
+              "3hr": 776,
+              "4hr": 884,
+              "5hr": 1069,
+              "6hr": 1255,
+              "8hr": 1522
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT018",
+        "partner_name": "Boat Miami Now",
+        "title": "50ft Sunseeker Manhattan",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 600,
+              "3hr": 725,
+              "4hr": 833,
+              "5hr": 1018,
+              "6hr": 1203,
+              "8hr": 1522
+            },
+            "fri": {
+              "3hr": 776,
+              "4hr": 884,
+              "5hr": 1069,
+              "6hr": 1255,
+              "8hr": 1625
+            },
+            "sat": {
+              "3hr": 879,
+              "4hr": 987,
+              "5hr": 1147,
+              "6hr": 1306,
+              "8hr": 1625
+            },
+            "sun": {
+              "3hr": 776,
+              "4hr": 884,
+              "5hr": 1069,
+              "6hr": 1255,
+              "8hr": 1522
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT019",
+        "partner_name": "Boat Miami Now",
+        "title": "53ft Azimut",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "2hr": 700,
+              "3hr": 875,
+              "4hr": 1160,
+              "5hr": 1315,
+              "6hr": 1470
+            },
+            "fri_sun": {
+              "3hr": 1000,
+              "4hr": 1260,
+              "5hr": 1460,
+              "6hr": 1620
+            },
+            "sat": {
+              "3hr": 950,
+              "4hr": 1335,
+              "5hr": 1515,
+              "6hr": 1695
+            }
+          },
+          "aurapex_min_markup": 250
+        }
+      },
+      {
+        "asset_id": "YACHT020",
+        "partner_name": "Boat Miami Now",
+        "title": "60ft Sunseeker Predator",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "4hr": 1500,
+              "6hr": 2000
+            },
+            "fri_sun": {
+              "4hr": 1600,
+              "6hr": 2100
+            },
+            "sat": {
+              "4hr": 1700,
+              "6hr": 2200
+            }
+          },
+          "aurapex_markup_guidance": {
+            "minimum": 250,
+            "recommended_for_this_asset": "250-500"
+          }
+        }
+      },
+      {
+        "asset_id": "YACHT021",
+        "partner_name": "Boat Miami Now",
+        "title": "65ft Viking Flybridge",
+        "departure": "Miami River",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "mon_thu": {
+              "3hr": 1000,
+              "4hr": 1290,
+              "5hr": 1495,
+              "6hr": 1700
+            },
+            "fri_sun": {
+              "3hr": 1050,
+              "4hr": 1390,
+              "5hr": 1595,
+              "6hr": 1800
+            },
+            "sat": {
+              "3hr": 1200,
+              "4hr": 1440,
+              "5hr": 1645,
+              "6hr": 1850
+            }
+          },
+          "aurapex_markup_guidance": {
+            "minimum": 250,
+            "recommended_for_this_asset": "250-500"
+          }
+        }
+      },
+      {
+        "asset_id": "YACHT022",
+        "partner_name": "Boat Miami Now",
+        "title": "82ft Sunseeker Predator",
+        "departure": "2215 NW 14th St, Miami, FL 33125",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "weekday_mon_thu": {
+              "4hr": 2350,
+              "6hr": 3000,
+              "8hr": 3600
+            },
+            "weekend": {
+              "4hr": 2600,
+              "6hr": 3400,
+              "8hr": 3850
+            }
+          },
+          "aurapex_markup_guidance": {
+            "minimum": 250,
+            "recommended_for_this_asset": "400-800"
+          }
+        }
+      },
+      {
+        "asset_id": "YACHT023",
+        "partner_name": "Boat Miami Now",
+        "title": "110ft Maiora",
+        "departure": "2215 NW 14th St, Miami, FL 33125",
+        "max_guests": 13,
+        "pricing": {
+          "broker": {
+            "all_week": {
+              "4hr": 3500,
+              "5hr": 3800,
+              "6hr": 4250,
+              "7hr": 5050,
+              "8hr": 6000
+            }
+          },
+          "aurapex_markup_guidance": {
+            "minimum": 250,
+            "recommended_for_this_asset": "800-1500"
+          }
+        }
+      }
+    ]
+  }
+}
