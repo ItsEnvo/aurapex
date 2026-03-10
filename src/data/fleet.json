@@ -74,6 +74,15 @@
       "categories": [
         "jet_skis"
       ]
+    },
+    {
+      "partner_id": "P006",
+      "partner_name": "Yarri",
+      "categories": [
+        "cars"
+      ],
+      "source_link": "https://preferred.smugmug.com/",
+      "notes": "Preferred Exotics fleet provided by Yarri."
     }
   ],
   "inventory": {
@@ -297,6 +306,160 @@
         "cost_per_day": 200,
         "retail_price_per_day": 325,
         "profit_per_day": 125
+      },
+      {
+        "asset_id": "CAR021",
+        "partner_name": "Yarri",
+        "category": "exotic_car",
+        "subcategory": "Exotic Cars",
+        "title": "Audi R8 Gray",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR022",
+        "partner_name": "Yarri",
+        "category": "exotic_car",
+        "subcategory": "Exotic Cars",
+        "title": "Chevrolet Corvette C8 White",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR023",
+        "partner_name": "Yarri",
+        "category": "exotic_car",
+        "subcategory": "Exotic Cars",
+        "title": "Chevrolet Corvette C8 Red",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR024",
+        "partner_name": "Yarri",
+        "category": "ultra_luxury_suv",
+        "subcategory": "Ultra Luxury SUVs",
+        "title": "Rolls Royce Cullinan Mansory White",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR025",
+        "partner_name": "Yarri",
+        "category": "ultra_luxury_suv",
+        "subcategory": "Ultra Luxury SUVs",
+        "title": "Rolls Royce Cullinan Mansory Black",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR026",
+        "partner_name": "Yarri",
+        "category": "exotic_car",
+        "subcategory": "Exotic Cars",
+        "title": "Porsche 911 White",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR027",
+        "partner_name": "Yarri",
+        "category": "supercar",
+        "subcategory": "Supercars",
+        "title": "Porsche GT3RS Red",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR028",
+        "partner_name": "Yarri",
+        "category": "supercar",
+        "subcategory": "Supercars",
+        "title": "Porsche GT3RS Gray",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR029",
+        "partner_name": "Yarri",
+        "category": "ultra_luxury_suv",
+        "subcategory": "Ultra Luxury SUVs",
+        "title": "Mercedes Maybach GLS",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR030",
+        "partner_name": "Yarri",
+        "category": "performance_car",
+        "subcategory": "Performance Cars",
+        "title": "BMW M4 Competition Purple",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR031",
+        "partner_name": "Yarri",
+        "category": "luxury_suv",
+        "subcategory": "Luxury SUVs",
+        "title": "Mercedes G63 Brabus Black",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR032",
+        "partner_name": "Yarri",
+        "category": "exotic_suv",
+        "subcategory": "Exotic SUVs",
+        "title": "Lamborghini Urus Mansory Yellow",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR033",
+        "partner_name": "Yarri",
+        "category": "exotic_suv",
+        "subcategory": "Exotic SUVs",
+        "title": "Lamborghini Urus S Orange",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+      },
+      {
+        "asset_id": "CAR034",
+        "partner_name": "Yarri",
+        "category": "exotic_suv",
+        "subcategory": "Exotic SUVs",
+        "title": "Lamborghini Urus Black",
+        "location": "Miami",
+        "retail_price_per_day": null,
+        "cost_per_day": null,
+        "notes": "Pricing TBD - Yarri / Preferred Exotics"
       }
     ],
     "jet_skis": [
