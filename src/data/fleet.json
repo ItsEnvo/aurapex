@@ -500,7 +500,13 @@
           "aurapex": {
             "starting_4hr": 670
           }
-        }
+        },
+        "images": [
+          "/images/yachts/26ft-searay-sundeck/1.jpg",
+          "/images/yachts/26ft-searay-sundeck/2.jpg",
+          "/images/yachts/26ft-searay-sundeck/3.jpg",
+          "/images/yachts/26ft-searay-sundeck/4.jpg"
+        ]
       },
       {
         "asset_id": "YACHT002",
@@ -531,7 +537,11 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/36ft-regal/1.jpg",
+          "/images/yachts/36ft-regal/2.jpg"
+        ]
       },
       {
         "asset_id": "YACHT003",
@@ -567,7 +577,13 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/37ft-monterey-white/1.jpg",
+          "/images/yachts/37ft-monterey-white/2.jpg",
+          "/images/yachts/37ft-monterey-white/3.jpg",
+          "/images/yachts/37ft-monterey-white/4.jpg"
+        ]
       },
       {
         "asset_id": "YACHT004",
@@ -600,7 +616,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/37ft-monterey-blue/1.jpg",
+          "/images/yachts/37ft-monterey-blue/2.jpg",
+          "/images/yachts/37ft-monterey-blue/3.jpg",
+          "/images/yachts/37ft-monterey-blue/4.jpg",
+          "/images/yachts/37ft-monterey-blue/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT005",
@@ -633,7 +656,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/37ft-cruiser/1.jpg",
+          "/images/yachts/37ft-cruiser/2.jpg",
+          "/images/yachts/37ft-cruiser/3.jpg",
+          "/images/yachts/37ft-cruiser/4.jpg",
+          "/images/yachts/37ft-cruiser/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT006",
@@ -669,7 +699,13 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/37ft-sundancer/1.jpg",
+          "/images/yachts/37ft-sundancer/2.jpg",
+          "/images/yachts/37ft-sundancer/3.jpg",
+          "/images/yachts/37ft-sundancer/4.jpg"
+        ]
       },
       {
         "asset_id": "YACHT007",
@@ -702,7 +738,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/40ft-formula/1.jpg",
+          "/images/yachts/40ft-formula/2.jpg",
+          "/images/yachts/40ft-formula/3.jpg",
+          "/images/yachts/40ft-formula/4.jpg",
+          "/images/yachts/40ft-formula/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT008",
@@ -735,7 +778,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/40ft-axopar/1.jpg",
+          "/images/yachts/40ft-axopar/2.jpg",
+          "/images/yachts/40ft-axopar/3.jpg",
+          "/images/yachts/40ft-axopar/4.jpg",
+          "/images/yachts/40ft-axopar/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT009",
@@ -772,7 +822,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/42ft-regal/1.jpg",
+          "/images/yachts/42ft-regal/2.jpg",
+          "/images/yachts/42ft-regal/3.jpg",
+          "/images/yachts/42ft-regal/4.jpg",
+          "/images/yachts/42ft-regal/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT010",
@@ -808,7 +865,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/42ft-doral-hawaii/1.jpg",
+          "/images/yachts/42ft-doral-hawaii/2.jpg",
+          "/images/yachts/42ft-doral-hawaii/3.jpg",
+          "/images/yachts/42ft-doral-hawaii/4.jpg",
+          "/images/yachts/42ft-doral-hawaii/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT011",
@@ -853,7 +917,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/44ft-searay-sundancer2/1.jpg",
+          "/images/yachts/44ft-searay-sundancer2/2.jpg",
+          "/images/yachts/44ft-searay-sundancer2/3.jpg",
+          "/images/yachts/44ft-searay-sundancer2/4.jpg",
+          "/images/yachts/44ft-searay-sundancer2/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT012",
@@ -879,7 +950,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/45ft-tempest/1.jpg",
+          "/images/yachts/45ft-tempest/2.jpg",
+          "/images/yachts/45ft-tempest/3.jpg",
+          "/images/yachts/45ft-tempest/4.jpg",
+          "/images/yachts/45ft-tempest/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT013",
@@ -909,7 +987,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/45ft-azimut/1.jpg",
+          "/images/yachts/45ft-azimut/2.jpg",
+          "/images/yachts/45ft-azimut/3.jpg",
+          "/images/yachts/45ft-azimut/4.jpg",
+          "/images/yachts/45ft-azimut/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT014",
@@ -950,7 +1035,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/46ft-maxum/1.jpg",
+          "/images/yachts/46ft-maxum/2.jpg",
+          "/images/yachts/46ft-maxum/3.jpg",
+          "/images/yachts/46ft-maxum/4.jpg",
+          "/images/yachts/46ft-maxum/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT015",
@@ -990,7 +1082,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/48ft-cranchi/1.jpg",
+          "/images/yachts/48ft-cranchi/2.jpg",
+          "/images/yachts/48ft-cranchi/3.jpg",
+          "/images/yachts/48ft-cranchi/4.jpg",
+          "/images/yachts/48ft-cranchi/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT016",
@@ -1016,7 +1115,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/48ft-silverton-flybridge/1.jpg",
+          "/images/yachts/48ft-silverton-flybridge/2.jpg",
+          "/images/yachts/48ft-silverton-flybridge/3.jpg",
+          "/images/yachts/48ft-silverton-flybridge/4.jpg",
+          "/images/yachts/48ft-silverton-flybridge/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT017",
@@ -1056,7 +1162,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/48ft-silverton-sportbridge/1.jpg",
+          "/images/yachts/48ft-silverton-sportbridge/2.jpg",
+          "/images/yachts/48ft-silverton-sportbridge/3.jpg",
+          "/images/yachts/48ft-silverton-sportbridge/4.jpg",
+          "/images/yachts/48ft-silverton-sportbridge/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT018",
@@ -1097,7 +1210,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/50ft-sunseeker-manhattan/1.jpg",
+          "/images/yachts/50ft-sunseeker-manhattan/2.jpg",
+          "/images/yachts/50ft-sunseeker-manhattan/3.jpg",
+          "/images/yachts/50ft-sunseeker-manhattan/4.jpg",
+          "/images/yachts/50ft-sunseeker-manhattan/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT019",
@@ -1128,7 +1248,14 @@
             }
           },
           "aurapex_min_markup": 250
-        }
+        },
+        "images": [
+          "/images/yachts/53ft-azimut/1.jpg",
+          "/images/yachts/53ft-azimut/2.jpg",
+          "/images/yachts/53ft-azimut/3.jpg",
+          "/images/yachts/53ft-azimut/4.jpg",
+          "/images/yachts/53ft-azimut/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT020",
@@ -1155,7 +1282,14 @@
             "minimum": 250,
             "recommended_for_this_asset": "250-500"
           }
-        }
+        },
+        "images": [
+          "/images/yachts/60ft-sunseeker-predator/1.jpg",
+          "/images/yachts/60ft-sunseeker-predator/2.jpg",
+          "/images/yachts/60ft-sunseeker-predator/3.jpg",
+          "/images/yachts/60ft-sunseeker-predator/4.jpg",
+          "/images/yachts/60ft-sunseeker-predator/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT021",
@@ -1188,7 +1322,14 @@
             "minimum": 250,
             "recommended_for_this_asset": "250-500"
           }
-        }
+        },
+        "images": [
+          "/images/yachts/65ft-viking/1.jpg",
+          "/images/yachts/65ft-viking/2.jpg",
+          "/images/yachts/65ft-viking/3.jpg",
+          "/images/yachts/65ft-viking/4.jpg",
+          "/images/yachts/65ft-viking/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT022",
@@ -1213,7 +1354,14 @@
             "minimum": 250,
             "recommended_for_this_asset": "400-800"
           }
-        }
+        },
+        "images": [
+          "/images/yachts/82ft-sunseeker-predator/1.jpg",
+          "/images/yachts/82ft-sunseeker-predator/2.jpg",
+          "/images/yachts/82ft-sunseeker-predator/3.jpg",
+          "/images/yachts/82ft-sunseeker-predator/4.jpg",
+          "/images/yachts/82ft-sunseeker-predator/5.jpg"
+        ]
       },
       {
         "asset_id": "YACHT023",
@@ -1235,7 +1383,10 @@
             "minimum": 250,
             "recommended_for_this_asset": "800-1500"
           }
-        }
+        },
+        "images": [
+          "/images/yachts/110ft-maiora/1.jpg"
+        ]
       }
     ]
   }

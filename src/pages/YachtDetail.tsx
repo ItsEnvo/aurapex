@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
-import { ArrowLeft, Star, Users, Anchor, MapPin, Calendar, Clock } from 'lucide-react'
+import { ArrowLeft, Star, Users, Anchor, MapPin, Calendar, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
 import { findItemBySlug } from '../data/inventory'
 import type { Yacht } from '../data/inventory'
 
 const YachtDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
+  const [activeImage, setActiveImage] = useState(0)
   
   if (!slug) {
     return <Navigate to="/yachts" replace />
@@ -41,16 +42,54 @@ const YachtDetail: React.FC = () => {
       <section className="pb-16 bg-luxury-charcoal">
         <div className="container-max section-padding">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Yacht Image */}
+            {/* Yacht Image Gallery */}
             <div className="relative">
               <div className="relative h-96 rounded-xl overflow-hidden">
                 <img
-                  src={yacht.image}
-                  alt={yacht.title}
+                  src={yacht.images[activeImage]}
+                  alt={`${yacht.title} - Photo ${activeImage + 1}`}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                
+                {/* Gallery Navigation */}
+                {yacht.images.length > 1 && (
+                  <>
+                    <button
+                      onClick={() => setActiveImage(prev => prev === 0 ? yacht.images.length - 1 : prev - 1)}
+                      className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+                    >
+                      <ChevronLeft size={20} />
+                    </button>
+                    <button
+                      onClick={() => setActiveImage(prev => prev === yacht.images.length - 1 ? 0 : prev + 1)}
+                      className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+                    >
+                      <ChevronRight size={20} />
+                    </button>
+                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white text-sm">
+                      {activeImage + 1} / {yacht.images.length}
+                    </div>
+                  </>
+                )}
               </div>
+              
+              {/* Thumbnail Strip */}
+              {yacht.images.length > 1 && (
+                <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
+                  {yacht.images.map((img, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setActiveImage(i)}
+                      className={`flex-shrink-0 w-20 h-14 rounded-lg overflow-hidden border-2 transition-all ${
+                        i === activeImage ? 'border-luxury-gold opacity-100' : 'border-transparent opacity-60 hover:opacity-80'
+                      }`}
+                    >
+                      <img src={img} alt={`${yacht.title} thumbnail ${i + 1}`} className="w-full h-full object-cover" />
+                    </button>
+                  ))}
+                </div>
+              )}
             </div>
 
             {/* Yacht Details */}

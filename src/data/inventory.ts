@@ -19,7 +19,8 @@ export interface InventoryItem {
   subcategory?: string
   location?: string
   priceDisplay: string // Formatted for customer display
-  image: string // Unsplash placeholder
+  image: string // Primary image (first from images array, or Unsplash fallback)
+  images: string[] // All available images
 }
 
 export interface Car extends InventoryItem {
@@ -119,7 +120,8 @@ export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
     location: car.location,
     dailyPrice: car.retail_price_per_day,
     priceDisplay: `From $${car.retail_price_per_day.toLocaleString()}/day`,
-    image: getImageUrl('cars', car.title)
+    image: getImageUrl('cars', car.title),
+    images: [getImageUrl('cars', car.title)]
   }
 })
 
@@ -132,6 +134,10 @@ export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
   const prices = Object.values(aurapexPricing).filter(p => typeof p === 'number')
   const startingPrice = prices.length > 0 ? Math.min(...prices) : 0
   
+  // Use real photos if available, fallback to Unsplash
+  const realImages: string[] = yacht.images && yacht.images.length > 0 ? yacht.images : []
+  const primaryImage = realImages.length > 0 ? realImages[0] : getImageUrl('yachts', yacht.title)
+  
   return {
     id: yacht.asset_id,
     slug,
@@ -142,7 +148,8 @@ export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
     startingPrice,
     pricing: aurapexPricing,
     priceDisplay: startingPrice > 0 ? `From $${startingPrice.toLocaleString()}` : 'Contact for pricing',
-    image: getImageUrl('yachts', yacht.title)
+    image: primaryImage,
+    images: realImages.length > 0 ? realImages : [getImageUrl('yachts', yacht.title)]
   }
 })
 
@@ -160,7 +167,8 @@ export const villas: Villa[] = fleetData.inventory.villas.map((villa: any) => {
     sleeps: villa.sleeps,
     nightlyPrice: villa.retail_price_per_night,
     priceDisplay: `From $${villa.retail_price_per_night.toLocaleString()}/night`,
-    image: getImageUrl('villas', villa.title)
+    image: getImageUrl('villas', villa.title),
+    images: [getImageUrl('villas', villa.title)]
   }
 })
 
@@ -180,7 +188,8 @@ export const jetSkis: JetSki[] = fleetData.inventory.jet_skis.map((jetski: any) 
     hourlyPrice,
     dailyPrice: jetski.retail_price_per_day,
     priceDisplay: `From $${hourlyPrice}/hour`,
-    image: getImageUrl('jet_skis', jetski.title)
+    image: getImageUrl('jet_skis', jetski.title),
+    images: [getImageUrl('jet_skis', jetski.title)]
   }
 })
 
