@@ -90,6 +90,7 @@ const getImageUrl = (category: string, title: string): string => {
 // Calculate Aurapex pricing for yachts (broker price + minimum markup)
 const calculateYachtPricing = (brokerPricing: any) => {
   const aurapexPricing: { [key: string]: number } = {}
+  if (!brokerPricing) return aurapexPricing
   const markupPercent = 0.25 // 25% minimum markup
   
   if (brokerPricing.half_day) {
@@ -118,8 +119,8 @@ export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
     category: 'cars' as const,
     subcategory: car.subcategory || car.category,
     location: car.location,
-    dailyPrice: car.retail_price_per_day,
-    priceDisplay: `From $${car.retail_price_per_day.toLocaleString()}/day`,
+    dailyPrice: car.retail_price_per_day || 0,
+    priceDisplay: car.retail_price_per_day ? `From $${car.retail_price_per_day.toLocaleString()}/day` : 'Contact for pricing',
     image: getImageUrl('cars', car.title),
     images: [getImageUrl('cars', car.title)]
   }
@@ -128,11 +129,15 @@ export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
 // Process yachts
 export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
   const slug = createSlug(yacht.title)
-  const aurapexPricing = calculateYachtPricing(yacht.broker_pricing || {})
+  // Try multiple pricing structures
+  const brokerPricing = yacht.broker_pricing || yacht.pricing?.broker || {}
+  const aurapexPricingData = yacht.pricing?.aurapex || {}
+  const aurapexPricing = calculateYachtPricing(brokerPricing)
   
-  // Find the cheapest option for starting price display
+  // Use Aurapex pricing if available, otherwise calculated from broker
+  const startingAurapex = aurapexPricingData.starting_4hr || aurapexPricingData.half_day || 0
   const prices = Object.values(aurapexPricing).filter(p => typeof p === 'number')
-  const startingPrice = prices.length > 0 ? Math.min(...prices) : 0
+  const startingPrice = startingAurapex || (prices.length > 0 ? Math.min(...(prices as number[])) : 0)
   
   // Use real photos if available, fallback to Unsplash
   const realImages: string[] = yacht.images && yacht.images.length > 0 ? yacht.images : []
@@ -165,8 +170,8 @@ export const villas: Villa[] = fleetData.inventory.villas.map((villa: any) => {
     bedrooms: villa.bedrooms,
     bathrooms: villa.bathrooms,
     sleeps: villa.sleeps,
-    nightlyPrice: villa.retail_price_per_night,
-    priceDisplay: `From $${villa.retail_price_per_night.toLocaleString()}/night`,
+    nightlyPrice: villa.retail_price_per_night || 0,
+    priceDisplay: villa.retail_price_per_night ? `From $${villa.retail_price_per_night.toLocaleString()}/night` : 'Contact for pricing',
     image: getImageUrl('villas', villa.title),
     images: [getImageUrl('villas', villa.title)]
   }
