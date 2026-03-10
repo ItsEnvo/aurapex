@@ -121,8 +121,8 @@ export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
     location: car.location,
     dailyPrice: car.retail_price_per_day || 0,
     priceDisplay: car.retail_price_per_day ? `From $${car.retail_price_per_day.toLocaleString()}/day` : 'Contact for pricing',
-    image: getImageUrl('cars', car.title),
-    images: [getImageUrl('cars', car.title)]
+    image: (car as any).images?.length > 0 ? (car as any).images[0] : getImageUrl('cars', car.title),
+    images: (car as any).images?.length > 0 ? (car as any).images : [getImageUrl('cars', car.title)]
   }
 })
 

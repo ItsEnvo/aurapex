@@ -316,7 +316,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/audi-r8-gray/1.jpg",
+          "/images/cars/audi-r8-gray/2.jpg",
+          "/images/cars/audi-r8-gray/3.jpg",
+          "/images/cars/audi-r8-gray/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR022",
@@ -327,7 +333,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/corvette-c8-white/1.jpg",
+          "/images/cars/corvette-c8-white/2.jpg",
+          "/images/cars/corvette-c8-white/3.jpg",
+          "/images/cars/corvette-c8-white/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR023",
@@ -338,7 +350,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/corvette-c8-red/1.jpg",
+          "/images/cars/corvette-c8-red/2.jpg",
+          "/images/cars/corvette-c8-red/3.jpg",
+          "/images/cars/corvette-c8-red/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR024",
@@ -349,7 +367,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/rolls-royce-cullinan-mansory-white/1.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-white/2.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-white/3.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-white/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR025",
@@ -360,7 +384,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/rolls-royce-cullinan-mansory-black/1.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-black/2.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-black/3.jpg",
+          "/images/cars/rolls-royce-cullinan-mansory-black/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR026",
@@ -371,7 +401,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/porsche-911-white/1.jpg",
+          "/images/cars/porsche-911-white/2.jpg",
+          "/images/cars/porsche-911-white/3.jpg",
+          "/images/cars/porsche-911-white/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR027",
@@ -382,7 +418,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/porsche-gt3rs-red/1.jpg",
+          "/images/cars/porsche-gt3rs-red/2.jpg",
+          "/images/cars/porsche-gt3rs-red/3.jpg",
+          "/images/cars/porsche-gt3rs-red/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR028",
@@ -393,7 +435,12 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/porsche-gt3rs-gray/1.jpg",
+          "/images/cars/porsche-gt3rs-gray/2.jpg",
+          "/images/cars/porsche-gt3rs-gray/3.jpg"
+        ]
       },
       {
         "asset_id": "CAR029",
@@ -404,7 +451,12 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/mercedes-maybach-gls/1.jpg",
+          "/images/cars/mercedes-maybach-gls/2.jpg",
+          "/images/cars/mercedes-maybach-gls/3.jpg"
+        ]
       },
       {
         "asset_id": "CAR030",
@@ -415,7 +467,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/bmw-m4-competition-purple/1.jpg",
+          "/images/cars/bmw-m4-competition-purple/2.jpg",
+          "/images/cars/bmw-m4-competition-purple/3.jpg",
+          "/images/cars/bmw-m4-competition-purple/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR031",
@@ -426,7 +484,13 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/mercedes-g63-brabus-black/1.jpg",
+          "/images/cars/mercedes-g63-brabus-black/2.jpg",
+          "/images/cars/mercedes-g63-brabus-black/3.jpg",
+          "/images/cars/mercedes-g63-brabus-black/4.jpg"
+        ]
       },
       {
         "asset_id": "CAR032",
@@ -437,7 +501,12 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/lamborghini-urus-mansory-yellow/1.jpg",
+          "/images/cars/lamborghini-urus-mansory-yellow/2.jpg",
+          "/images/cars/lamborghini-urus-mansory-yellow/3.jpg"
+        ]
       },
       {
         "asset_id": "CAR033",
@@ -448,7 +517,12 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/lamborghini-urus-s-orange/1.jpg",
+          "/images/cars/lamborghini-urus-s-orange/2.jpg",
+          "/images/cars/lamborghini-urus-s-orange/3.jpg"
+        ]
       },
       {
         "asset_id": "CAR034",
@@ -459,7 +533,12 @@
         "location": "Miami",
         "retail_price_per_day": null,
         "cost_per_day": null,
-        "notes": "Pricing TBD - Yarri / Preferred Exotics"
+        "notes": "Pricing TBD - Yarri / Preferred Exotics",
+        "images": [
+          "/images/cars/lamborghini-urus-black/1.jpg",
+          "/images/cars/lamborghini-urus-black/2.jpg",
+          "/images/cars/lamborghini-urus-black/3.jpg"
+        ]
       }
     ],
     "jet_skis": [
