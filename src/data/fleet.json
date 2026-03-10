@@ -1627,7 +1627,11 @@
           }
         },
         "images": [
-          "/images/yachts/110ft-maiora/1.jpg"
+          "/images/yachts/110ft-maiora/1.jpg",
+          "/images/yachts/110ft-maiora/2.jpg",
+          "/images/yachts/110ft-maiora/3.jpg",
+          "/images/yachts/110ft-maiora/4.jpg",
+          "/images/yachts/110ft-maiora/5.jpg"
         ]
       }
     ]
