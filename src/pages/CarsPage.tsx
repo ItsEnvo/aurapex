@@ -50,7 +50,7 @@ const CarsPage: React.FC = () => {
 
                 {/* Car Image */}
                 <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={car.image}
                     alt={car.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -116,7 +116,7 @@ const CarsPage: React.FC = () => {
               Can't find the perfect exotic car? We have access to exclusive vehicles not shown here.
             </p>
             <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => window.open('https://wa.me/15617774360?text=Hi%2C%20I%27m%20looking%20for%20a%20specific%20vehicle%20not%20listed%20on%20your%20site.%20Can%20you%20help%20source%20it%3F', '_blank')}
               className="luxury-button-outline"
             >
               Request Custom Vehicle

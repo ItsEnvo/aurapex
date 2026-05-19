@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { ArrowLeft, Star, Users, Zap, MapPin, Calendar, Shield } from 'lucide-react'
 import { findItemBySlug } from '../data/inventory'
 import type { Car } from '../data/inventory'
+import ImageGallery from '../components/ImageGallery'
 
 const CarDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -17,9 +18,9 @@ const CarDetail: React.FC = () => {
     return <Navigate to="/cars" replace />
   }
 
-  const scrollToContact = () => {
+  const handleBooking = () => {
     // Navigate to home and scroll to contact
-    window.location.href = '/#contact'
+    const msg = encodeURIComponent(`Hi, I'm interested in renting the ${car.title}. Can you help?`); window.open(`https://wa.me/15617774360?text=${msg}`, '_blank')
   }
 
   return (
@@ -40,19 +41,12 @@ const CarDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="pb-16 bg-luxury-charcoal">
         <div className="container-max section-padding">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Car Image */}
-            <div className="relative">
-              <div className="relative h-96 rounded-xl overflow-hidden">
-                <img
-                  src={car.image}
-                  alt={car.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-            </div>
+          {/* Image Gallery — Full Width */}
+          <div className="mb-12">
+            <ImageGallery images={car.images} title={car.title} />
+          </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Car Details */}
             <div className="space-y-6">
               <div>
@@ -81,7 +75,7 @@ const CarDetail: React.FC = () => {
                     <div className="text-gray-400">per day</div>
                   </div>
                   <div className="text-right text-sm text-gray-400">
-                    <div>Insurance available</div>
+                    <div>Full coverage insurance required</div>
                     <div>+$100/day (optional)</div>
                   </div>
                 </div>
@@ -112,7 +106,7 @@ const CarDetail: React.FC = () => {
 
               {/* CTA Button */}
               <button
-                onClick={scrollToContact}
+                onClick={handleBooking}
                 className="w-full luxury-button flex items-center justify-center space-x-2"
               >
                 <Calendar size={20} />
@@ -142,7 +136,7 @@ const CarDetail: React.FC = () => {
                   <Shield className="w-5 h-5 text-luxury-gold mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-white">Insurance Required</h4>
-                    <p className="text-gray-400 text-sm">Personal auto insurance or our optional coverage</p>
+                    <p className="text-gray-400 text-sm">You must provide proof of full coverage auto insurance before pickup</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -211,7 +205,7 @@ const CarDetail: React.FC = () => {
               Contact our concierge team to check availability and customize your luxury car rental experience
             </p>
             <button
-              onClick={scrollToContact}
+              onClick={handleBooking}
               className="luxury-button"
             >
               Contact Us Now

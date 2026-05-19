@@ -34,12 +34,12 @@ const Footer: React.FC = () => {
     {
       city: 'Fort Lauderdale',
       address: '123 Las Olas Boulevard\nFort Lauderdale, FL 33301',
-      phone: '+1 (954) 555-0123'
+      phone: '+1 (561) 777-4360'
     },
     {
       city: 'Miami',
       address: '456 Ocean Drive\nMiami Beach, FL 33139',
-      phone: '+1 (305) 555-0124'
+      phone: '+1 (561) 777-4360'
     }
   ]
 
@@ -201,8 +201,8 @@ const Footer: React.FC = () => {
               <p className="mt-1">
                 Licensed luxury vehicle rental service in Florida | 
                 <span className="mx-2">•</span>
-                <a href="mailto:info@aurapexrentals.com" className="hover:text-luxury-gold transition-colors">
-                  info@aurapexrentals.com
+                <a href="mailto:Aurapexbookings@gmail.com" className="hover:text-luxury-gold transition-colors">
+                  Aurapexbookings@gmail.com
                 </a>
               </p>
             </div>
@@ -210,7 +210,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <button className="hover:text-luxury-gold transition-colors">Privacy Policy</button>
               <button className="hover:text-luxury-gold transition-colors">Terms of Service</button>
-              <button className="hover:text-luxury-gold transition-colors">Insurance Info</button>
+              <button className="hover:text-luxury-gold transition-colors">Rental Policy</button>
             </div>
           </div>
         </div>

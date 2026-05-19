@@ -88,226 +88,6 @@
   "inventory": {
     "cars": [
       {
-        "asset_id": "CAR001",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "luxury_coupe",
-        "title": "Lexus LC500",
-        "location": "Miami",
-        "cost_per_day": 280,
-        "retail_price_per_day": 399,
-        "profit_per_day": 119
-      },
-      {
-        "asset_id": "CAR002",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "luxury_suv",
-        "title": "Mercedes GLE AMG53",
-        "location": "Miami",
-        "cost_per_day": 280,
-        "retail_price_per_day": 399,
-        "profit_per_day": 119
-      },
-      {
-        "asset_id": "CAR003",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "performance_suv",
-        "title": "BMW X6M",
-        "location": "Miami",
-        "cost_per_day": 280,
-        "retail_price_per_day": 399,
-        "profit_per_day": 119
-      },
-      {
-        "asset_id": "CAR004",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "luxury_suv",
-        "title": "Range Rover SVR",
-        "location": "Miami",
-        "cost_per_day": 320,
-        "retail_price_per_day": 449,
-        "profit_per_day": 129
-      },
-      {
-        "asset_id": "CAR005",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "luxury_sedan",
-        "title": "Mercedes S Class",
-        "location": "Miami",
-        "cost_per_day": 320,
-        "retail_price_per_day": 449,
-        "profit_per_day": 129
-      },
-      {
-        "asset_id": "CAR006",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "luxury_suv",
-        "title": "Cadillac Escalade",
-        "location": "Miami",
-        "cost_per_day": 320,
-        "retail_price_per_day": 449,
-        "profit_per_day": 129
-      },
-      {
-        "asset_id": "CAR007",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "exotic_suv",
-        "title": "Mercedes G550 AMG",
-        "location": "Miami",
-        "cost_per_day": 400,
-        "retail_price_per_day": 549,
-        "profit_per_day": 149
-      },
-      {
-        "asset_id": "CAR008",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "performance_sedan",
-        "title": "BMW M5 (900HP)",
-        "location": "Miami",
-        "cost_per_day": 480,
-        "retail_price_per_day": 699,
-        "profit_per_day": 219
-      },
-      {
-        "asset_id": "CAR009",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "ultra_luxury_suv",
-        "title": "Maybach GLS",
-        "location": "Miami",
-        "cost_per_day": 800,
-        "retail_price_per_day": 1199,
-        "profit_per_day": 399
-      },
-      {
-        "asset_id": "CAR010",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "exotic_suv",
-        "title": "Lamborghini Urus",
-        "location": "Miami",
-        "cost_per_day": 800,
-        "retail_price_per_day": 1299,
-        "profit_per_day": 499
-      },
-      {
-        "asset_id": "CAR011",
-        "partner_name": "PluggOfMiami",
-        "category": "exotic_luxury_car",
-        "subcategory": "ultra_luxury_suv",
-        "title": "Rolls Royce Cullinan",
-        "location": "Miami",
-        "cost_per_day": 1080,
-        "retail_price_per_day": 1499,
-        "profit_per_day": 419
-      },
-      {
-        "asset_id": "CAR012",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "daily",
-        "title": "BMW 335i",
-        "location": "Miami",
-        "cost_per_day": 120,
-        "retail_price_per_day": 179,
-        "profit_per_day": 59
-      },
-      {
-        "asset_id": "CAR013",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "luxury_daily",
-        "title": "BMW 740i",
-        "location": "Miami",
-        "cost_per_day": 140,
-        "retail_price_per_day": 199,
-        "profit_per_day": 59
-      },
-      {
-        "asset_id": "CAR014",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "specialty",
-        "title": "Polaris Slingshot",
-        "location": "Miami",
-        "cost_per_day": 160,
-        "retail_price_per_day": 229,
-        "profit_per_day": 69
-      },
-      {
-        "asset_id": "CAR015",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "daily_luxury",
-        "title": "Mercedes C300",
-        "location": "Miami",
-        "cost_per_day": 160,
-        "retail_price_per_day": 229,
-        "profit_per_day": 69
-      },
-      {
-        "asset_id": "CAR016",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "performance_daily",
-        "title": "Lexus RC F",
-        "location": "Miami",
-        "cost_per_day": 200,
-        "retail_price_per_day": 279,
-        "profit_per_day": 79
-      },
-      {
-        "asset_id": "CAR017",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "luxury_suv",
-        "title": "Porsche Macan S",
-        "location": "Miami",
-        "cost_per_day": 200,
-        "retail_price_per_day": 279,
-        "profit_per_day": 79
-      },
-      {
-        "asset_id": "CAR018",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "performance_daily",
-        "title": "Cadillac CT4-V",
-        "location": "Miami",
-        "cost_per_day": 200,
-        "retail_price_per_day": 279,
-        "profit_per_day": 79
-      },
-      {
-        "asset_id": "CAR019",
-        "partner_name": "PluggOfMiami",
-        "category": "daily_car",
-        "subcategory": "daily_luxury",
-        "title": "BMW 330i M Package",
-        "location": "Miami",
-        "cost_per_day": 200,
-        "retail_price_per_day": 279,
-        "profit_per_day": 79
-      },
-      {
-        "asset_id": "CAR020",
-        "partner_name": "Za",
-        "category": "exotic_luxury_car",
-        "subcategory": "performance_exotic",
-        "title": "Corvette Stingray C8",
-        "location": "South Florida",
-        "cost_per_day": 200,
-        "retail_price_per_day": 325,
-        "profit_per_day": 125
-      },
-      {
         "asset_id": "CAR021",
         "partner_name": "Yarri",
         "category": "exotic_car",
@@ -607,123 +387,269 @@
     "villas": [
       {
         "asset_id": "VILLA001",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Ruby",
         "location": "North Miami Beach",
+        "details": "9 Rooms / 9 Bath — Sleeps 20",
         "bedrooms": 9,
         "bathrooms": 9,
         "sleeps": 20,
-        "base_cost_per_night": 3500,
-        "retail_price_per_night": 4200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 3500,
+          "event_rates": {
+            "boat_show": 3500,
+            "ultra": 4500,
+            "f1": 5000,
+            "fifa_wc": 4500,
+            "memorial": 3800,
+            "thanksgiving": 4000,
+            "art_basel": 5000,
+            "rolling_loud": 3800,
+            "christmas": 5000,
+            "new_years": 6000
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/1269532730472372268.ics?s=657c2bb98fb38dcb67411794667319ae",
+        "drive_folder": "145beq7QJPOL6OSOlEf6hVJTY1JNl0WSK",
+        "images": []
       },
       {
         "asset_id": "VILLA002",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Emerald",
         "location": "North Miami Beach",
+        "details": "9 Rooms / 7.5 Bath — Sleeps 20",
         "bedrooms": 9,
         "bathrooms": 7.5,
         "sleeps": 20,
-        "base_cost_per_night": 3500,
-        "retail_price_per_night": 4200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 3500,
+          "event_rates": {
+            "boat_show": 3500,
+            "ultra": 4500,
+            "f1": 5000,
+            "fifa_wc": 4500,
+            "memorial": 3800,
+            "thanksgiving": 4000,
+            "art_basel": 5000,
+            "rolling_loud": 3800,
+            "christmas": 5000,
+            "new_years": 6000
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/800267130428606154.ics?s=d7c6d36815a22bcc0456c3da1941e2bf",
+        "drive_folder": "1dX-Z4jel6s89bHhK6hhynqD14DR4f6U7",
+        "images": []
       },
       {
         "asset_id": "VILLA003",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Maya",
         "location": "North Miami Beach",
+        "details": "5 Rooms / 4.5 Bath — Sleeps 12",
         "bedrooms": 5,
         "bathrooms": 4.5,
         "sleeps": 12,
-        "base_cost_per_night": 2500,
-        "retail_price_per_night": 3200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 2500,
+          "event_rates": {
+            "boat_show": 2500,
+            "ultra": 3250,
+            "f1": 2999,
+            "fifa_wc": 3250,
+            "memorial": 2500,
+            "thanksgiving": 2500,
+            "art_basel": 2999,
+            "rolling_loud": 3250,
+            "christmas": 2999,
+            "new_years": 4500
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/1317687064527678109.ics?s=04740c9e1597a964720ecfcefe504760",
+        "drive_folder": "1uW0p67zI06ICtjUvLmvWQSwqTRqmUqrq",
+        "images": []
       },
       {
         "asset_id": "VILLA004",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Summercrest",
         "location": "Miami Shores",
+        "details": "6 Rooms / 4.5 Bath — Sleeps 12",
         "bedrooms": 6,
         "bathrooms": 4.5,
         "sleeps": 12,
-        "base_cost_per_night": 2500,
-        "retail_price_per_night": 3200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 2500,
+          "event_rates": {
+            "boat_show": 2500,
+            "ultra": 3250,
+            "f1": 5500,
+            "fifa_wc": 3250,
+            "memorial": 4000,
+            "thanksgiving": 4000,
+            "art_basel": 7000,
+            "rolling_loud": 3250,
+            "christmas": 6000,
+            "new_years": 4500
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/552217610787095734.ics?s=addbc45623d265648b32bf15c948efd8",
+        "drive_folder": "1AdBu8-l2xDpLPz4Vb2qYjJDgY2DrtjrG",
+        "images": []
       },
       {
         "asset_id": "VILLA005",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Sapphire",
         "location": "North Miami Beach",
+        "details": "8 Rooms / 8.5 Bath — Sleeps 18",
         "bedrooms": 8,
         "bathrooms": 8.5,
         "sleeps": 18,
-        "base_cost_per_night": 3500,
-        "retail_price_per_night": 4200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 3500,
+          "event_rates": {
+            "boat_show": 3500,
+            "ultra": 4500,
+            "f1": 5000,
+            "fifa_wc": 4500,
+            "memorial": 3800,
+            "thanksgiving": 4000,
+            "art_basel": 5000,
+            "rolling_loud": 3800,
+            "christmas": 5000,
+            "new_years": 6000
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/980416921067780781.ics?s=63f27afa6a93bf8c3c4e14a761188dfb",
+        "drive_folder": "1xtTilZuUCozA_lwRS4Slep9cEZ50fciO",
+        "images": []
       },
       {
         "asset_id": "VILLA006",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Onyx",
         "location": "North Miami Beach",
+        "details": "8 Rooms / 8.5 Bath — Sleeps 18",
         "bedrooms": 8,
         "bathrooms": 8.5,
         "sleeps": 18,
-        "base_cost_per_night": 3500,
-        "retail_price_per_night": 4200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 3500,
+          "event_rates": {
+            "boat_show": 3500,
+            "ultra": 4500,
+            "f1": 5000,
+            "fifa_wc": 4500,
+            "memorial": 3800,
+            "thanksgiving": 4000,
+            "art_basel": 5000,
+            "rolling_loud": 3800,
+            "christmas": 5000,
+            "new_years": 6000
+          }
+        },
+        "drive_folder": "1A_EydpEy2JfgnkKOMYeBX327YywuzgZa",
+        "images": []
       },
       {
         "asset_id": "VILLA007",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Calabassa",
         "location": "Miami Beach",
+        "details": "10 Rooms / 8.5 Bath — Sleeps 22",
         "bedrooms": 10,
         "bathrooms": 8.5,
         "sleeps": 22,
-        "base_cost_per_night": 5500,
-        "retail_price_per_night": 6500,
-        "profit_per_night": 1000
+        "pricing": {
+          "base_rate_per_night": 5500,
+          "event_rates": {
+            "boat_show": 10000,
+            "ultra": 7500,
+            "f1": 8000,
+            "fifa_wc": 7500,
+            "memorial": 6000,
+            "thanksgiving": 6500,
+            "art_basel": 9000,
+            "rolling_loud": 6500,
+            "christmas": 8000,
+            "new_years": 10000
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/53970983.ics?s=7dc69a20d8e902d83c65fc08fb222932",
+        "drive_folder": "1PtZlVA1WZUA0QAsxLPyxQdoBQBzieU7q",
+        "images": []
       },
       {
         "asset_id": "VILLA008",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Pointe",
-        "location": "Bay Point",
+        "location": "Bay Point, Miami",
+        "details": "7 Rooms / 7.5 Bath — Sleeps 14",
         "bedrooms": 7,
         "bathrooms": 7.5,
         "sleeps": 14,
-        "base_cost_per_night": null,
-        "retail_price_per_night": null,
-        "pricing_notes": "Custom / inquire"
+        "pricing": {
+          "base_rate_per_night": 10000,
+          "event_rates": "inquire"
+        },
+        "drive_folder": "14mLUWQJ25TLKwkZUUdA_ipM740CdProF",
+        "images": []
       },
       {
         "asset_id": "VILLA009",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Jasper",
         "location": "North Miami Beach",
+        "details": "9 Rooms / 9.5 Bath — Sleeps 18",
         "bedrooms": 9,
         "bathrooms": 9.5,
         "sleeps": 18,
-        "base_cost_per_night": 3500,
-        "retail_price_per_night": 4200,
-        "profit_per_night": 700
+        "pricing": {
+          "base_rate_per_night": 3500,
+          "event_rates": {
+            "boat_show": 3500,
+            "ultra": 4500,
+            "f1": 5000,
+            "fifa_wc": 4500,
+            "memorial": 3800,
+            "thanksgiving": 4000,
+            "art_basel": 5000,
+            "rolling_loud": 3800,
+            "christmas": 5000,
+            "new_years": 7000
+          }
+        },
+        "ical": "https://www.airbnb.com/calendar/ical/1492080179193223740.ics?s=543f6d8cc7a5d782653312ce3fd99689",
+        "drive_folder": "1N0jqJTVCPpWXvjrKNGOC31xgDatGPJj8",
+        "images": []
       },
       {
         "asset_id": "VILLA010",
-        "partner_name": "Alex",
+        "partner_name": "AuraPex Villas",
         "title": "Villa Reverie",
         "location": "Miami Shores",
-        "bedrooms": 7,
+        "details": "5 Rooms / 6.5 Bath — Sleeps 12",
+        "bedrooms": 5,
         "bathrooms": 6.5,
         "sleeps": 12,
-        "base_cost_per_night": 5500,
-        "retail_price_per_night": 6500,
-        "profit_per_night": 1000
+        "pricing": {
+          "base_rate_per_night": 5500,
+          "event_rates": {
+            "boat_show": 10000,
+            "ultra": 7500,
+            "f1": 8000,
+            "fifa_wc": 7500,
+            "memorial": 6000,
+            "thanksgiving": 6500,
+            "art_basel": 9000,
+            "rolling_loud": 6500,
+            "christmas": 8000,
+            "new_years": 10000
+          }
+        },
+        "drive_folder": "1V4Fj8vQwyPcWRODLc0HcLOruWPh3U1MH",
+        "images": []
       }
     ],
     "yachts": [
@@ -741,13 +667,15 @@
           },
           "aurapex": {
             "starting_4hr": 670
-          }
+          },
+          "base_rate_4hr": 550
         },
         "images": [
           "/images/yachts/26ft-searay-sundeck/1.jpg",
           "/images/yachts/26ft-searay-sundeck/2.jpg",
           "/images/yachts/26ft-searay-sundeck/3.jpg",
-          "/images/yachts/26ft-searay-sundeck/4.jpg"
+          "/images/yachts/26ft-searay-sundeck/4.jpg",
+          "/images/yachts/26ft-searay-sundeck/5.jpg"
         ]
       },
       {
@@ -778,7 +706,8 @@
               "8hr": 1140
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 850
         },
         "images": [
           "/images/yachts/36ft-regal/1.jpg",
@@ -818,7 +747,8 @@
               "8hr": 1196
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 800
         },
         "images": [
           "/images/yachts/37ft-monterey-white/1.jpg",
@@ -857,7 +787,8 @@
               "8hr": 1196
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 800
         },
         "images": [
           "/images/yachts/37ft-monterey-blue/1.jpg",
@@ -897,7 +828,8 @@
               "8hr": 1196
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 800
         },
         "images": [
           "/images/yachts/37ft-cruiser/1.jpg",
@@ -940,7 +872,8 @@
               "8hr": 1200
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 850
         },
         "images": [
           "/images/yachts/37ft-sundancer/1.jpg",
@@ -979,7 +912,8 @@
               "8hr": 1310
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 900
         },
         "images": [
           "/images/yachts/40ft-formula/1.jpg",
@@ -1019,7 +953,8 @@
               "6hr": 1225
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1150
         },
         "images": [
           "/images/yachts/40ft-axopar/1.jpg",
@@ -1065,7 +1000,8 @@
               "6hr": 1195
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1050
         },
         "images": [
           "/images/yachts/42ft-regal/1.jpg",
@@ -1110,7 +1046,8 @@
               "8hr": 1460
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 950
         },
         "images": [
           "/images/yachts/42ft-doral-hawaii/1.jpg",
@@ -1162,7 +1099,8 @@
               "8hr": 1360
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 950
         },
         "images": [
           "/images/yachts/44ft-searay-sundancer2/1.jpg",
@@ -1195,7 +1133,8 @@
               "8hr": 1620
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1150
         },
         "images": [
           "/images/yachts/45ft-tempest/1.jpg",
@@ -1232,7 +1171,8 @@
               "6hr": 1610
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1500
         },
         "images": [
           "/images/yachts/45ft-azimut/1.jpg",
@@ -1280,7 +1220,8 @@
               "8hr": 1492
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1050
         },
         "images": [
           "/images/yachts/46ft-maxum/1.jpg",
@@ -1327,7 +1268,8 @@
               "6hr": 1010
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 900
         },
         "images": [
           "/images/yachts/48ft-cranchi/1.jpg",
@@ -1360,7 +1302,8 @@
               "8hr": 1550
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1150
         },
         "images": [
           "/images/yachts/48ft-silverton-flybridge/1.jpg",
@@ -1407,7 +1350,8 @@
               "8hr": 1522
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1100
         },
         "images": [
           "/images/yachts/48ft-silverton-sportbridge/1.jpg",
@@ -1455,7 +1399,8 @@
               "8hr": 1522
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1100
         },
         "images": [
           "/images/yachts/50ft-sunseeker-manhattan/1.jpg",
@@ -1493,7 +1438,8 @@
               "6hr": 1695
             }
           },
-          "aurapex_min_markup": 250
+          "aurapex_min_markup": 250,
+          "base_rate_4hr": 1550
         },
         "images": [
           "/images/yachts/53ft-azimut/1.jpg",
@@ -1527,7 +1473,8 @@
           "aurapex_markup_guidance": {
             "minimum": 250,
             "recommended_for_this_asset": "250-500"
-          }
+          },
+          "base_rate_4hr": 1950
         },
         "images": [
           "/images/yachts/60ft-sunseeker-predator/1.jpg",
@@ -1567,7 +1514,8 @@
           "aurapex_markup_guidance": {
             "minimum": 250,
             "recommended_for_this_asset": "250-500"
-          }
+          },
+          "base_rate_4hr": 1700
         },
         "images": [
           "/images/yachts/65ft-viking/1.jpg",
@@ -1599,7 +1547,8 @@
           "aurapex_markup_guidance": {
             "minimum": 250,
             "recommended_for_this_asset": "400-800"
-          }
+          },
+          "base_rate_4hr": 3100
         },
         "images": [
           "/images/yachts/82ft-sunseeker-predator/1.jpg",
@@ -1628,7 +1577,8 @@
           "aurapex_markup_guidance": {
             "minimum": 250,
             "recommended_for_this_asset": "800-1500"
-          }
+          },
+          "base_rate_4hr": 4550
         },
         "images": [
           "/images/yachts/110ft-maiora/1.jpg",
@@ -1637,6 +1587,221 @@
           "/images/yachts/110ft-maiora/4.jpg",
           "/images/yachts/110ft-maiora/5.jpg"
         ]
+      },
+      {
+        "asset_id": "yacht_deep_blue",
+        "title": "90' Deep Blue",
+        "type": "Motor Yacht",
+        "length_ft": 90,
+        "capacity": 13,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Jacuzzi",
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System",
+          "Water Toys"
+        ],
+        "pricing": {
+          "base_rate_4hr": 4200,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/deep-blue/1.jpg",
+          "/images/yachts/deep-blue/2.jpg",
+          "/images/yachts/deep-blue/3.jpg",
+          "/images/yachts/deep-blue/4.jpg",
+          "/images/yachts/deep-blue/5.jpg",
+          "/images/yachts/deep-blue/6.jpg",
+          "/images/yachts/deep-blue/7.jpg",
+          "/images/yachts/deep-blue/8.jpg",
+          "/images/yachts/deep-blue/9.jpg",
+          "/images/yachts/deep-blue/10.jpg",
+          "/images/yachts/deep-blue/11.jpg",
+          "/images/yachts/deep-blue/12.jpg",
+          "/images/yachts/deep-blue/13.jpg"
+        ],
+        "description": "90-foot luxury motor yacht with jacuzzi, perfect for Miami celebrations and corporate events.",
+        "departure": "Miami, FL",
+        "max_guests": 13
+      },
+      {
+        "asset_id": "yacht_acqua",
+        "title": "90' Acqua",
+        "type": "Motor Yacht",
+        "length_ft": 90,
+        "capacity": 13,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Jacuzzi",
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System"
+        ],
+        "pricing": {
+          "base_rate_4hr": 3900,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/acqua/1.jpg",
+          "/images/yachts/acqua/2.jpg",
+          "/images/yachts/acqua/3.jpg",
+          "/images/yachts/acqua/4.jpg",
+          "/images/yachts/acqua/5.jpg",
+          "/images/yachts/acqua/6.jpg",
+          "/images/yachts/acqua/7.jpg",
+          "/images/yachts/acqua/8.jpg",
+          "/images/yachts/acqua/9.jpg",
+          "/images/yachts/acqua/10.jpg",
+          "/images/yachts/acqua/11.jpg",
+          "/images/yachts/acqua/12.jpg"
+        ],
+        "description": "90-foot Acqua yacht with jacuzzi and premium amenities for the ultimate ocean experience.",
+        "departure": "Miami, FL",
+        "max_guests": 13
+      },
+      {
+        "asset_id": "yacht_del_mar",
+        "title": "85' Del Mar",
+        "type": "Motor Yacht",
+        "length_ft": 85,
+        "capacity": 13,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System",
+          "Water Toys"
+        ],
+        "pricing": {
+          "base_rate_4hr": 3650,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/del-mar/1.jpg",
+          "/images/yachts/del-mar/2.jpg",
+          "/images/yachts/del-mar/3.jpg",
+          "/images/yachts/del-mar/4.jpg",
+          "/images/yachts/del-mar/5.jpg"
+        ],
+        "description": "85-foot Del Mar — spacious and elegant, ideal for sunset cruises and private events.",
+        "departure": "Miami, FL",
+        "max_guests": 13
+      },
+      {
+        "asset_id": "yacht_money_waves",
+        "title": "70' Money Waves",
+        "type": "Motor Yacht",
+        "length_ft": 70,
+        "capacity": 13,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System"
+        ],
+        "pricing": {
+          "base_rate_4hr": 2600,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/money-waves/1.jpg",
+          "/images/yachts/money-waves/2.jpg",
+          "/images/yachts/money-waves/3.jpg",
+          "/images/yachts/money-waves/4.jpg",
+          "/images/yachts/money-waves/5.jpg",
+          "/images/yachts/money-waves/6.jpg"
+        ],
+        "description": "70-foot Money Waves — stylish and powerful, perfect for groups looking to ride in style.",
+        "departure": "Miami, FL",
+        "max_guests": 13
+      },
+      {
+        "asset_id": "yacht_sky",
+        "title": "70' Sky",
+        "type": "Motor Yacht",
+        "length_ft": 70,
+        "capacity": 13,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System"
+        ],
+        "pricing": {
+          "base_rate_4hr": 2400,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/sky/1.jpg",
+          "/images/yachts/sky/2.jpg",
+          "/images/yachts/sky/3.jpg",
+          "/images/yachts/sky/4.jpg",
+          "/images/yachts/sky/5.jpg"
+        ],
+        "description": "70-foot Sky yacht — sleek profile with open deck space and premium entertainment.",
+        "departure": "Miami, FL",
+        "max_guests": 13
+      },
+      {
+        "asset_id": "yacht_anvera",
+        "title": "62' Anvera",
+        "type": "Motor Yacht",
+        "length_ft": 62,
+        "capacity": 12,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System"
+        ],
+        "pricing": {
+          "base_rate_4hr": 2150,
+          "currency": "USD"
+        },
+        "images": [
+          "/images/yachts/anvera/1.jpg",
+          "/images/yachts/anvera/2.jpg",
+          "/images/yachts/anvera/3.jpg"
+        ],
+        "description": "62-foot Anvera — sporty Italian design meets luxury on the water.",
+        "departure": "Miami, FL",
+        "max_guests": 12
+      },
+      {
+        "asset_id": "yacht_a_yacht",
+        "title": "60' A-Yacht",
+        "type": "Motor Yacht",
+        "length_ft": 60,
+        "capacity": 12,
+        "crew": true,
+        "location": "Miami, FL",
+        "features": [
+          "Full Bar",
+          "Sun Deck",
+          "Professional Crew",
+          "Sound System"
+        ],
+        "pricing": {
+          "base_rate_4hr": 1950,
+          "currency": "USD"
+        },
+        "images": [],
+        "description": "60-foot A-Yacht — intimate luxury yacht experience for smaller groups.",
+        "departure": "Miami, FL",
+        "max_guests": 12
       }
     ]
   }

@@ -50,7 +50,7 @@ const YachtsPage: React.FC = () => {
 
                 {/* Yacht Image */}
                 <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={yacht.image}
                     alt={yacht.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
@@ -69,7 +69,7 @@ const YachtsPage: React.FC = () => {
                       </div>
                       <div className="text-sm text-gray-400 mt-1">
                         <Anchor className="w-3 h-3 inline mr-1" />
-                        {yacht.departure.includes('Miami') ? 'Miami' : 'Fort Lauderdale'}
+                        {(yacht.departure || 'Miami, FL').includes('Miami') ? 'Miami' : 'Fort Lauderdale'}
                       </div>
                     </div>
                     <div className="text-right">

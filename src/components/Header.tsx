@@ -73,6 +73,12 @@ const Header: React.FC = () => {
             >
               Jet Skis
             </Link>
+            <Link 
+              to="/experiences"
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Experiences
+            </Link>
             <button 
               onClick={() => scrollToSection('how-it-works')}
               className="text-white hover:text-luxury-gold transition-colors duration-300"
@@ -91,9 +97,9 @@ const Header: React.FC = () => {
             >
               Contact
             </button>
-            <a href="tel:+1-954-555-0123" className="flex items-center space-x-2 luxury-button">
+            <a href="tel:+1-561-777-4360" className="flex items-center space-x-2 luxury-button">
               <Phone size={16} />
-              <span>(954) 555-0123</span>
+              <span>(561) 777-4360</span>
             </a>
           </nav>
 
@@ -139,6 +145,13 @@ const Header: React.FC = () => {
             >
               Jet Skis
             </Link>
+            <Link 
+              to="/experiences"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Experiences
+            </Link>
             <button 
               onClick={() => scrollToSection('how-it-works')}
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
@@ -157,9 +170,9 @@ const Header: React.FC = () => {
             >
               Contact
             </button>
-            <a href="tel:+1-954-555-0123" className="flex items-center space-x-2 luxury-button w-fit">
+            <a href="tel:+1-561-777-4360" className="flex items-center space-x-2 luxury-button w-fit">
               <Phone size={16} />
-              <span>(954) 555-0123</span>
+              <span>(561) 777-4360</span>
             </a>
           </nav>
         </div>

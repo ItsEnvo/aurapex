@@ -57,8 +57,115 @@ export interface JetSki extends InventoryItem {
   dailyPrice?: number
 }
 
-// Generate Unsplash image URLs based on category
-const getImageUrl = (category: string, title: string): string => {
+// Function to get local images based on vehicle title mapping
+const getLocalImages = (category: string, title: string): string[] => {
+  const baseUrl = '/images'
+  const lowerTitle = title.toLowerCase()
+  
+  if (category === 'cars') {
+    // Map titles to their correct image folders
+    if (lowerTitle.includes('audi r8 gray')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/audi-r8-gray/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('bmw m4 competition purple')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/bmw-m4-competition-purple/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('corvette stingray c8') || lowerTitle.includes('chevrolet corvette c8 red')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/corvette-c8-red/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('chevrolet corvette c8 white')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/corvette-c8-white/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('lamborghini urus black')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/cars/lamborghini-urus-black/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('lamborghini urus mansory yellow')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/cars/lamborghini-urus-mansory-yellow/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('lamborghini urus s orange')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/cars/lamborghini-urus-s-orange/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('mercedes g63 brabus black') || lowerTitle.includes('mercedes g550 amg')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/mercedes-g63-brabus-black/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('mercedes maybach gls') || lowerTitle.includes('maybach gls')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/cars/mercedes-maybach-gls/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('porsche 911 white')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/porsche-911-white/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('porsche gt3rs gray')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/cars/porsche-gt3rs-gray/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('porsche gt3rs red')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/porsche-gt3rs-red/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('rolls royce cullinan mansory black')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/rolls-royce-cullinan-mansory-black/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('rolls royce cullinan mansory white') || lowerTitle.includes('rolls royce cullinan')) {
+      return Array.from({length: 4}, (_, i) => `${baseUrl}/cars/rolls-royce-cullinan-mansory-white/${i + 1}.jpg`)
+    }
+  }
+  
+  if (category === 'yachts') {
+    // Map yacht titles to their correct image folders (only folders with actual images)
+    if (lowerTitle.includes('26ft searay sundeck')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/26ft-searay-sundeck/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('48ft cranchi')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/48ft-cranchi/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('48ft silverton flybridge')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/48ft-silverton-flybridge/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('48ft silverton sportbridge')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/48ft-silverton-sportbridge/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('50ft sunseeker manhattan')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/50ft-sunseeker-manhattan/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('53ft azimut')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/53ft-azimut/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('60ft sunseeker predator')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/60ft-sunseeker-predator/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('65ft viking flybridge') || lowerTitle.includes('65ft viking')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/65ft-viking/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('82ft sunseeker predator')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/82ft-sunseeker-predator/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('110ft maiora')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/110ft-maiora/${i + 1}.jpg`)
+    }
+    // Handle the newer yachts with different naming convention
+    if (lowerTitle.includes('90\' deep blue') || lowerTitle.includes('deep blue')) {
+      return Array.from({length: 13}, (_, i) => `${baseUrl}/yachts/deep-blue/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('90\' acqua') || lowerTitle.includes('acqua')) {
+      return Array.from({length: 12}, (_, i) => `${baseUrl}/yachts/acqua/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('85\' del mar') || lowerTitle.includes('del mar')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/del-mar/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('70\' money waves') || lowerTitle.includes('money waves')) {
+      return Array.from({length: 6}, (_, i) => `${baseUrl}/yachts/money-waves/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('70\' sky') || lowerTitle.includes('sky')) {
+      return Array.from({length: 5}, (_, i) => `${baseUrl}/yachts/sky/${i + 1}.jpg`)
+    }
+    if (lowerTitle.includes('62\' anvera') || lowerTitle.includes('anvera')) {
+      return Array.from({length: 3}, (_, i) => `${baseUrl}/yachts/anvera/${i + 1}.jpg`)
+    }
+  }
+  
+  return [] // Return empty array if no local images found
+}
+
+// Generate Unsplash image URLs based on category (fallback only)
+const getUnsplashImageUrl = (category: string, title: string): string => {
   const baseUrl = 'https://images.unsplash.com/photo-'
   
   switch (category) {
@@ -74,7 +181,7 @@ const getImageUrl = (category: string, title: string): string => {
       return `${baseUrl}1563720223185-11003d516935?w=800&h=600&fit=crop`
     
     case 'yachts':
-      return `${baseUrl}1544551763-46a013bb70d5?w=800&h=600&fit=crop`
+      return `${baseUrl}1567899378494-47b22a2ae96a?w=800&h=600&fit=crop`
     
     case 'villas':
       return `${baseUrl}1613490493192-bf5730000ea4?w=800&h=600&fit=crop`
@@ -112,6 +219,20 @@ const calculateYachtPricing = (brokerPricing: any) => {
 // Process cars
 export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
   const slug = createSlug(car.title)
+  
+  // Use images from fleet.json if available, otherwise try our mapping, otherwise fallback to Unsplash
+  let carImages: string[] = []
+  if (car.images && car.images.length > 0) {
+    carImages = car.images
+  } else {
+    const localImages = getLocalImages('cars', car.title)
+    if (localImages.length > 0) {
+      carImages = localImages
+    } else {
+      carImages = [getUnsplashImageUrl('cars', car.title)]
+    }
+  }
+  
   return {
     id: car.asset_id,
     slug,
@@ -121,27 +242,38 @@ export const cars: Car[] = fleetData.inventory.cars.map((car: any) => {
     location: car.location,
     dailyPrice: car.retail_price_per_day || 0,
     priceDisplay: car.retail_price_per_day ? `From $${car.retail_price_per_day.toLocaleString()}/day` : 'Contact for pricing',
-    image: (car as any).images?.length > 0 ? (car as any).images[0] : getImageUrl('cars', car.title),
-    images: (car as any).images?.length > 0 ? (car as any).images : [getImageUrl('cars', car.title)]
+    image: carImages[0],
+    images: carImages
   }
 })
 
 // Process yachts
 export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
   const slug = createSlug(yacht.title)
+  
   // Try multiple pricing structures
   const brokerPricing = yacht.broker_pricing || yacht.pricing?.broker || {}
   const aurapexPricingData = yacht.pricing?.aurapex || {}
   const aurapexPricing = calculateYachtPricing(brokerPricing)
   
-  // Use Aurapex pricing if available, otherwise calculated from broker
+  // Use Aurapex pricing if available, otherwise calculated from broker, otherwise base_rate_4hr
   const startingAurapex = aurapexPricingData.starting_4hr || aurapexPricingData.half_day || 0
+  const directRate = yacht.pricing?.base_rate_4hr || 0
   const prices = Object.values(aurapexPricing).filter(p => typeof p === 'number')
-  const startingPrice = startingAurapex || (prices.length > 0 ? Math.min(...(prices as number[])) : 0)
+  const startingPrice = startingAurapex || directRate || (prices.length > 0 ? Math.min(...(prices as number[])) : 0)
   
-  // Use real photos if available, fallback to Unsplash
-  const realImages: string[] = yacht.images && yacht.images.length > 0 ? yacht.images : []
-  const primaryImage = realImages.length > 0 ? realImages[0] : getImageUrl('yachts', yacht.title)
+  // Use images from fleet.json if available, otherwise try our mapping, otherwise fallback to Unsplash
+  let yachtImages: string[] = []
+  if (yacht.images && yacht.images.length > 0) {
+    yachtImages = yacht.images
+  } else {
+    const localImages = getLocalImages('yachts', yacht.title)
+    if (localImages.length > 0) {
+      yachtImages = localImages
+    } else {
+      yachtImages = [getUnsplashImageUrl('yachts', yacht.title)]
+    }
+  }
   
   return {
     id: yacht.asset_id,
@@ -149,31 +281,32 @@ export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
     title: yacht.title,
     category: 'yachts' as const,
     departure: yacht.departure,
-    maxGuests: yacht.max_guests || fleetData.global_policies.yachts.default_max_guests,
+    maxGuests: yacht.max_guests || yacht.capacity || fleetData.global_policies.yachts.default_max_guests,
     startingPrice,
     pricing: aurapexPricing,
-    priceDisplay: startingPrice > 0 ? `From $${startingPrice.toLocaleString()}` : 'Contact for pricing',
-    image: primaryImage,
-    images: realImages.length > 0 ? realImages : [getImageUrl('yachts', yacht.title)]
+    priceDisplay: startingPrice > 0 ? `From $${startingPrice.toLocaleString()}${directRate ? '/4hr' : ''}` : 'Contact for pricing',
+    image: yachtImages[0],
+    images: yachtImages
   }
 })
 
 // Process villas
 export const villas: Villa[] = fleetData.inventory.villas.map((villa: any) => {
   const slug = createSlug(villa.title)
+  const baseRate = villa.pricing?.base_rate_per_night || villa.retail_price_per_night || 0
   return {
     id: villa.asset_id,
     slug,
     title: villa.title,
     category: 'villas' as const,
     location: villa.location,
-    bedrooms: villa.bedrooms,
-    bathrooms: villa.bathrooms,
-    sleeps: villa.sleeps,
-    nightlyPrice: villa.retail_price_per_night || 0,
-    priceDisplay: villa.retail_price_per_night ? `From $${villa.retail_price_per_night.toLocaleString()}/night` : 'Contact for pricing',
-    image: getImageUrl('villas', villa.title),
-    images: [getImageUrl('villas', villa.title)]
+    bedrooms: villa.bedrooms || 0,
+    bathrooms: villa.bathrooms || 0,
+    sleeps: villa.sleeps || 0,
+    nightlyPrice: baseRate,
+    priceDisplay: baseRate ? `From $${baseRate.toLocaleString()}/night` : 'Contact for pricing',
+    image: getUnsplashImageUrl('villas', villa.title),
+    images: [getUnsplashImageUrl('villas', villa.title)]
   }
 })
 
@@ -193,8 +326,8 @@ export const jetSkis: JetSki[] = fleetData.inventory.jet_skis.map((jetski: any) 
     hourlyPrice,
     dailyPrice: jetski.retail_price_per_day,
     priceDisplay: `From $${hourlyPrice}/hour`,
-    image: getImageUrl('jet_skis', jetski.title),
-    images: [getImageUrl('jet_skis', jetski.title)]
+    image: getUnsplashImageUrl('jet_skis', jetski.title),
+    images: [getUnsplashImageUrl('jet_skis', jetski.title)]
   }
 })
 

@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { ArrowLeft, Star, Users, Home, MapPin, Calendar, Bed, Wifi, Car } from 'lucide-react'
 import { findItemBySlug } from '../data/inventory'
 import type { Villa } from '../data/inventory'
+import ImageGallery from '../components/ImageGallery'
 
 const VillaDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -17,9 +18,9 @@ const VillaDetail: React.FC = () => {
     return <Navigate to="/villas" replace />
   }
 
-  const scrollToContact = () => {
+  const handleBooking = () => {
     // Navigate to home and scroll to contact
-    window.location.href = '/#contact'
+    const msg = encodeURIComponent(`Hi, I'm interested in the ${villa.title} villa. Can you help?`); window.open(`https://wa.me/15617774360?text=${msg}`, '_blank')
   }
 
   return (
@@ -40,19 +41,12 @@ const VillaDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="pb-16 bg-luxury-charcoal">
         <div className="container-max section-padding">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Villa Image */}
-            <div className="relative">
-              <div className="relative h-96 rounded-xl overflow-hidden">
-                <img
-                  src={villa.image}
-                  alt={villa.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-            </div>
+          {/* Image Gallery — Full Width */}
+          <div className="mb-12">
+            <ImageGallery images={villa.images} title={villa.title} />
+          </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Villa Details */}
             <div className="space-y-6">
               <div>
@@ -122,7 +116,7 @@ const VillaDetail: React.FC = () => {
 
               {/* CTA Button */}
               <button
-                onClick={scrollToContact}
+                onClick={handleBooking}
                 className="w-full luxury-button flex items-center justify-center space-x-2"
               >
                 <Calendar size={20} />
@@ -256,7 +250,7 @@ const VillaDetail: React.FC = () => {
               Contact our villa specialists to check availability and customize your luxury stay experience
             </p>
             <button
-              onClick={scrollToContact}
+              onClick={handleBooking}
               className="luxury-button"
             >
               Reserve Your Villa

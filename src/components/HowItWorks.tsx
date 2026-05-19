@@ -22,7 +22,7 @@ const HowItWorks: React.FC = () => {
       icon: Key,
       title: 'Drive & Enjoy',
       description: 'Pick up your vehicle at our convenient locations or enjoy complimentary delivery. Experience luxury with our full support throughout your rental.',
-      details: ['Convenient pickup locations', 'Delivery service available', 'Full insurance coverage']
+      details: ['Convenient pickup locations', 'Delivery service available', 'Government ID required']
     }
   ]
 
@@ -39,8 +39,8 @@ const HowItWorks: React.FC = () => {
     },
     {
       icon: Shield,
-      title: 'Full Insurance',
-      description: 'Comprehensive coverage included with every rental for peace of mind'
+      title: 'Insurance Required',
+      description: 'Renters must provide proof of full coverage insurance. We verify before every rental.'
     }
   ]
 

@@ -50,7 +50,7 @@ const VillasPage: React.FC = () => {
 
                 {/* Villa Image */}
                 <div className="relative h-48 mb-6 rounded-lg overflow-hidden">
-                  <img
+                  <img loading="lazy"
                     src={villa.image}
                     alt={villa.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"

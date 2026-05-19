@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { Star, Users, Zap, Calendar, ArrowRight } from 'lucide-react'
+import { Star, Users, Zap, Calendar, ArrowRight, Utensils, Camera } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { getFeaturedItems } from '../data/inventory'
+import { getFeaturedItems, inventory } from '../data/inventory'
 
 interface DisplayVehicle {
   id: string
@@ -104,10 +104,10 @@ const Fleet: React.FC = () => {
   const filteredVehicles = vehicles.filter(vehicle => vehicle.category === activeCategory)
 
   const categories = [
-    { key: 'cars' as const, label: 'Exotic Cars', count: featured.cars.length, route: '/cars' },
-    { key: 'yachts' as const, label: 'Luxury Yachts', count: featured.yachts.length, route: '/yachts' },
-    { key: 'villas' as const, label: 'Luxury Villas', count: featured.villas.length, route: '/villas' },
-    { key: 'jetSkis' as const, label: 'Jet Skis', count: featured.jetSkis.length, route: '/jet-skis' }
+    { key: 'cars' as const, label: 'Exotic Cars', count: inventory.cars.length, route: '/cars' },
+    { key: 'yachts' as const, label: 'Luxury Yachts', count: inventory.yachts.length, route: '/yachts' },
+    { key: 'villas' as const, label: 'Luxury Villas', count: inventory.villas.length, route: '/villas' },
+    { key: 'jetSkis' as const, label: 'Jet Skis', count: inventory.jetSkis.length, route: '/jet-skis' }
   ]
 
   const getCategoryTitle = () => {
@@ -241,11 +241,47 @@ const Fleet: React.FC = () => {
           ))}
         </div>
 
+        {/* Experiences Showcase */}
+        <div className="mt-16 mb-16">
+          <div className="luxury-card max-w-4xl mx-auto text-center">
+            <div className="w-16 h-16 bg-gradient-to-br from-luxury-gold to-gold-400 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <Star className="w-8 h-8 text-luxury-black" />
+            </div>
+            <h4 className="text-2xl font-luxury font-bold text-white mb-4">
+              Miami <span className="text-gradient">Experiences</span>
+            </h4>
+            <p className="text-gray-400 mb-6 max-w-2xl mx-auto">
+              Beyond vehicle rentals — discover Miami's exclusive nightlife, private dining, luxury transportation, and custom celebrations. AuraPex is your gateway to unforgettable experiences.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-300 mb-8">
+              <div className="flex items-center justify-center space-x-2">
+                <Users className="w-4 h-4 text-luxury-gold" />
+                <span>VIP Nightlife Access</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <Utensils className="w-4 h-4 text-luxury-gold" />
+                <span>Private Chef Services</span>
+              </div>
+              <div className="flex items-center justify-center space-x-2">
+                <Camera className="w-4 h-4 text-luxury-gold" />
+                <span>Special Celebrations</span>
+              </div>
+            </div>
+            <Link
+              to="/experiences"
+              className="luxury-button inline-flex items-center space-x-2"
+            >
+              <span>Explore Experiences</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-gray-400 mb-6">Can't find what you're looking for? We have access to exclusive vehicles not shown here.</p>
           <button 
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => window.open('https://wa.me/15617774360?text=Hi%2C%20I%27m%20looking%20for%20a%20specific%20vehicle%20not%20listed%20on%20your%20site.%20Can%20you%20help%20source%20it%3F', '_blank')}
             className="luxury-button-outline"
           >
             Request Custom Vehicle

@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
-import { ArrowLeft, Star, Users, Anchor, MapPin, Calendar, Clock, ChevronLeft, ChevronRight } from 'lucide-react'
+import { ArrowLeft, Star, Users, Anchor, MapPin, Calendar, Clock } from 'lucide-react'
 import { findItemBySlug } from '../data/inventory'
 import type { Yacht } from '../data/inventory'
+import ImageGallery from '../components/ImageGallery'
+import YachtAddOns from '../components/YachtAddOns'
 
 const YachtDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
-  const [activeImage, setActiveImage] = useState(0)
   
   if (!slug) {
     return <Navigate to="/yachts" replace />
@@ -18,9 +19,9 @@ const YachtDetail: React.FC = () => {
     return <Navigate to="/yachts" replace />
   }
 
-  const scrollToContact = () => {
-    // Navigate to home and scroll to contact
-    window.location.href = '/#contact'
+  const handleBooking = () => {
+    const msg = encodeURIComponent(`Hi, I'm interested in chartering the ${yacht.title}. Can you help me with availability and pricing?`)
+    window.open(`https://wa.me/15617774360?text=${msg}`, '_blank')
   }
 
   return (
@@ -41,57 +42,12 @@ const YachtDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="pb-16 bg-luxury-charcoal">
         <div className="container-max section-padding">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Yacht Image Gallery */}
-            <div className="relative">
-              <div className="relative h-96 rounded-xl overflow-hidden">
-                <img
-                  src={yacht.images[activeImage]}
-                  alt={`${yacht.title} - Photo ${activeImage + 1}`}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                
-                {/* Gallery Navigation */}
-                {yacht.images.length > 1 && (
-                  <>
-                    <button
-                      onClick={() => setActiveImage(prev => prev === 0 ? yacht.images.length - 1 : prev - 1)}
-                      className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors"
-                    >
-                      <ChevronLeft size={20} />
-                    </button>
-                    <button
-                      onClick={() => setActiveImage(prev => prev === yacht.images.length - 1 ? 0 : prev + 1)}
-                      className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white hover:bg-black/70 transition-colors"
-                    >
-                      <ChevronRight size={20} />
-                    </button>
-                    <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white text-sm">
-                      {activeImage + 1} / {yacht.images.length}
-                    </div>
-                  </>
-                )}
-              </div>
-              
-              {/* Thumbnail Strip */}
-              {yacht.images.length > 1 && (
-                <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
-                  {yacht.images.map((img, i) => (
-                    <button
-                      key={i}
-                      onClick={() => setActiveImage(i)}
-                      className={`flex-shrink-0 w-20 h-14 rounded-lg overflow-hidden border-2 transition-all ${
-                        i === activeImage ? 'border-luxury-gold opacity-100' : 'border-transparent opacity-60 hover:opacity-80'
-                      }`}
-                    >
-                      <img src={img} alt={`${yacht.title} thumbnail ${i + 1}`} className="w-full h-full object-cover" />
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+          {/* Image Gallery — Full Width */}
+          <div className="mb-12">
+            <ImageGallery images={yacht.images} title={yacht.title} />
+          </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Yacht Details */}
             <div className="space-y-6">
               <div>
@@ -105,7 +61,7 @@ const YachtDetail: React.FC = () => {
                   </div>
                   <div className="flex items-center space-x-2">
                     <Anchor className="w-5 h-5 text-luxury-gold" />
-                    <span>{yacht.departure.includes('Miami') ? 'Miami' : 'Fort Lauderdale'}</span>
+                    <span>{(yacht.departure || 'Miami, FL').includes('Miami') ? 'Miami' : 'Fort Lauderdale'}</span>
                   </div>
                 </div>
               </div>
@@ -135,7 +91,7 @@ const YachtDetail: React.FC = () => {
 
               {/* CTA Button */}
               <button
-                onClick={scrollToContact}
+                onClick={handleBooking}
                 className="w-full luxury-button flex items-center justify-center space-x-2"
               >
                 <Calendar size={20} />
@@ -152,44 +108,31 @@ const YachtDetail: React.FC = () => {
           <div className="luxury-card max-w-4xl mx-auto">
             <h3 className="text-2xl font-semibold text-white mb-8 text-center">Charter Pricing</h3>
             
-            {Object.keys(yacht.pricing).length > 0 ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {yacht.pricing.halfDay && (
-                  <div className="text-center">
-                    <h4 className="text-luxury-gold font-semibold mb-2">Half Day</h4>
-                    <div className="text-2xl font-bold text-white">${yacht.pricing.halfDay.toLocaleString()}</div>
-                    <div className="text-sm text-gray-400">4 hours</div>
-                  </div>
-                )}
-                
-                {yacht.pricing.fullDay && (
-                  <div className="text-center">
-                    <h4 className="text-luxury-gold font-semibold mb-2">Full Day</h4>
-                    <div className="text-2xl font-bold text-white">${yacht.pricing.fullDay.toLocaleString()}</div>
-                    <div className="text-sm text-gray-400">8 hours</div>
-                  </div>
-                )}
-                
-                {yacht.pricing.overnight && (
-                  <div className="text-center">
-                    <h4 className="text-luxury-gold font-semibold mb-2">Overnight</h4>
-                    <div className="text-2xl font-bold text-white">${yacht.pricing.overnight.toLocaleString()}</div>
-                    <div className="text-sm text-gray-400">24 hours</div>
-                  </div>
-                )}
-                
-                {yacht.pricing.weekly && (
-                  <div className="text-center">
-                    <h4 className="text-luxury-gold font-semibold mb-2">Weekly</h4>
-                    <div className="text-2xl font-bold text-white">${yacht.pricing.weekly.toLocaleString()}</div>
-                    <div className="text-sm text-gray-400">7 days</div>
-                  </div>
-                )}
+            {yacht.startingPrice > 0 ? (
+              <div className="text-center">
+                <div className="text-sm text-gray-400 mb-2 uppercase tracking-wider">Starting From</div>
+                <div className="text-4xl font-bold text-white mb-1">${yacht.startingPrice.toLocaleString()}</div>
+                <div className="text-luxury-gold font-medium">for 4 hours</div>
+                <p className="text-sm text-gray-400 mt-4">Pricing varies by day of week. Contact us for a custom quote.</p>
+                <button
+                  onClick={handleBooking}
+                  className="mt-6 luxury-button inline-flex items-center gap-2"
+                >
+                  <Calendar size={18} />
+                  Get Exact Quote
+                </button>
               </div>
             ) : (
               <div className="text-center">
                 <div className="text-2xl font-bold text-luxury-gold mb-2">Contact for Pricing</div>
                 <p className="text-gray-400">Custom charter pricing available based on your needs</p>
+                <button
+                  onClick={handleBooking}
+                  className="mt-6 luxury-button inline-flex items-center gap-2"
+                >
+                  <Calendar size={18} />
+                  Request Quote
+                </button>
               </div>
             )}
             
@@ -212,6 +155,9 @@ const YachtDetail: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* Yacht Add-Ons */}
+      <YachtAddOns />
 
       {/* Details Section */}
       <section className="py-16 bg-luxury-charcoal">
@@ -260,7 +206,7 @@ const YachtDetail: React.FC = () => {
                   <MapPin className="w-5 h-5 text-luxury-gold mt-0.5" />
                   <div>
                     <h4 className="font-semibold text-white">Departure Location</h4>
-                    <p className="text-gray-400 text-sm">{yacht.departure}</p>
+                    <p className="text-gray-400 text-sm">{yacht.departure || 'Miami, FL'}</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -301,7 +247,7 @@ const YachtDetail: React.FC = () => {
               Contact our charter specialists to check availability and plan your perfect day on the water
             </p>
             <button
-              onClick={scrollToContact}
+              onClick={handleBooking}
               className="luxury-button"
             >
               Book Your Charter

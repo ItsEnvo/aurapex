@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { ArrowLeft, Star, Users, Zap, MapPin, Calendar, Clock, Shield } from 'lucide-react'
 import { findItemBySlug } from '../data/inventory'
 import type { JetSki } from '../data/inventory'
+import ImageGallery from '../components/ImageGallery'
 
 const JetSkiDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -17,9 +18,9 @@ const JetSkiDetail: React.FC = () => {
     return <Navigate to="/jet-skis" replace />
   }
 
-  const scrollToContact = () => {
+  const handleBooking = () => {
     // Navigate to home and scroll to contact
-    window.location.href = '/#contact'
+    const msg = encodeURIComponent(`Hi, I'm interested in jet ski rentals. Can you help?`); window.open(`https://wa.me/15617774360?text=${msg}`, '_blank')
   }
 
   return (
@@ -40,19 +41,12 @@ const JetSkiDetail: React.FC = () => {
       {/* Hero Section */}
       <section className="pb-16 bg-luxury-charcoal">
         <div className="container-max section-padding">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Jet Ski Image */}
-            <div className="relative">
-              <div className="relative h-96 rounded-xl overflow-hidden">
-                <img
-                  src={jetski.image}
-                  alt={jetski.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-              </div>
-            </div>
+          {/* Image Gallery — Full Width */}
+          <div className="mb-12">
+            <ImageGallery images={jetski.images} title={jetski.title} />
+          </div>
 
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Jet Ski Details */}
             <div className="space-y-6">
               <div>
@@ -116,7 +110,7 @@ const JetSkiDetail: React.FC = () => {
 
               {/* CTA Button */}
               <button
-                onClick={scrollToContact}
+                onClick={handleBooking}
                 className="w-full luxury-button flex items-center justify-center space-x-2"
               >
                 <Calendar size={20} />
@@ -259,7 +253,7 @@ const JetSkiDetail: React.FC = () => {
               Contact us to check availability at your preferred location and book your jet ski adventure
             </p>
             <button
-              onClick={scrollToContact}
+              onClick={handleBooking}
               className="luxury-button"
             >
               Book Your Adventure

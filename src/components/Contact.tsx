@@ -36,15 +36,15 @@ const Contact: React.FC = () => {
   const locations = [
     {
       city: 'Fort Lauderdale',
-      address: '123 Las Olas Boulevard\nFort Lauderdale, FL 33301',
-      phone: '+1 (954) 555-0123',
-      email: 'fortlauderdale@aurapexrentals.com'
+      address: 'Fort Lauderdale, FL',
+      phone: '+1 (561) 777-4360',
+      email: 'Aurapexbookings@gmail.com'
     },
     {
       city: 'Miami',
-      address: '456 Ocean Drive\nMiami Beach, FL 33139', 
-      phone: '+1 (305) 555-0124',
-      email: 'miami@aurapexrentals.com'
+      address: 'Miami, FL', 
+      phone: '+1 (561) 777-4360',
+      email: 'Aurapexbookings@gmail.com'
     }
   ]
 
@@ -52,8 +52,41 @@ const Contact: React.FC = () => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    // Create WhatsApp message
+    const vehicleTypeLabel = vehicleTypes.find(v => v.value === formData.vehicleType)?.label || formData.vehicleType
+    const whatsappMessage = `New Aurapex Lead: ${formData.name}, ${formData.phone}, ${formData.email}, interested in ${vehicleTypeLabel}, dates ${formData.startDate} - ${formData.endDate}, message: ${formData.message || 'No additional message'}`
+    
+    // Send to WhatsApp
+    const whatsappUrl = `https://wa.me/15617774360?text=${encodeURIComponent(whatsappMessage)}`
+    
+    // Also send to Web3Forms as backup
+    try {
+      const web3Response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: 'YOUR_WEB3FORMS_ACCESS_KEY_HERE', // Replace with actual key later
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          vehicle_type: vehicleTypeLabel,
+          specific_vehicle: formData.specificVehicle,
+          start_date: formData.startDate,
+          end_date: formData.endDate,
+          message: formData.message,
+          subject: 'New Aurapex Rental Inquiry'
+        })
+      })
+    } catch (error) {
+      console.log('Web3Forms backup failed:', error)
+      // Continue anyway - WhatsApp is primary
+    }
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank')
     
     setIsSubmitted(true)
     setIsSubmitting(false)
@@ -82,7 +115,7 @@ const Contact: React.FC = () => {
                 Your luxury rental inquiry has been received. Our concierge team will contact you within 30 minutes to discuss your requirements and confirm availability.
               </p>
               <p className="text-lg text-luxury-gold mb-8">
-                For immediate assistance, call us at <a href="tel:+1-954-555-0123" className="underline">(954) 555-0123</a>
+                For immediate assistance, call us at <a href="tel:+1-561-777-4360" className="underline">(561) 777-4360</a>
               </p>
               <button 
                 onClick={() => setIsSubmitted(false)}
@@ -340,8 +373,8 @@ const Contact: React.FC = () => {
               <p className="text-gray-400 text-sm mb-4">
                 Call our concierge team for instant quotes and availability.
               </p>
-              <a href="tel:+1-954-555-0123" className="luxury-button w-full text-center block">
-                Call (954) 555-0123
+              <a href="tel:+1-561-777-4360" className="luxury-button w-full text-center block">
+                Call (561) 777-4360
               </a>
             </div>
           </div>
