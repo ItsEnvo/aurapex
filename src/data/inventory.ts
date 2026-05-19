@@ -187,7 +187,7 @@ const getUnsplashImageUrl = (category: string, title: string): string => {
       return `${baseUrl}1613490493192-bf5730000ea4?w=800&h=600&fit=crop`
     
     case 'jet_skis':
-      return `${baseUrl}1551698618-1dfe5d97d256?w=800&h=600&fit=crop`
+      return '/images/jet-skis/waverunner-action.jpg'
     
     default:
       return `${baseUrl}1544636331-e26879cd4d9b?w=800&h=600&fit=crop`

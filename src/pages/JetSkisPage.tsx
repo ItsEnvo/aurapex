@@ -40,7 +40,7 @@ const JetSkisPage: React.FC = () => {
       <section className="pt-24 pb-16 bg-hero-gradient relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
-            src="https://images.unsplash.com/photo-1626954079979-5e8003659536?w=1600&h=900&fit=crop"
+            src="/images/jet-skis/waverunner-hero.jpg"
             alt=""
             className="w-full h-full object-cover"
           />
