@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 
 // Scroll to top on every route change
 function ScrollToTop() {
@@ -83,6 +84,7 @@ function App() {
         <Route path="/jet-skis/:slug" element={<DefaultLayout><JetSkiDetail /></DefaultLayout>} />
         <Route path="/experiences" element={<DefaultLayout><ExperiencesPage /></DefaultLayout>} />
       </Routes>
+      <Analytics />
     </Router>
   )
 }
