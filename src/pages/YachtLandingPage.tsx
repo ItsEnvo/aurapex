@@ -34,8 +34,13 @@ const YachtLandingPage: React.FC = () => {
     
     // Create WhatsApp message
     const whatsappMessage = `New Aurapex Yacht Charter Lead: ${formData.name}, ${formData.phone}, ${formData.email}, interested in yacht charter, dates ${formData.startDate} - ${formData.endDate}, message: ${formData.message || 'No additional message'}`
-    
-    // Send to Web3Forms as backup
+
+    // Open WhatsApp first, while we still have the user gesture (an await before
+    // window.open lets popup blockers kill the hand-off and drop the lead).
+    const whatsappUrl = `https://wa.me/15617774360?text=${encodeURIComponent(whatsappMessage)}`
+    window.open(whatsappUrl, '_blank')
+
+    // Also send to Web3Forms as an email backup so no lead is lost.
     try {
       const web3Response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -57,11 +62,7 @@ const YachtLandingPage: React.FC = () => {
     } catch (error) {
       console.log('Web3Forms backup failed:', error)
     }
-    
-    // Open WhatsApp
-    const whatsappUrl = `https://wa.me/15617774360?text=${encodeURIComponent(whatsappMessage)}`
-    window.open(whatsappUrl, '_blank')
-    
+
     setIsSubmitted(true)
     setIsSubmitting(false)
   }
@@ -325,7 +326,7 @@ const YachtLandingPage: React.FC = () => {
                         onChange={handleInputChange}
                         required
                         className="w-full bg-luxury-charcoal border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors"
-                        placeholder="+1 (555) 123-4567"
+                        placeholder="Your phone number"
                       />
                     </div>
                   </div>

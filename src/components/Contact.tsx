@@ -58,8 +58,13 @@ const Contact: React.FC = () => {
     
     // Send to WhatsApp
     const whatsappUrl = `https://wa.me/15617774360?text=${encodeURIComponent(whatsappMessage)}`
-    
-    // Also send to Web3Forms as backup
+
+    // Open WhatsApp first, while we still have the user gesture (an await before
+    // window.open lets popup blockers kill the hand-off and drop the lead).
+    window.open(whatsappUrl, '_blank')
+
+    // Also send to Web3Forms as an email backup so no lead is lost even if the
+    // visitor never completes the WhatsApp send.
     try {
       const web3Response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -82,12 +87,9 @@ const Contact: React.FC = () => {
       })
     } catch (error) {
       console.log('Web3Forms backup failed:', error)
-      // Continue anyway - WhatsApp is primary
+      // Continue anyway - WhatsApp already opened above
     }
-    
-    // Open WhatsApp
-    window.open(whatsappUrl, '_blank')
-    
+
     setIsSubmitted(true)
     setIsSubmitting(false)
   }
@@ -194,7 +196,7 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     required
                     className="w-full bg-luxury-charcoal border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-luxury-gold focus:ring-1 focus:ring-luxury-gold transition-colors"
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="Your phone number"
                   />
                 </div>
 
