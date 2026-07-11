@@ -68,25 +68,40 @@ const VillasPage: React.FC = () => {
                         <span>{villa.location}</span>
                       </div>
                       <div className="flex items-center space-x-4 text-sm text-gray-400">
-                        <div className="flex items-center space-x-1">
-                          <Bed className="w-3 h-3" />
-                          <span>{villa.bedrooms}BR</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Home className="w-3 h-3" />
-                          <span>{villa.bathrooms}BA</span>
-                        </div>
-                        <div className="flex items-center space-x-1">
-                          <Users className="w-3 h-3" />
-                          <span>Sleeps {villa.sleeps}</span>
-                        </div>
+                        {villa.bedrooms > 0 && (
+                          <div className="flex items-center space-x-1">
+                            <Bed className="w-3 h-3" />
+                            <span>{villa.bedrooms}BR</span>
+                          </div>
+                        )}
+                        {villa.bathrooms > 0 && (
+                          <div className="flex items-center space-x-1">
+                            <Home className="w-3 h-3" />
+                            <span>{villa.bathrooms}BA</span>
+                          </div>
+                        )}
+                        {villa.sleeps > 0 && (
+                          <div className="flex items-center space-x-1">
+                            <Users className="w-3 h-3" />
+                            <span>Sleeps {villa.sleeps}</span>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="text-right">
-                      <div className="text-xl font-bold text-luxury-gold">
-                        ${villa.nightlyPrice.toLocaleString()}
-                      </div>
-                      <div className="text-sm text-gray-400">per night</div>
+                      {villa.nightlyPrice > 0 ? (
+                        <>
+                          <div className="text-xl font-bold text-luxury-gold">
+                            ${villa.nightlyPrice.toLocaleString()}
+                          </div>
+                          <div className="text-sm text-gray-400">per night</div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="text-lg font-bold text-luxury-gold">Inquire</div>
+                          <div className="text-sm text-gray-400">for pricing</div>
+                        </>
+                      )}
                     </div>
                   </div>
 

@@ -650,6 +650,386 @@
         },
         "drive_folder": "1V4Fj8vQwyPcWRODLc0HcLOruWPh3U1MH",
         "images": []
+      },
+      {
+        "asset_id": "VILLA011",
+        "partner_name": "LX MIAMI",
+        "title": "Casa Blanca",
+        "location": "Miami",
+        "details": "4 BR / 3 BA — Sleeps 10",
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "sleeps": 10,
+        "images": [
+          "/images/villas/casa-blanca/1.jpg",
+          "/images/villas/casa-blanca/2.jpg",
+          "/images/villas/casa-blanca/3.jpg",
+          "/images/villas/casa-blanca/4.jpg",
+          "/images/villas/casa-blanca/5.jpg",
+          "/images/villas/casa-blanca/6.jpg",
+          "/images/villas/casa-blanca/7.jpg",
+          "/images/villas/casa-blanca/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA012",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Contempa",
+        "location": "Fort Lauderdale",
+        "details": "7.5 BR / 8 BA — Sleeps 18",
+        "bedrooms": 7,
+        "bathrooms": 8,
+        "sleeps": 18,
+        "images": [
+          "/images/villas/villa-contempa/1.jpg",
+          "/images/villas/villa-contempa/2.jpg",
+          "/images/villas/villa-contempa/3.jpg",
+          "/images/villas/villa-contempa/4.jpg",
+          "/images/villas/villa-contempa/5.jpg",
+          "/images/villas/villa-contempa/6.jpg",
+          "/images/villas/villa-contempa/7.jpg",
+          "/images/villas/villa-contempa/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA013",
+        "partner_name": "LX MIAMI",
+        "title": "Las Palmas",
+        "location": "Fort Lauderdale",
+        "details": "7 BR / 7 BA — Sleeps 14",
+        "bedrooms": 7,
+        "bathrooms": 7,
+        "sleeps": 14,
+        "images": [
+          "/images/villas/las-palmas/1.jpg",
+          "/images/villas/las-palmas/2.jpg",
+          "/images/villas/las-palmas/3.jpg",
+          "/images/villas/las-palmas/4.jpg",
+          "/images/villas/las-palmas/5.jpg",
+          "/images/villas/las-palmas/6.jpg",
+          "/images/villas/las-palmas/7.jpg",
+          "/images/villas/las-palmas/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA014",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Larsa",
+        "location": "Hallandale",
+        "details": "5 BR / 3.5 BA — Sleeps 12",
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "sleeps": 12,
+        "images": [
+          "/images/villas/villa-larsa/1.jpg",
+          "/images/villas/villa-larsa/2.jpg",
+          "/images/villas/villa-larsa/3.jpg",
+          "/images/villas/villa-larsa/4.jpg",
+          "/images/villas/villa-larsa/5.jpg",
+          "/images/villas/villa-larsa/6.jpg",
+          "/images/villas/villa-larsa/7.jpg",
+          "/images/villas/villa-larsa/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA015",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Lexi",
+        "location": "Coral Gables",
+        "details": "6 BR / 6 BA — Sleeps 14",
+        "bedrooms": 6,
+        "bathrooms": 6,
+        "sleeps": 14,
+        "images": [
+          "/images/villas/villa-lexi/1.jpg",
+          "/images/villas/villa-lexi/2.jpg",
+          "/images/villas/villa-lexi/3.jpg",
+          "/images/villas/villa-lexi/4.jpg",
+          "/images/villas/villa-lexi/5.jpg",
+          "/images/villas/villa-lexi/6.jpg",
+          "/images/villas/villa-lexi/7.jpg",
+          "/images/villas/villa-lexi/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA016",
+        "partner_name": "LX MIAMI",
+        "title": "San Marco Bleu",
+        "location": "Fort Lauderdale",
+        "details": "6 BR / 7.5 BA — Sleeps 12",
+        "bedrooms": 6,
+        "bathrooms": 7,
+        "sleeps": 12,
+        "images": [
+          "/images/villas/san-marco-bleu/1.jpg",
+          "/images/villas/san-marco-bleu/2.jpg",
+          "/images/villas/san-marco-bleu/3.jpg",
+          "/images/villas/san-marco-bleu/4.jpg",
+          "/images/villas/san-marco-bleu/5.jpg",
+          "/images/villas/san-marco-bleu/6.jpg",
+          "/images/villas/san-marco-bleu/7.jpg",
+          "/images/villas/san-marco-bleu/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA017",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Reina",
+        "location": "Palmetto Bay",
+        "details": "5 BR / 5 BA — Sleeps 10",
+        "bedrooms": 5,
+        "bathrooms": 5,
+        "sleeps": 10,
+        "images": [
+          "/images/villas/villa-reina/1.jpg",
+          "/images/villas/villa-reina/2.jpg",
+          "/images/villas/villa-reina/3.jpg",
+          "/images/villas/villa-reina/4.jpg",
+          "/images/villas/villa-reina/5.jpg",
+          "/images/villas/villa-reina/6.jpg",
+          "/images/villas/villa-reina/7.jpg",
+          "/images/villas/villa-reina/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA018",
+        "partner_name": "LX MIAMI",
+        "title": "Casa Lumina",
+        "location": "Fort Lauderdale",
+        "details": "4 BR / 5 BA",
+        "bedrooms": 4,
+        "bathrooms": 5,
+        "sleeps": 0,
+        "images": [
+          "/images/villas/casa-lumina/1.jpg",
+          "/images/villas/casa-lumina/2.jpg",
+          "/images/villas/casa-lumina/3.jpg",
+          "/images/villas/casa-lumina/4.jpg",
+          "/images/villas/casa-lumina/5.jpg",
+          "/images/villas/casa-lumina/6.jpg",
+          "/images/villas/casa-lumina/7.jpg",
+          "/images/villas/casa-lumina/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA019",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Desiree",
+        "location": "North Miami Beach",
+        "details": "6 BR / 8 BA — Sleeps 14",
+        "bedrooms": 6,
+        "bathrooms": 8,
+        "sleeps": 14,
+        "images": [
+          "/images/villas/villa-desiree/1.jpg",
+          "/images/villas/villa-desiree/2.jpg",
+          "/images/villas/villa-desiree/3.jpg",
+          "/images/villas/villa-desiree/4.jpg",
+          "/images/villas/villa-desiree/5.jpg",
+          "/images/villas/villa-desiree/6.jpg",
+          "/images/villas/villa-desiree/7.jpg",
+          "/images/villas/villa-desiree/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA020",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Harrison",
+        "location": "Hollywood",
+        "details": "5 BR / 2.5 BA — Sleeps 10",
+        "bedrooms": 5,
+        "bathrooms": 2,
+        "sleeps": 10,
+        "images": [
+          "/images/villas/villa-harrison/1.jpg",
+          "/images/villas/villa-harrison/2.jpg",
+          "/images/villas/villa-harrison/3.jpg",
+          "/images/villas/villa-harrison/4.jpg",
+          "/images/villas/villa-harrison/5.jpg",
+          "/images/villas/villa-harrison/6.jpg",
+          "/images/villas/villa-harrison/7.jpg",
+          "/images/villas/villa-harrison/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA021",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Oleta",
+        "location": "Sunny Isles Beach",
+        "details": "4 BR / 4.5 BA — Sleeps 10",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "sleeps": 10,
+        "images": [
+          "/images/villas/villa-oleta/1.jpg",
+          "/images/villas/villa-oleta/2.jpg",
+          "/images/villas/villa-oleta/3.jpg",
+          "/images/villas/villa-oleta/4.jpg",
+          "/images/villas/villa-oleta/5.jpg",
+          "/images/villas/villa-oleta/6.jpg",
+          "/images/villas/villa-oleta/7.jpg",
+          "/images/villas/villa-oleta/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA022",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Strata",
+        "location": "Miami",
+        "details": "5 BR / 5.5 BA — Sleeps 12",
+        "bedrooms": 5,
+        "bathrooms": 5,
+        "sleeps": 12,
+        "images": [
+          "/images/villas/villa-strata/1.jpg",
+          "/images/villas/villa-strata/2.jpg",
+          "/images/villas/villa-strata/3.jpg",
+          "/images/villas/villa-strata/4.jpg",
+          "/images/villas/villa-strata/5.jpg",
+          "/images/villas/villa-strata/6.jpg",
+          "/images/villas/villa-strata/7.jpg",
+          "/images/villas/villa-strata/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA023",
+        "partner_name": "LX MIAMI",
+        "title": "Sanctuary Manor",
+        "location": "Miami",
+        "details": "5 BR / 5.5 BA — Sleeps 12",
+        "bedrooms": 5,
+        "bathrooms": 5,
+        "sleeps": 12,
+        "images": [
+          "/images/villas/sanctuary-manor/1.jpg",
+          "/images/villas/sanctuary-manor/2.jpg",
+          "/images/villas/sanctuary-manor/3.jpg",
+          "/images/villas/sanctuary-manor/4.jpg",
+          "/images/villas/sanctuary-manor/5.jpg",
+          "/images/villas/sanctuary-manor/6.jpg",
+          "/images/villas/sanctuary-manor/7.jpg",
+          "/images/villas/sanctuary-manor/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA024",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Nova",
+        "location": "Brickell / Vizcaya Gardens",
+        "details": "7 BR / 6.5 BA — Sleeps 14",
+        "bedrooms": 7,
+        "bathrooms": 6,
+        "sleeps": 14,
+        "images": [
+          "/images/villas/villa-nova/1.jpg",
+          "/images/villas/villa-nova/2.jpg",
+          "/images/villas/villa-nova/3.jpg",
+          "/images/villas/villa-nova/4.jpg",
+          "/images/villas/villa-nova/5.jpg",
+          "/images/villas/villa-nova/6.jpg",
+          "/images/villas/villa-nova/7.jpg",
+          "/images/villas/villa-nova/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA025",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Paraiso",
+        "location": "Miami",
+        "details": "5 BR / 4.5 BA — Sleeps 13",
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "sleeps": 13,
+        "images": [
+          "/images/villas/villa-paraiso/1.jpg",
+          "/images/villas/villa-paraiso/2.jpg",
+          "/images/villas/villa-paraiso/3.jpg",
+          "/images/villas/villa-paraiso/4.jpg",
+          "/images/villas/villa-paraiso/5.jpg",
+          "/images/villas/villa-paraiso/6.jpg",
+          "/images/villas/villa-paraiso/7.jpg",
+          "/images/villas/villa-paraiso/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA026",
+        "partner_name": "LX MIAMI",
+        "title": "Boardwalk Mansion",
+        "location": "Fort Lauderdale",
+        "details": "7 BR / 9 BA — Sleeps 14",
+        "bedrooms": 7,
+        "bathrooms": 9,
+        "sleeps": 14,
+        "images": [
+          "/images/villas/boardwalk-mansion/1.jpg",
+          "/images/villas/boardwalk-mansion/2.jpg",
+          "/images/villas/boardwalk-mansion/3.jpg",
+          "/images/villas/boardwalk-mansion/4.jpg",
+          "/images/villas/boardwalk-mansion/5.jpg",
+          "/images/villas/boardwalk-mansion/6.jpg",
+          "/images/villas/boardwalk-mansion/7.jpg",
+          "/images/villas/boardwalk-mansion/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA027",
+        "partner_name": "LX MIAMI",
+        "title": "Villa Raya",
+        "location": "Miami",
+        "details": "4 BR / 4.5 BA — Sleeps 10",
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "sleeps": 10,
+        "images": [
+          "/images/villas/villa-raya/1.jpg",
+          "/images/villas/villa-raya/2.jpg",
+          "/images/villas/villa-raya/3.jpg",
+          "/images/villas/villa-raya/4.jpg",
+          "/images/villas/villa-raya/5.jpg",
+          "/images/villas/villa-raya/6.jpg",
+          "/images/villas/villa-raya/7.jpg",
+          "/images/villas/villa-raya/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA028",
+        "partner_name": "LX MIAMI",
+        "title": "Bayside Sky-Villa #5",
+        "location": "Miami Beach",
+        "details": "Luxury Sky-Villa",
+        "bedrooms": 0,
+        "bathrooms": 0,
+        "sleeps": 0,
+        "images": [
+          "/images/villas/bayside-sky-villa-5/1.jpg",
+          "/images/villas/bayside-sky-villa-5/2.jpg",
+          "/images/villas/bayside-sky-villa-5/3.jpg",
+          "/images/villas/bayside-sky-villa-5/4.jpg",
+          "/images/villas/bayside-sky-villa-5/5.jpg",
+          "/images/villas/bayside-sky-villa-5/6.jpg",
+          "/images/villas/bayside-sky-villa-5/7.jpg",
+          "/images/villas/bayside-sky-villa-5/8.jpg"
+        ]
+      },
+      {
+        "asset_id": "VILLA029",
+        "partner_name": "LX MIAMI",
+        "title": "Bayside Sky-Villa #6",
+        "location": "Miami Beach",
+        "details": "Luxury Sky-Villa",
+        "bedrooms": 0,
+        "bathrooms": 0,
+        "sleeps": 0,
+        "images": [
+          "/images/villas/bayside-sky-villa-6/1.jpg",
+          "/images/villas/bayside-sky-villa-6/2.jpg",
+          "/images/villas/bayside-sky-villa-6/3.jpg",
+          "/images/villas/bayside-sky-villa-6/4.jpg",
+          "/images/villas/bayside-sky-villa-6/5.jpg",
+          "/images/villas/bayside-sky-villa-6/6.jpg",
+          "/images/villas/bayside-sky-villa-6/7.jpg",
+          "/images/villas/bayside-sky-villa-6/8.jpg"
+        ]
       }
     ],
     "yachts": [

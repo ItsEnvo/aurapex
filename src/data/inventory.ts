@@ -294,6 +294,12 @@ export const yachts: Yacht[] = fleetData.inventory.yachts.map((yacht: any) => {
 export const villas: Villa[] = fleetData.inventory.villas.map((villa: any) => {
   const slug = createSlug(villa.title)
   const baseRate = villa.pricing?.base_rate_per_night || villa.retail_price_per_night || 0
+
+  // Use real photos from fleet.json if available, otherwise fall back to Unsplash
+  const villaImages: string[] = (villa.images && villa.images.length > 0)
+    ? villa.images
+    : [getUnsplashImageUrl('villas', villa.title)]
+
   return {
     id: villa.asset_id,
     slug,
@@ -305,10 +311,13 @@ export const villas: Villa[] = fleetData.inventory.villas.map((villa: any) => {
     sleeps: villa.sleeps || 0,
     nightlyPrice: baseRate,
     priceDisplay: baseRate ? `From $${baseRate.toLocaleString()}/night` : 'Contact for pricing',
-    image: getUnsplashImageUrl('villas', villa.title),
-    images: [getUnsplashImageUrl('villas', villa.title)]
+    image: villaImages[0],
+    images: villaImages
   }
 })
+  // Only surface villas that have real photos (hides photoless placeholders
+  // without deleting their data from fleet.json — add images to restore them)
+  .filter(villa => !villa.image.includes('unsplash.com'))
 
 // Process jet skis
 export const jetSkis: JetSki[] = fleetData.inventory.jet_skis.map((jetski: any) => {

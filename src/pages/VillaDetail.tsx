@@ -60,18 +60,24 @@ const VillaDetail: React.FC = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-6 text-lg text-white">
-                  <div className="flex items-center space-x-2">
-                    <Bed className="w-5 h-5 text-luxury-gold" />
-                    <span>{villa.bedrooms} Bedrooms</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Home className="w-5 h-5 text-luxury-gold" />
-                    <span>{villa.bathrooms} Bathrooms</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Users className="w-5 h-5 text-luxury-gold" />
-                    <span>Sleeps {villa.sleeps}</span>
-                  </div>
+                  {villa.bedrooms > 0 && (
+                    <div className="flex items-center space-x-2">
+                      <Bed className="w-5 h-5 text-luxury-gold" />
+                      <span>{villa.bedrooms} Bedrooms</span>
+                    </div>
+                  )}
+                  {villa.bathrooms > 0 && (
+                    <div className="flex items-center space-x-2">
+                      <Home className="w-5 h-5 text-luxury-gold" />
+                      <span>{villa.bathrooms} Bathrooms</span>
+                    </div>
+                  )}
+                  {villa.sleeps > 0 && (
+                    <div className="flex items-center space-x-2">
+                      <Users className="w-5 h-5 text-luxury-gold" />
+                      <span>Sleeps {villa.sleeps}</span>
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -79,10 +85,19 @@ const VillaDetail: React.FC = () => {
               <div className="luxury-card">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-3xl font-bold text-luxury-gold">
-                      ${villa.nightlyPrice.toLocaleString()}
-                    </div>
-                    <div className="text-gray-400">per night</div>
+                    {villa.nightlyPrice > 0 ? (
+                      <>
+                        <div className="text-3xl font-bold text-luxury-gold">
+                          ${villa.nightlyPrice.toLocaleString()}
+                        </div>
+                        <div className="text-gray-400">per night</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-3xl font-bold text-luxury-gold">Inquire for pricing</div>
+                        <div className="text-gray-400">Custom quote per dates</div>
+                      </>
+                    )}
                   </div>
                   <div className="text-right text-sm text-gray-400">
                     <div>Minimum 3 nights</div>
