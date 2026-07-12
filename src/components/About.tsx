@@ -11,7 +11,7 @@ const About: React.FC = () => {
     },
     {
       icon: Car,
-      number: '50+',
+      number: '250+',
       label: 'Premium Vehicles',
       description: 'Exotic cars, luxury yachts, and performance watercraft'
     },

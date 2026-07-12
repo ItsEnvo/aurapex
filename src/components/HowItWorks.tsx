@@ -20,9 +20,9 @@ const HowItWorks: React.FC = () => {
     {
       number: 3,
       icon: Key,
-      title: 'Drive & Enjoy',
-      description: 'Pick up your vehicle at our convenient locations or enjoy complimentary delivery. Experience luxury with our full support throughout your rental.',
-      details: ['Convenient pickup locations', 'Delivery service available', 'Government ID required']
+      title: 'Enjoy the Experience',
+      description: 'Pick up your car, board your yacht, or settle into your villa — or enjoy complimentary delivery. Our team handles everything so you can simply relax and enjoy.',
+      details: ['Convenient pickup or delivery', 'Full concierge support', 'Government ID required']
     }
   ]
 
@@ -39,8 +39,8 @@ const HowItWorks: React.FC = () => {
     },
     {
       icon: Shield,
-      title: 'Insurance Required',
-      description: 'Renters must provide proof of full coverage insurance. We verify before every rental.'
+      title: 'Car Rental Insurance',
+      description: 'Exotic car renters must provide proof of full-coverage insurance, verified before pickup. Yacht and villa bookings are fully crewed or staffed — no renter insurance needed.'
     }
   ]
 

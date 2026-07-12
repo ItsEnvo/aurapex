@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
               <div className="text-sm text-gray-400 uppercase tracking-wider">Happy Clients</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-luxury-gold mb-2">50+</div>
+              <div className="text-3xl md:text-4xl font-bold text-luxury-gold mb-2">250+</div>
               <div className="text-sm text-gray-400 uppercase tracking-wider">Luxury Vehicles</div>
             </div>
             <div className="text-center">
