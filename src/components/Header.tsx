@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X, Phone } from 'lucide-react'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const location = useLocation()
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,15 +17,13 @@ const Header: React.FC = () => {
   }, [])
 
   const scrollToSection = (id: string) => {
+    setIsMenuOpen(false)
     if (location.pathname === '/') {
-      const element = document.getElementById(id)
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-        setIsMenuOpen(false)
-      }
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
     } else {
-      // Navigate to home first, then scroll
-      window.location.href = `/#${id}`
+      // Go to the homepage first, then scroll to the section once it renders
+      navigate('/')
+      setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 350)
     }
   }
 
@@ -114,8 +113,8 @@ const Header: React.FC = () => {
 
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 ${
-          isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-        } overflow-hidden`}>
+          isMenuOpen ? 'max-h-[85vh] opacity-100 overflow-y-auto' : 'max-h-0 opacity-0 overflow-hidden'
+        }`}>
           <nav className="py-4 space-y-4 border-t border-white/10">
             <Link 
               to="/cars"

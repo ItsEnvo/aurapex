@@ -9,9 +9,19 @@
   
   body {
     @apply bg-luxury-black text-white font-modern;
+    overflow-x: hidden;
   }
-  
-  /* Custom scrollbar styles would go here */
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep scroll (used by mobile tab strips) */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
 
 @layer components {

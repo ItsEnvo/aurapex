@@ -104,10 +104,10 @@ const Fleet: React.FC = () => {
   const filteredVehicles = vehicles.filter(vehicle => vehicle.category === activeCategory)
 
   const categories = [
-    { key: 'cars' as const, label: 'Exotic Cars', count: inventory.cars.length, route: '/cars' },
-    { key: 'yachts' as const, label: 'Luxury Yachts', count: inventory.yachts.length, route: '/yachts' },
-    { key: 'villas' as const, label: 'Luxury Villas', count: inventory.villas.length, route: '/villas' },
-    { key: 'jetSkis' as const, label: 'Jet Skis', count: inventory.jetSkis.length, route: '/jet-skis' }
+    { key: 'cars' as const, label: 'Exotic Cars', short: 'Cars', count: inventory.cars.length, route: '/cars' },
+    { key: 'yachts' as const, label: 'Luxury Yachts', short: 'Yachts', count: inventory.yachts.length, route: '/yachts' },
+    { key: 'villas' as const, label: 'Luxury Villas', short: 'Villas', count: inventory.villas.length, route: '/villas' },
+    { key: 'jetSkis' as const, label: 'Jet Skis', short: 'Jet Skis', count: inventory.jetSkis.length, route: '/jet-skis' }
   ]
 
   const getCategoryTitle = () => {
@@ -141,19 +141,21 @@ const Fleet: React.FC = () => {
         </div>
 
         {/* Category Tabs */}
-        <div className="flex flex-col sm:flex-row justify-center mb-12">
-          <div className="glass-effect rounded-full p-2 inline-flex">
+        <div className="flex justify-center mb-12 px-2">
+          <div className="glass-effect rounded-full p-1.5 sm:p-2 inline-flex max-w-full overflow-x-auto no-scrollbar">
             {categories.map((category) => (
               <button
                 key={category.key}
                 onClick={() => setActiveCategory(category.key)}
-                className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`px-3 sm:px-6 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 ${
                   activeCategory === category.key
                     ? 'bg-luxury-gold text-luxury-black shadow-lg'
                     : 'text-gray-300 hover:text-white'
                 }`}
               >
-                {category.label} ({category.count})
+                <span className="sm:hidden">{category.short}</span>
+                <span className="hidden sm:inline">{category.label}</span>
+                <span className="hidden sm:inline ml-1 opacity-70">({category.count})</span>
               </button>
             ))}
           </div>
