@@ -1034,6 +1034,21 @@
     ],
     "yachts": [
       {
+        "asset_id": "YACHT024",
+        "partner_name": "Aurapex",
+        "title": "90ft Sunseeker Flybridge",
+        "departure": "Miami, FL",
+        "max_guests": 13,
+        "notes": "Flybridge with jacuzzi. Pricing TBD.",
+        "images": [
+          "/images/yachts/90ft-sunseeker-flybridge/1.jpg",
+          "/images/yachts/90ft-sunseeker-flybridge/2.jpg",
+          "/images/yachts/90ft-sunseeker-flybridge/3.jpg",
+          "/images/yachts/90ft-sunseeker-flybridge/4.jpg",
+          "/images/yachts/90ft-sunseeker-flybridge/5.jpg"
+        ]
+      },
+      {
         "asset_id": "YACHT001",
         "partner_name": "Boat Miami Now",
         "title": "26ft Searay Sundeck",
