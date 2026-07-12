@@ -1,0 +1,2142 @@
+{
+  "cities": [
+    {
+      "name": "Miami",
+      "slug": "miami",
+      "count": 186,
+      "cover": "/images/fleet/miami/90-leopard.jpg"
+    },
+    {
+      "name": "Fort Lauderdale",
+      "slug": "fort-lauderdale",
+      "count": 21,
+      "cover": "/images/fleet/fort-lauderdale/_cover.jpg"
+    },
+    {
+      "name": "Palm Beach",
+      "slug": "palm-beach",
+      "count": 7,
+      "cover": "/images/fleet/palm-beach/_cover.jpg"
+    },
+    {
+      "name": "Naples",
+      "slug": "naples",
+      "count": 1,
+      "cover": "/images/fleet/naples/72-galeon.jpg"
+    },
+    {
+      "name": "Tampa",
+      "slug": "tampa",
+      "count": 1,
+      "cover": "/images/fleet/tampa/_cover.jpg"
+    },
+    {
+      "name": "New York",
+      "slug": "new-york",
+      "count": 3,
+      "cover": "/images/fleet/new-york/65-galeon-ny.jpg"
+    },
+    {
+      "name": "Event & Party Yachts",
+      "slug": "event-party-yachts",
+      "count": 17,
+      "cover": "/images/fleet/event-party-yachts/130-venetian-lady.jpg"
+    },
+    {
+      "name": "Bahamas",
+      "slug": "bahamas",
+      "count": 9,
+      "cover": "/images/fleet/bahamas/_cover.jpg"
+    },
+    {
+      "name": "Turks and Caicos",
+      "slug": "turks-and-caicos",
+      "count": 1,
+      "cover": "/images/fleet/turks-and-caicos/_cover.jpg"
+    },
+    {
+      "name": "Punta Cana, D.R",
+      "slug": "punta-cana-dr",
+      "count": 6,
+      "cover": "/images/fleet/punta-cana-dr/_cover.jpg"
+    },
+    {
+      "name": "Cancun, MX.",
+      "slug": "cancun-mx",
+      "count": 4,
+      "cover": "/images/fleet/cancun-mx/_cover.jpg"
+    },
+    {
+      "name": "St Barths",
+      "slug": "st-barths",
+      "count": 2,
+      "cover": "/images/fleet/st-barths/_cover.jpg"
+    }
+  ],
+  "yachts": [
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "28' Axopar",
+      "slug": "28-axopar",
+      "lengthFt": 28,
+      "image": "/images/fleet/miami/28-axopar.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "30' Sea Ray",
+      "slug": "30-sea-ray",
+      "lengthFt": 30,
+      "image": "/images/fleet/miami/30-sea-ray.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "32' Saxdor",
+      "slug": "32-saxdor",
+      "lengthFt": 32,
+      "image": "/images/fleet/miami/32-saxdor.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "32' Saxdor F",
+      "slug": "32-saxdor-f",
+      "lengthFt": 32,
+      "image": "/images/fleet/miami/32-saxdor-f.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "36' Searay",
+      "slug": "36-searay",
+      "lengthFt": 36,
+      "image": "/images/fleet/miami/36-searay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "37' Axopar",
+      "slug": "37-axopar",
+      "lengthFt": 37,
+      "image": "/images/fleet/miami/37-axopar.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "37' Midnight Express",
+      "slug": "37-midnight-express",
+      "lengthFt": 37,
+      "image": "/images/fleet/miami/37-midnight-express.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "38' Pardo",
+      "slug": "38-pardo",
+      "lengthFt": 38,
+      "image": "/images/fleet/miami/38-pardo.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "40' Azimut",
+      "slug": "40-azimut",
+      "lengthFt": 40,
+      "image": "/images/fleet/miami/40-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "40' Fjord",
+      "slug": "40-fjord",
+      "lengthFt": 40,
+      "image": "/images/fleet/miami/40-fjord.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "40' VanDutch",
+      "slug": "40-vandutch",
+      "lengthFt": 40,
+      "image": "/images/fleet/miami/40-vandutch.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "40' VanDutch SB",
+      "slug": "40-vandutch-sb",
+      "lengthFt": 40,
+      "image": "/images/fleet/miami/40-vandutch-sb.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "41' Silvertron MR",
+      "slug": "41-silvertron-mr",
+      "lengthFt": 41,
+      "image": "/images/fleet/miami/41-silvertron-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Azimut K",
+      "slug": "42-azimut-k",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-azimut-k.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Azimut MBM",
+      "slug": "42-azimut-mbm",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-azimut-mbm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Fjord",
+      "slug": "42-fjord",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-fjord.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Cruiser",
+      "slug": "42-cruiser",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-cruiser.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Fourwinns",
+      "slug": "42-fourwinns",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-fourwinns.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Marquis",
+      "slug": "42-marquis",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-marquis.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Mystic",
+      "slug": "42-mystic",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-mystic.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "42' Searay Sundancer",
+      "slug": "42-searay-sundancer",
+      "lengthFt": 42,
+      "image": "/images/fleet/miami/42-searay-sundancer.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "43' Azimut",
+      "slug": "43-azimut",
+      "lengthFt": 43,
+      "image": "/images/fleet/miami/43-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "43' Continental",
+      "slug": "43-continental",
+      "lengthFt": 43,
+      "image": "/images/fleet/miami/43-continental.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "43' Pardo",
+      "slug": "43-pardo",
+      "lengthFt": 43,
+      "image": "/images/fleet/miami/43-pardo.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "44' Sundancer",
+      "slug": "44-sundancer",
+      "lengthFt": 44,
+      "image": "/images/fleet/miami/44-sundancer.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Azimut N",
+      "slug": "45-azimut-n",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-azimut-n.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Formula V",
+      "slug": "45-formula-v",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-formula-v.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Fontaine Pajot 2023",
+      "slug": "45-fontaine-pajot-2023",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-fontaine-pajot-2023.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Galeon",
+      "slug": "45-galeon",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-galeon.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Maxum",
+      "slug": "45-maxum",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-maxum.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Meridian",
+      "slug": "45-meridian",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-meridian.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Prestige",
+      "slug": "45-prestige",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "45' Searay Bay",
+      "slug": "45-searay-bay",
+      "lengthFt": 45,
+      "image": "/images/fleet/miami/45-searay-bay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "46' Cruiser",
+      "slug": "46-cruiser",
+      "lengthFt": 46,
+      "image": "/images/fleet/miami/46-cruiser.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "46' SeaRay Key",
+      "slug": "46-searay-key",
+      "lengthFt": 46,
+      "image": "/images/fleet/miami/46-searay-key.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "47' Galeon",
+      "slug": "47-galeon",
+      "lengthFt": 47,
+      "image": "/images/fleet/miami/47-galeon.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "47' SeaRay",
+      "slug": "47-searay",
+      "lengthFt": 47,
+      "image": "/images/fleet/miami/47-searay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "47' Searay G",
+      "slug": "47-searay-g",
+      "lengthFt": 47,
+      "image": "/images/fleet/miami/47-searay-g.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "48' Cruiser",
+      "slug": "48-cruiser",
+      "lengthFt": 48,
+      "image": "/images/fleet/miami/48-cruiser.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "48’ Formula",
+      "slug": "48-formula",
+      "lengthFt": 48,
+      "image": "/images/fleet/miami/48-formula.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "48' SeaRay Fly",
+      "slug": "48-searay-fly",
+      "lengthFt": 48,
+      "image": "/images/fleet/miami/48-searay-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut",
+      "slug": "50-azimut",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut C",
+      "slug": "50-azimut-c",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-c.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut CG",
+      "slug": "50-azimut-cg",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-cg.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut DT",
+      "slug": "50-azimut-dt",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-dt.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut Fly",
+      "slug": "50-azimut-fly",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut G",
+      "slug": "50-azimut-g",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-g.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut MR",
+      "slug": "50-azimut-mr",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Azimut V",
+      "slug": "50-azimut-v",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-azimut-v.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Catamaran MB",
+      "slug": "50-catamaran-mb",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-catamaran-mb.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Cruiser",
+      "slug": "50-cruiser",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-cruiser.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Fairline",
+      "slug": "50-fairline",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-fairline.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Pershing",
+      "slug": "50-pershing",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-pershing.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Prestige Fly",
+      "slug": "50-prestige-fly",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-prestige-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Searay I",
+      "slug": "50-searay-i",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-searay-i.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' SeaRay MR",
+      "slug": "50-searay-mr",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-searay-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "50' Searay S",
+      "slug": "50-searay-s",
+      "lengthFt": 50,
+      "image": "/images/fleet/miami/50-searay-s.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Benetau",
+      "slug": "52-benetau",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-benetau.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Fairline",
+      "slug": "52-fairline",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-fairline.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Midnight Mansory",
+      "slug": "52-midnight-mansory",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-midnight-mansory.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Prestige",
+      "slug": "52-prestige",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' SeaRay",
+      "slug": "52-searay",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-searay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Searay Bay",
+      "slug": "52-searay-bay",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-searay-bay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Searay M",
+      "slug": "52-searay-m",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-searay-m.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "52' Princess",
+      "slug": "52-princess",
+      "lengthFt": 52,
+      "image": "/images/fleet/miami/52-princess.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "53' Azimut",
+      "slug": "53-azimut",
+      "lengthFt": 53,
+      "image": "/images/fleet/miami/53-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "53' Galeon",
+      "slug": "53-galeon",
+      "lengthFt": 53,
+      "image": "/images/fleet/miami/53-galeon.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "53' Galeon",
+      "slug": "53-galeon-2",
+      "lengthFt": 53,
+      "image": "/images/fleet/miami/53-galeon-2.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "53' Galeon RL",
+      "slug": "53-galeon-rl",
+      "lengthFt": 53,
+      "image": "/images/fleet/miami/53-galeon-rl.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55 Azimutt",
+      "slug": "55-azimutt",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-azimutt.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55' Azimut",
+      "slug": "55-azimut",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55' Azimut CG",
+      "slug": "55-azimut-cg",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-azimut-cg.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55' Azimut NM",
+      "slug": "55-azimut-nm",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-azimut-nm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55' Fairline",
+      "slug": "55-fairline",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-fairline.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55' Technomar",
+      "slug": "55-technomar",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-technomar.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "55 VanDutch",
+      "slug": "55-vandutch",
+      "lengthFt": 55,
+      "image": "/images/fleet/miami/55-vandutch.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "58' Anvera",
+      "slug": "58-anvera",
+      "lengthFt": 58,
+      "image": "/images/fleet/miami/58-anvera.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "58' SeaRay",
+      "slug": "58-searay",
+      "lengthFt": 58,
+      "image": "/images/fleet/miami/58-searay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "58' Searay MR",
+      "slug": "58-searay-mr",
+      "lengthFt": 58,
+      "image": "/images/fleet/miami/58-searay-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Absolute",
+      "slug": "60-absolute",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-absolute.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Azimut I",
+      "slug": "60-azimut-i",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-azimut-i.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Azimut II",
+      "slug": "60-azimut-ii",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-azimut-ii.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Azimut Bay",
+      "slug": "60-azimut-bay",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-azimut-bay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Azimut F",
+      "slug": "60-azimut-f",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-azimut-f.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Azimut R",
+      "slug": "60-azimut-r",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-azimut-r.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Leopard",
+      "slug": "60-leopard",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-leopard.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Midnight Express",
+      "slug": "60-midnight-express",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-midnight-express.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Searay L",
+      "slug": "60-searay-l",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-searay-l.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Searay V",
+      "slug": "60-searay-v",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-searay-v.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Searay Vice",
+      "slug": "60-searay-vice",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-searay-vice.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Sunreef",
+      "slug": "60-sunreef",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-sunreef.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "60' Viking",
+      "slug": "60-viking",
+      "lengthFt": 60,
+      "image": "/images/fleet/miami/60-viking.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Azimut",
+      "slug": "62-azimut",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Azimut AMO",
+      "slug": "62-azimut-amo",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-azimut-amo.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62 Azimut FLY",
+      "slug": "62-azimut-fly",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Azimut MR",
+      "slug": "62-azimut-mr",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-azimut-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Pearl",
+      "slug": "62-pearl",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-pearl.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Pershing",
+      "slug": "62-pershing",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-pershing.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Pershing RL",
+      "slug": "62-pershing-rl",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-pershing-rl.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "62' Prestige",
+      "slug": "62-prestige",
+      "lengthFt": 62,
+      "image": "/images/fleet/miami/62-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "63' Dyna",
+      "slug": "63-dyna",
+      "lengthFt": 63,
+      "image": "/images/fleet/miami/63-dyna.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "63' Marquis",
+      "slug": "63-marquis",
+      "lengthFt": 63,
+      "image": "/images/fleet/miami/63-marquis.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "64' Azimut D",
+      "slug": "64-azimut-d",
+      "lengthFt": 64,
+      "image": "/images/fleet/miami/64-azimut-d.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "64' Pershing",
+      "slug": "64-pershing",
+      "lengthFt": 64,
+      "image": "/images/fleet/miami/64-pershing.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "64' Pershing W",
+      "slug": "64-pershing-w",
+      "lengthFt": 64,
+      "image": "/images/fleet/miami/64-pershing-w.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "65' Fairline",
+      "slug": "65-fairline",
+      "lengthFt": 65,
+      "image": "/images/fleet/miami/65-fairline.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "65' NuMarine",
+      "slug": "65-numarine",
+      "lengthFt": 65,
+      "image": "/images/fleet/miami/65-numarine.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "65' Neptunes",
+      "slug": "65-neptunes",
+      "lengthFt": 65,
+      "image": "/images/fleet/miami/65-neptunes.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "65' Prestige",
+      "slug": "65-prestige",
+      "lengthFt": 65,
+      "image": "/images/fleet/miami/65-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "65' Princess V",
+      "slug": "65-princess-v",
+      "lengthFt": 65,
+      "image": "/images/fleet/miami/65-princess-v.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Astondoa",
+      "slug": "66-astondoa",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-astondoa.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66 Azimut",
+      "slug": "66-azimut",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Azimut Fly",
+      "slug": "66-azimut-fly",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Azimut Fly MBM",
+      "slug": "66-azimut-fly-mbm",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-azimut-fly-mbm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Azimut MBM",
+      "slug": "66-azimut-mbm",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-azimut-mbm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Azimut NM",
+      "slug": "66-azimut-nm",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-azimut-nm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "66' Marquis",
+      "slug": "66-marquis",
+      "lengthFt": 66,
+      "image": "/images/fleet/miami/66-marquis.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Azimut",
+      "slug": "68-azimut",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Azimut Fly",
+      "slug": "68-azimut-fly",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Azimut P",
+      "slug": "68-azimut-p",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-azimut-p.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Galeon 2025",
+      "slug": "68-galeon-2025",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-galeon-2025.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Galeon DTM",
+      "slug": "68-galeon-dtm",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-galeon-dtm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Galeon FLY",
+      "slug": "68-galeon-fly",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-galeon-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Prestige",
+      "slug": "68-prestige",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Sunreef",
+      "slug": "68-sunreef",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-sunreef.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Sunreef II",
+      "slug": "68-sunreef-ii",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-sunreef-ii.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "68' Sunseeker MW",
+      "slug": "68-sunseeker-mw",
+      "lengthFt": 68,
+      "image": "/images/fleet/miami/68-sunseeker-mw.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Azimut",
+      "slug": "70-azimut",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Azimut Bay",
+      "slug": "70-azimut-bay",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-azimut-bay.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Azimut DT",
+      "slug": "70-azimut-dt",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-azimut-dt.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Hatteras Sportfish",
+      "slug": "70-hatteras-sportfish",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-hatteras-sportfish.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Sunreef 2026",
+      "slug": "70-sunreef-2026",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-sunreef-2026.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Sunseeker",
+      "slug": "70-sunseeker",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-sunseeker.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "70' Sunseeker",
+      "slug": "70-sunseeker-2",
+      "lengthFt": 70,
+      "image": "/images/fleet/miami/70-sunseeker-2.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Azimut",
+      "slug": "72-azimut",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Azimut Fly",
+      "slug": "72-azimut-fly",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Azimut S7",
+      "slug": "72-azimut-s7",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-azimut-s7.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Azimut S 7",
+      "slug": "72-azimut-s-7",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-azimut-s-7.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Ferretti",
+      "slug": "72-ferretti",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-ferretti.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "72' Uniesse",
+      "slug": "72-uniesse",
+      "lengthFt": 72,
+      "image": "/images/fleet/miami/72-uniesse.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "74' Princess",
+      "slug": "74-princess",
+      "lengthFt": 74,
+      "image": "/images/fleet/miami/74-princess.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "74' Sunseeker",
+      "slug": "74-sunseeker",
+      "lengthFt": 74,
+      "image": "/images/fleet/miami/74-sunseeker.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "74' Sunseeker NBV",
+      "slug": "74-sunseeker-nbv",
+      "lengthFt": 74,
+      "image": "/images/fleet/miami/74-sunseeker-nbv.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Aicon",
+      "slug": "75-aicon",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-aicon.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Lazzara",
+      "slug": "75-lazzara",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-lazzara.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Mangusta",
+      "slug": "75-mangusta",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-mangusta.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Prestige",
+      "slug": "75-prestige",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-prestige.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Sunseeker II",
+      "slug": "75-sunseeker-ii",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-sunseeker-ii.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Sunseeker MBM",
+      "slug": "75-sunseeker-mbm",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-sunseeker-mbm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Sunseeker MR",
+      "slug": "75-sunseeker-mr",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-sunseeker-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "75' Sunseekr",
+      "slug": "75-sunseekr",
+      "lengthFt": 75,
+      "image": "/images/fleet/miami/75-sunseekr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "76' Riva",
+      "slug": "76-riva",
+      "lengthFt": 76,
+      "image": "/images/fleet/miami/76-riva.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "77' Azimut S",
+      "slug": "77-azimut-s",
+      "lengthFt": 77,
+      "image": "/images/fleet/miami/77-azimut-s.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Azimut",
+      "slug": "80-azimut",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Azimut S8",
+      "slug": "80-azimut-s8",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-azimut-s8.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Baia Panther",
+      "slug": "80-baia-panther",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-baia-panther.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Ferretti",
+      "slug": "80-ferretti",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-ferretti.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' NuMarine",
+      "slug": "80-numarine",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-numarine.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Pershing GTX80",
+      "slug": "80-pershing-gtx80",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-pershing-gtx80.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Sunseeker",
+      "slug": "80-sunseeker",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-sunseeker.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "80' Sunseeker NM",
+      "slug": "80-sunseeker-nm",
+      "lengthFt": 80,
+      "image": "/images/fleet/miami/80-sunseeker-nm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "82' Pershing",
+      "slug": "82-pershing",
+      "lengthFt": 82,
+      "image": "/images/fleet/miami/82-pershing.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "82' Pearl",
+      "slug": "82-pearl",
+      "lengthFt": 82,
+      "image": "/images/fleet/miami/82-pearl.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "84' Azimut",
+      "slug": "84-azimut",
+      "lengthFt": 84,
+      "image": "/images/fleet/miami/84-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "84' Azimut Azure",
+      "slug": "84-azimut-azure",
+      "lengthFt": 84,
+      "image": "/images/fleet/miami/84-azimut-azure.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "84' Azimut DT",
+      "slug": "84-azimut-dt",
+      "lengthFt": 84,
+      "image": "/images/fleet/miami/84-azimut-dt.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "84' Azimut Sky",
+      "slug": "84-azimut-sky",
+      "lengthFt": 84,
+      "image": "/images/fleet/miami/84-azimut-sky.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "84' Ferretti",
+      "slug": "84-ferretti",
+      "lengthFt": 84,
+      "image": "/images/fleet/miami/84-ferretti.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "85' Azimut",
+      "slug": "85-azimut",
+      "lengthFt": 85,
+      "image": "/images/fleet/miami/85-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "85' Azimut MR",
+      "slug": "85-azimut-mr",
+      "lengthFt": 85,
+      "image": "/images/fleet/miami/85-azimut-mr.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "85' Princess",
+      "slug": "85-princess",
+      "lengthFt": 85,
+      "image": "/images/fleet/miami/85-princess.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "85' Sunseeker",
+      "slug": "85-sunseeker",
+      "lengthFt": 85,
+      "image": "/images/fleet/miami/85-sunseeker.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "85' Sunseeker AQ",
+      "slug": "85-sunseeker-aq",
+      "lengthFt": 85,
+      "image": "/images/fleet/miami/85-sunseeker-aq.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "86' Azimut NBV",
+      "slug": "86-azimut-nbv",
+      "lengthFt": 86,
+      "image": "/images/fleet/miami/86-azimut-nbv.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "87' Ferretti",
+      "slug": "87-ferretti",
+      "lengthFt": 87,
+      "image": "/images/fleet/miami/87-ferretti.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' Azimut",
+      "slug": "88-azimut",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-azimut.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88’ Azimut Fly",
+      "slug": "88-azimut-fly",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-azimut-fly.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' Azimut MM",
+      "slug": "88-azimut-mm",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-azimut-mm.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' Princess",
+      "slug": "88-princess",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-princess.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' SanLorenzo SX",
+      "slug": "88-sanlorenzo-sx",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-sanlorenzo-sx.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' Sirena",
+      "slug": "88-sirena",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-sirena.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "88' Sunseeker",
+      "slug": "88-sunseeker",
+      "lengthFt": 88,
+      "image": "/images/fleet/miami/88-sunseeker.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "90' Leopard",
+      "slug": "90-leopard",
+      "lengthFt": 90,
+      "image": "/images/fleet/miami/90-leopard.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "90' Ocean Alexander",
+      "slug": "90-ocean-alexander",
+      "lengthFt": 90,
+      "image": "/images/fleet/miami/90-ocean-alexander.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "90' Pershing",
+      "slug": "90-pershing",
+      "lengthFt": 90,
+      "image": "/images/fleet/miami/90-pershing.jpg"
+    },
+    {
+      "city": "Miami",
+      "citySlug": "miami",
+      "name": "90' Sunseeker",
+      "slug": "90-sunseeker",
+      "lengthFt": 90,
+      "image": "/images/fleet/miami/90-sunseeker.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "53' Leopard",
+      "slug": "53-leopard",
+      "lengthFt": 53,
+      "image": "/images/fleet/bahamas/53-leopard.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "65' Searay Nassau",
+      "slug": "65-searay-nassau",
+      "lengthFt": 65,
+      "image": "/images/fleet/bahamas/65-searay-nassau.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "68' Sunseeker",
+      "slug": "68-sunseeker",
+      "lengthFt": 68,
+      "image": "/images/fleet/bahamas/68-sunseeker.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "76' Sunseeker Nassau",
+      "slug": "76-sunseeker-nassau",
+      "lengthFt": 76,
+      "image": "/images/fleet/bahamas/76-sunseeker-nassau.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "77' Azimut S",
+      "slug": "77-azimut-s",
+      "lengthFt": 77,
+      "image": "/images/fleet/bahamas/77-azimut-s.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "92' Lazzara",
+      "slug": "92-lazzara",
+      "lengthFt": 92,
+      "image": "/images/fleet/bahamas/92-lazzara.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "108' Mangusta",
+      "slug": "108-mangusta",
+      "lengthFt": 108,
+      "image": "/images/fleet/bahamas/108-mangusta.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "112' SanLorenzo",
+      "slug": "112-sanlorenzo",
+      "lengthFt": 112,
+      "image": "/images/fleet/bahamas/112-sanlorenzo.jpg"
+    },
+    {
+      "city": "Bahamas",
+      "citySlug": "bahamas",
+      "name": "100' Riva STW",
+      "slug": "100-riva-stw",
+      "lengthFt": 100,
+      "image": "/images/fleet/bahamas/100-riva-stw.jpg"
+    },
+    {
+      "city": "Cancun, MX.",
+      "citySlug": "cancun-mx",
+      "name": "51' Leopard",
+      "slug": "51-leopard",
+      "lengthFt": 51,
+      "image": "/images/fleet/cancun-mx/51-leopard.jpg"
+    },
+    {
+      "city": "Cancun, MX.",
+      "citySlug": "cancun-mx",
+      "name": "64' Sunseeker",
+      "slug": "64-sunseeker",
+      "lengthFt": 64,
+      "image": "/images/fleet/cancun-mx/64-sunseeker.jpg"
+    },
+    {
+      "city": "Cancun, MX.",
+      "citySlug": "cancun-mx",
+      "name": "80' Azimutt",
+      "slug": "80-azimutt",
+      "lengthFt": 80,
+      "image": "/images/fleet/cancun-mx/80-azimutt.jpg"
+    },
+    {
+      "city": "Cancun, MX.",
+      "citySlug": "cancun-mx",
+      "name": "96' Sanlorenzo",
+      "slug": "96-sanlorenzo",
+      "lengthFt": 96,
+      "image": "/images/fleet/cancun-mx/96-sanlorenzo.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "35' Ponton",
+      "slug": "35-ponton",
+      "lengthFt": 35,
+      "image": "/images/fleet/event-party-yachts/35-ponton.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "45' Pontoon",
+      "slug": "45-pontoon",
+      "lengthFt": 45,
+      "image": "/images/fleet/event-party-yachts/45-pontoon.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "50' Pontoon",
+      "slug": "50-pontoon",
+      "lengthFt": 50,
+      "image": "/images/fleet/event-party-yachts/50-pontoon.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "80' Hatteras",
+      "slug": "80-hatteras",
+      "lengthFt": 80,
+      "image": "/images/fleet/event-party-yachts/80-hatteras.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "100' Celebration",
+      "slug": "100-celebration",
+      "lengthFt": 100,
+      "image": "/images/fleet/event-party-yachts/100-celebration.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "100' Customline",
+      "slug": "100-customline",
+      "lengthFt": 100,
+      "image": "/images/fleet/event-party-yachts/100-customline.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "100' Custom-line",
+      "slug": "100-custom-line",
+      "lengthFt": 100,
+      "image": "/images/fleet/event-party-yachts/100-custom-line.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "100' CustomLine MS",
+      "slug": "100-customline-ms",
+      "lengthFt": 100,
+      "image": "/images/fleet/event-party-yachts/100-customline-ms.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "130' Venetian Lady",
+      "slug": "130-venetian-lady",
+      "lengthFt": 130,
+      "image": "/images/fleet/event-party-yachts/130-venetian-lady.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Biscayne Lady",
+      "slug": "biscayne-lady",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/biscayne-lady.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Casa Mar",
+      "slug": "casa-mar",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/casa-mar.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Miami Lady",
+      "slug": "miami-lady",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/miami-lady.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Midnight Sun",
+      "slug": "midnight-sun",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/midnight-sun.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Solstice",
+      "slug": "solstice",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/solstice.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "Venetian Lady",
+      "slug": "venetian-lady",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/venetian-lady.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "SEAFAIR",
+      "slug": "seafair",
+      "lengthFt": 0,
+      "image": "/images/fleet/event-party-yachts/seafair.jpg"
+    },
+    {
+      "city": "Event & Party Yachts",
+      "citySlug": "event-party-yachts",
+      "name": "50' Pontoon R",
+      "slug": "50-pontoon-r",
+      "lengthFt": 50,
+      "image": "/images/fleet/event-party-yachts/50-pontoon-r.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "27' Fourwinns",
+      "slug": "27-fourwinns",
+      "lengthFt": 27,
+      "image": "/images/fleet/fort-lauderdale/27-fourwinns.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "38' Axopar FT",
+      "slug": "38-axopar-ft",
+      "lengthFt": 38,
+      "image": "/images/fleet/fort-lauderdale/38-axopar-ft.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "42' Azimut FT",
+      "slug": "42-azimut-ft",
+      "lengthFt": 42,
+      "image": "/images/fleet/fort-lauderdale/42-azimut-ft.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "42' Fjord",
+      "slug": "42-fjord",
+      "lengthFt": 42,
+      "image": "/images/fleet/fort-lauderdale/42-fjord.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "50' Montecarlo",
+      "slug": "50-montecarlo",
+      "lengthFt": 50,
+      "image": "/images/fleet/fort-lauderdale/50-montecarlo.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "50' Pardo",
+      "slug": "50-pardo",
+      "lengthFt": 50,
+      "image": "/images/fleet/fort-lauderdale/50-pardo.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "55' Azimut",
+      "slug": "55-azimut",
+      "lengthFt": 55,
+      "image": "/images/fleet/fort-lauderdale/55-azimut.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "60' Azimut",
+      "slug": "60-azimut",
+      "lengthFt": 60,
+      "image": "/images/fleet/fort-lauderdale/60-azimut.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "64' Azimut",
+      "slug": "64-azimut",
+      "lengthFt": 64,
+      "image": "/images/fleet/fort-lauderdale/64-azimut.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "68' Astondoa",
+      "slug": "68-astondoa",
+      "lengthFt": 68,
+      "image": "/images/fleet/fort-lauderdale/68-astondoa.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "68' Fairline",
+      "slug": "68-fairline",
+      "lengthFt": 68,
+      "image": "/images/fleet/fort-lauderdale/68-fairline.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "70' Azimut H",
+      "slug": "70-azimut-h",
+      "lengthFt": 70,
+      "image": "/images/fleet/fort-lauderdale/70-azimut-h.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "70' Pershing",
+      "slug": "70-pershing",
+      "lengthFt": 70,
+      "image": "/images/fleet/fort-lauderdale/70-pershing.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "72' Princess",
+      "slug": "72-princess",
+      "lengthFt": 72,
+      "image": "/images/fleet/fort-lauderdale/72-princess.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "75' Prestige",
+      "slug": "75-prestige",
+      "lengthFt": 75,
+      "image": "/images/fleet/fort-lauderdale/75-prestige.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "76' Sanlorenzo",
+      "slug": "76-sanlorenzo",
+      "lengthFt": 76,
+      "image": "/images/fleet/fort-lauderdale/76-sanlorenzo.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "78' Azimut",
+      "slug": "78-azimut",
+      "lengthFt": 78,
+      "image": "/images/fleet/fort-lauderdale/78-azimut.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "78' Ferretti",
+      "slug": "78-ferretti",
+      "lengthFt": 78,
+      "image": "/images/fleet/fort-lauderdale/78-ferretti.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "94' Lazzara IV",
+      "slug": "94-lazzara-iv",
+      "lengthFt": 94,
+      "image": "/images/fleet/fort-lauderdale/94-lazzara-iv.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "95' Sunseeker",
+      "slug": "95-sunseeker",
+      "lengthFt": 95,
+      "image": "/images/fleet/fort-lauderdale/95-sunseeker.jpg"
+    },
+    {
+      "city": "Fort Lauderdale",
+      "citySlug": "fort-lauderdale",
+      "name": "112' Lazzara",
+      "slug": "112-lazzara",
+      "lengthFt": 112,
+      "image": "/images/fleet/fort-lauderdale/112-lazzara.jpg"
+    },
+    {
+      "city": "Naples",
+      "citySlug": "naples",
+      "name": "72' Galeon",
+      "slug": "72-galeon",
+      "lengthFt": 72,
+      "image": "/images/fleet/naples/72-galeon.jpg"
+    },
+    {
+      "city": "New York",
+      "citySlug": "new-york",
+      "name": "62' Sea Ray",
+      "slug": "62-sea-ray",
+      "lengthFt": 62,
+      "image": "/images/fleet/new-york/62-sea-ray.jpg"
+    },
+    {
+      "city": "New York",
+      "citySlug": "new-york",
+      "name": "65' Galeon NY",
+      "slug": "65-galeon-ny",
+      "lengthFt": 65,
+      "image": "/images/fleet/new-york/65-galeon-ny.jpg"
+    },
+    {
+      "city": "New York",
+      "citySlug": "new-york",
+      "name": "65' Sunseeker",
+      "slug": "65-sunseeker",
+      "lengthFt": 65,
+      "image": "/images/fleet/new-york/65-sunseeker.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "58' Vanquish",
+      "slug": "58-vanquish",
+      "lengthFt": 58,
+      "image": "/images/fleet/palm-beach/58-vanquish.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "68' Galeon",
+      "slug": "68-galeon",
+      "lengthFt": 68,
+      "image": "/images/fleet/palm-beach/68-galeon.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "75' Lazzara",
+      "slug": "75-lazzara",
+      "lengthFt": 75,
+      "image": "/images/fleet/palm-beach/75-lazzara.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "75' NuMarine",
+      "slug": "75-numarine",
+      "lengthFt": 75,
+      "image": "/images/fleet/palm-beach/75-numarine.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "75' Prestige",
+      "slug": "75-prestige",
+      "lengthFt": 75,
+      "image": "/images/fleet/palm-beach/75-prestige.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "90' Horizon",
+      "slug": "90-horizon",
+      "lengthFt": 90,
+      "image": "/images/fleet/palm-beach/90-horizon.jpg"
+    },
+    {
+      "city": "Palm Beach",
+      "citySlug": "palm-beach",
+      "name": "72' Pershing",
+      "slug": "72-pershing",
+      "lengthFt": 72,
+      "image": "/images/fleet/palm-beach/72-pershing.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "50' Prestige",
+      "slug": "50-prestige",
+      "lengthFt": 50,
+      "image": "/images/fleet/punta-cana-dr/50-prestige.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "54' Searay",
+      "slug": "54-searay",
+      "lengthFt": 54,
+      "image": "/images/fleet/punta-cana-dr/54-searay.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "60' Aicon",
+      "slug": "60-aicon",
+      "lengthFt": 60,
+      "image": "/images/fleet/punta-cana-dr/60-aicon.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "70’ Azimut Casa de Campo",
+      "slug": "70-azimut-casa-de-campo",
+      "lengthFt": 70,
+      "image": "/images/fleet/punta-cana-dr/70-azimut-casa-de-campo.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "86' Azimut Casa de Campo",
+      "slug": "86-azimut-casa-de-campo",
+      "lengthFt": 86,
+      "image": "/images/fleet/punta-cana-dr/86-azimut-casa-de-campo.jpg"
+    },
+    {
+      "city": "Punta Cana, D.R",
+      "citySlug": "punta-cana-dr",
+      "name": "103' Maiora - Casa de Campo",
+      "slug": "103-maiora-casa-de-campo",
+      "lengthFt": 103,
+      "image": "/images/fleet/punta-cana-dr/103-maiora-casa-de-campo.jpg"
+    },
+    {
+      "city": "St Barths",
+      "citySlug": "st-barths",
+      "name": "65' Fairline",
+      "slug": "65-fairline",
+      "lengthFt": 65,
+      "image": "/images/fleet/st-barths/65-fairline.jpg"
+    },
+    {
+      "city": "St Barths",
+      "citySlug": "st-barths",
+      "name": "140' AB",
+      "slug": "140-ab",
+      "lengthFt": 140,
+      "image": "/images/fleet/st-barths/140-ab.jpg"
+    },
+    {
+      "city": "Tampa",
+      "citySlug": "tampa",
+      "name": "94' Lazzara",
+      "slug": "94-lazzara",
+      "lengthFt": 94,
+      "image": "/images/fleet/tampa/94-lazzara.jpg"
+    },
+    {
+      "city": "Turks and Caicos",
+      "citySlug": "turks-and-caicos",
+      "name": "65' Fairline",
+      "slug": "65-fairline",
+      "lengthFt": 65,
+      "image": "/images/fleet/turks-and-caicos/65-fairline.jpg"
+    }
+  ]
+}

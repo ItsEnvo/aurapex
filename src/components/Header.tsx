@@ -48,32 +48,38 @@ const Header: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6 ml-8">
             <Link 
               to="/cars"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Cars
             </Link>
-            <Link 
+            <Link
               to="/yachts"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Yachts
             </Link>
-            <Link 
+            <Link
+              to="/destinations"
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Destinations
+            </Link>
+            <Link
               to="/villas"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Villas
             </Link>
-            <Link 
+            <Link
               to="/jet-skis"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Jet Skis
             </Link>
-            <Link 
+            <Link
               to="/experiences"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
@@ -124,14 +130,21 @@ const Header: React.FC = () => {
             >
               Cars
             </Link>
-            <Link 
+            <Link
               to="/yachts"
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Yachts
             </Link>
-            <Link 
+            <Link
+              to="/destinations"
+              onClick={() => setIsMenuOpen(false)}
+              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              Destinations
+            </Link>
+            <Link
               to="/villas"
               onClick={() => setIsMenuOpen(false)}
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"

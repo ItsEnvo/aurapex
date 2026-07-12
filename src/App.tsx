@@ -28,6 +28,9 @@ import VillaDetail from './pages/VillaDetail'
 import JetSkiDetail from './pages/JetSkiDetail'
 import ExperiencesPage from './pages/ExperiencesPage'
 import YachtLandingPage from './pages/YachtLandingPage'
+import DestinationsPage from './pages/DestinationsPage'
+import DestinationCity from './pages/DestinationCity'
+import FleetYachtDetail from './pages/FleetYachtDetail'
 
 // Homepage component
 const HomePage = () => (
@@ -77,6 +80,9 @@ function App() {
         <Route path="/cars/:slug" element={<DefaultLayout><CarDetail /></DefaultLayout>} />
         <Route path="/yachts" element={<DefaultLayout><YachtsPage /></DefaultLayout>} />
         <Route path="/yachts/:slug" element={<DefaultLayout><YachtDetail /></DefaultLayout>} />
+        <Route path="/destinations" element={<DefaultLayout><DestinationsPage /></DefaultLayout>} />
+        <Route path="/destinations/:citySlug" element={<DefaultLayout><DestinationCity /></DefaultLayout>} />
+        <Route path="/destinations/:citySlug/:yachtSlug" element={<DefaultLayout><FleetYachtDetail /></DefaultLayout>} />
         <Route path="/yacht-charters" element={<YachtLandingPage />} />
         <Route path="/villas" element={<DefaultLayout><VillasPage /></DefaultLayout>} />
         <Route path="/villas/:slug" element={<DefaultLayout><VillaDetail /></DefaultLayout>} />
