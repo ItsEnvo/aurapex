@@ -25,7 +25,7 @@ const Fleet: React.FC = () => {
   // Convert inventory to display format
   const vehicles: DisplayVehicle[] = [
     // Featured cars
-    ...featured.cars.slice(0, 3).map(car => ({
+    ...featured.cars.slice(0, 6).map(car => ({
       id: car.id,
       name: car.title,
       category: 'cars' as const,
@@ -44,7 +44,7 @@ const Fleet: React.FC = () => {
     })),
     
     // Featured yachts
-    ...featured.yachts.slice(0, 3).map(yacht => ({
+    ...featured.yachts.slice(0, 6).map(yacht => ({
       id: yacht.id,
       name: yacht.title,
       category: 'yachts' as const,
@@ -63,7 +63,7 @@ const Fleet: React.FC = () => {
     })),
     
     // Featured villas
-    ...featured.villas.slice(0, 3).map(villa => ({
+    ...featured.villas.slice(0, 6).map(villa => ({
       id: villa.id,
       name: villa.title,
       category: 'villas' as const,
@@ -82,7 +82,7 @@ const Fleet: React.FC = () => {
     })),
     
     // Featured jet skis
-    ...featured.jetSkis.slice(0, 3).map(jetski => ({
+    ...featured.jetSkis.slice(0, 6).map(jetski => ({
       id: jetski.id,
       name: jetski.title,
       category: 'jetSkis' as const,

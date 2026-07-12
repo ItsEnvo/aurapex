@@ -366,12 +366,41 @@ export const findItemBySlug = (category: string, slug: string) => {
 
 // Get featured items (most premium ones)
 export const getFeaturedItems = () => {
-  // Sort by price and take top items from each category
-  const featuredCars = [...cars].sort((a, b) => b.dailyPrice - a.dailyPrice).slice(0, 4)
-  const featuredYachts = [...yachts].sort((a, b) => b.startingPrice - a.startingPrice).slice(0, 4)
-  const featuredVillas = [...villas].sort((a, b) => b.nightlyPrice - a.nightlyPrice).slice(0, 4)
-  const featuredJetSkis = [...jetSkis].sort((a, b) => b.hourlyPrice - a.hourlyPrice).slice(0, 4)
-  
+  const FEATURED_COUNT = 6
+
+  // Most inventory has no price yet, so rank by "impressiveness" with price as
+  // a first tiebreaker: prestige brands for cars, biggest boats/villas otherwise.
+  const carRank = (title: string): number => {
+    const t = title.toLowerCase()
+    if (t.includes('rolls')) return 100
+    if (t.includes('lamborghini')) return 92
+    if (t.includes('brabus') || t.includes('g63')) return 86
+    if (t.includes('maybach')) return 84
+    if (t.includes('gt3rs')) return 80
+    if (t.includes('911')) return 70
+    if (t.includes('m4')) return 60
+    if (t.includes('r8')) return 55
+    if (t.includes('corvette')) return 45
+    return 30
+  }
+  const lengthOf = (title: string): number => {
+    const m = title.match(/(\d{2,3})/)
+    return m ? parseInt(m[1], 10) : 0
+  }
+
+  const featuredCars = [...cars]
+    .sort((a, b) => (b.dailyPrice - a.dailyPrice) || (carRank(b.title) - carRank(a.title)))
+    .slice(0, FEATURED_COUNT)
+  const featuredYachts = [...yachts]
+    .sort((a, b) => (b.startingPrice - a.startingPrice) || (lengthOf(b.title) - lengthOf(a.title)))
+    .slice(0, FEATURED_COUNT)
+  const featuredVillas = [...villas]
+    .sort((a, b) => (b.nightlyPrice - a.nightlyPrice) || (b.sleeps - a.sleeps) || (b.bedrooms - a.bedrooms))
+    .slice(0, FEATURED_COUNT)
+  const featuredJetSkis = [...jetSkis]
+    .sort((a, b) => b.hourlyPrice - a.hourlyPrice)
+    .slice(0, FEATURED_COUNT)
+
   return {
     cars: featuredCars,
     yachts: featuredYachts,
