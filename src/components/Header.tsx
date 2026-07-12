@@ -62,12 +62,6 @@ const Header: React.FC = () => {
               Yachts
             </Link>
             <Link
-              to="/destinations"
-              className="text-white hover:text-luxury-gold transition-colors duration-300"
-            >
-              Destinations
-            </Link>
-            <Link
               to="/villas"
               className="text-white hover:text-luxury-gold transition-colors duration-300"
             >
@@ -136,13 +130,6 @@ const Header: React.FC = () => {
               className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
             >
               Yachts
-            </Link>
-            <Link
-              to="/destinations"
-              onClick={() => setIsMenuOpen(false)}
-              className="block w-full text-left text-white hover:text-luxury-gold transition-colors duration-300"
-            >
-              Destinations
             </Link>
             <Link
               to="/villas"

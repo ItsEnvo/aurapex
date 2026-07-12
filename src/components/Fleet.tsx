@@ -230,7 +230,9 @@ const Fleet: React.FC = () => {
 
                 {/* View Details Button */}
                 <Link
-                  to={`${getCategoryRoute(vehicle.category)}/${vehicle.slug}`}
+                  to={vehicle.category === 'yachts'
+                    ? `/yachts/detail/${vehicle.slug}`
+                    : `${getCategoryRoute(vehicle.category)}/${vehicle.slug}`}
                   className="w-full luxury-button flex items-center justify-center space-x-2"
                 >
                   <span>View Details</span>

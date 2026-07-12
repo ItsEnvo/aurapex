@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 
 // Scroll to top on every route change
@@ -78,11 +78,14 @@ function App() {
         <Route path="/" element={<DefaultLayout><HomePage /></DefaultLayout>} />
         <Route path="/cars" element={<DefaultLayout><CarsPage /></DefaultLayout>} />
         <Route path="/cars/:slug" element={<DefaultLayout><CarDetail /></DefaultLayout>} />
-        <Route path="/yachts" element={<DefaultLayout><YachtsPage /></DefaultLayout>} />
-        <Route path="/yachts/:slug" element={<DefaultLayout><YachtDetail /></DefaultLayout>} />
-        <Route path="/destinations" element={<DefaultLayout><DestinationsPage /></DefaultLayout>} />
-        <Route path="/destinations/:citySlug" element={<DefaultLayout><DestinationCity /></DefaultLayout>} />
-        <Route path="/destinations/:citySlug/:yachtSlug" element={<DefaultLayout><FleetYachtDetail /></DefaultLayout>} />
+        {/* Unified yachts: browse by city */}
+        <Route path="/yachts" element={<DefaultLayout><DestinationsPage /></DefaultLayout>} />
+        <Route path="/yachts/detail/:slug" element={<DefaultLayout><YachtDetail /></DefaultLayout>} />
+        <Route path="/yachts/:citySlug" element={<DefaultLayout><DestinationCity /></DefaultLayout>} />
+        <Route path="/yachts/:citySlug/:yachtSlug" element={<DefaultLayout><FleetYachtDetail /></DefaultLayout>} />
+        {/* Legacy redirects */}
+        <Route path="/destinations" element={<Navigate to="/yachts" replace />} />
+        <Route path="/destinations/*" element={<Navigate to="/yachts" replace />} />
         <Route path="/yacht-charters" element={<YachtLandingPage />} />
         <Route path="/villas" element={<DefaultLayout><VillasPage /></DefaultLayout>} />
         <Route path="/villas/:slug" element={<DefaultLayout><VillaDetail /></DefaultLayout>} />

@@ -5,11 +5,11 @@ import { findFleetYacht, findFleetCity } from '../data/fleet'
 
 const FleetYachtDetail: React.FC = () => {
   const { citySlug, yachtSlug } = useParams<{ citySlug: string; yachtSlug: string }>()
-  if (!citySlug || !yachtSlug) return <Navigate to="/destinations" replace />
+  if (!citySlug || !yachtSlug) return <Navigate to="/yachts" replace />
 
   const yacht = findFleetYacht(citySlug, yachtSlug)
   const city = findFleetCity(citySlug)
-  if (!yacht || !city) return <Navigate to="/destinations" replace />
+  if (!yacht || !city) return <Navigate to="/yachts" replace />
 
   const handleInquire = () => {
     const msg = encodeURIComponent(
@@ -24,7 +24,7 @@ const FleetYachtDetail: React.FC = () => {
       <section className="pt-24 pb-6 bg-luxury-charcoal">
         <div className="container-max section-padding">
           <Link
-            to={`/destinations/${city.slug}`}
+            to={`/yachts/${city.slug}`}
             className="inline-flex items-center space-x-2 text-luxury-gold hover:text-gold-400 transition-colors"
           >
             <ArrowLeft size={20} />

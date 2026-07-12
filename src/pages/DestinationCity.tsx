@@ -5,10 +5,10 @@ import { findFleetCity, yachtsInCity } from '../data/fleet'
 
 const DestinationCity: React.FC = () => {
   const { citySlug } = useParams<{ citySlug: string }>()
-  if (!citySlug) return <Navigate to="/destinations" replace />
+  if (!citySlug) return <Navigate to="/yachts" replace />
 
   const city = findFleetCity(citySlug)
-  if (!city) return <Navigate to="/destinations" replace />
+  if (!city) return <Navigate to="/yachts" replace />
 
   const yachts = yachtsInCity(citySlug)
 
@@ -18,7 +18,7 @@ const DestinationCity: React.FC = () => {
       <section className="pt-24 pb-6 bg-luxury-charcoal">
         <div className="container-max section-padding">
           <Link
-            to="/destinations"
+            to="/yachts"
             className="inline-flex items-center space-x-2 text-luxury-gold hover:text-gold-400 transition-colors"
           >
             <ArrowLeft size={20} />
@@ -46,8 +46,8 @@ const DestinationCity: React.FC = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {yachts.map((y) => (
               <Link
-                key={y.slug}
-                to={`/destinations/${city.slug}/${y.slug}`}
+                key={`${y.kind}-${y.slug}`}
+                to={y.detailPath}
                 className="group luxury-card !p-0 overflow-hidden rounded-xl"
               >
                 <div className="relative h-52 overflow-hidden">

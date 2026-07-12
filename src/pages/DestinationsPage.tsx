@@ -26,7 +26,7 @@ const DestinationsPage: React.FC = () => {
             {fleetCities.map((city) => (
               <Link
                 key={city.slug}
-                to={`/destinations/${city.slug}`}
+                to={`/yachts/${city.slug}`}
                 className="group relative h-72 rounded-xl overflow-hidden luxury-card !p-0"
               >
                 {city.cover && (
