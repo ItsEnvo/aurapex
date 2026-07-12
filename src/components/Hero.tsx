@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   }
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-start md:justify-center overflow-hidden pt-28 md:pt-24 pb-16">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-hero-gradient"></div>
       

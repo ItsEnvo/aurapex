@@ -29,7 +29,9 @@ const Header: React.FC = () => {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-luxury-black/95 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+      isScrolled || isMenuOpen
+        ? 'bg-luxury-black/90 backdrop-blur-xl border-b border-luxury-gold/20 shadow-lg shadow-black/40'
+        : 'bg-gradient-to-b from-black/80 via-black/50 to-transparent backdrop-blur-md border-b border-white/5'
     }`}>
       <div className="container-max section-padding">
         <div className="flex items-center justify-between py-4">
@@ -169,7 +171,7 @@ const Header: React.FC = () => {
             >
               Contact
             </button>
-            <a href="tel:+1-561-777-4360" className="flex items-center space-x-2 luxury-button w-fit">
+            <a href="tel:+1-561-777-4360" className="flex items-center justify-center space-x-2 luxury-button w-full mt-2">
               <Phone size={16} />
               <span>(561) 777-4360</span>
             </a>
