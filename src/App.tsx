@@ -23,6 +23,7 @@ import YachtsPage from './pages/YachtsPage'
 import VillasPage from './pages/VillasPage'
 import JetSkisPage from './pages/JetSkisPage'
 import CarDetail from './pages/CarDetail'
+import CarCity from './pages/CarCity'
 import YachtDetail from './pages/YachtDetail'
 import VillaDetail from './pages/VillaDetail'
 import JetSkiDetail from './pages/JetSkiDetail'
@@ -77,7 +78,8 @@ function App() {
       <Routes>
         <Route path="/" element={<DefaultLayout><HomePage /></DefaultLayout>} />
         <Route path="/cars" element={<DefaultLayout><CarsPage /></DefaultLayout>} />
-        <Route path="/cars/:slug" element={<DefaultLayout><CarDetail /></DefaultLayout>} />
+        <Route path="/cars/:citySlug" element={<DefaultLayout><CarCity /></DefaultLayout>} />
+        <Route path="/cars/:citySlug/:carSlug" element={<DefaultLayout><CarDetail /></DefaultLayout>} />
         {/* Unified yachts: browse by city */}
         <Route path="/yachts" element={<DefaultLayout><DestinationsPage /></DefaultLayout>} />
         <Route path="/yachts/detail/:slug" element={<DefaultLayout><YachtDetail /></DefaultLayout>} />

@@ -6,17 +6,19 @@ import type { Car } from '../data/inventory'
 import ImageGallery from '../components/ImageGallery'
 
 const CarDetail: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>()
-  
-  if (!slug) {
+  const { citySlug, carSlug } = useParams<{ citySlug: string; carSlug: string }>()
+
+  if (!carSlug) {
     return <Navigate to="/cars" replace />
   }
 
-  const car = findItemBySlug('cars', slug) as Car | null
-  
+  const car = findItemBySlug('cars', carSlug) as Car | null
+
   if (!car) {
     return <Navigate to="/cars" replace />
   }
+
+  const backTo = citySlug ? `/cars/${citySlug}` : '/cars'
 
   const handleBooking = () => {
     // Navigate to home and scroll to contact
@@ -29,7 +31,7 @@ const CarDetail: React.FC = () => {
       <section className="pt-24 pb-8 bg-luxury-charcoal">
         <div className="container-max section-padding">
           <Link
-            to="/cars"
+            to={backTo}
             className="inline-flex items-center space-x-2 text-luxury-gold hover:text-gold-400 transition-colors duration-300"
           >
             <ArrowLeft size={20} />
@@ -69,10 +71,19 @@ const CarDetail: React.FC = () => {
               <div className="luxury-card">
                 <div className="flex items-center justify-between">
                   <div>
-                    <div className="text-3xl font-bold text-luxury-gold">
-                      ${car.dailyPrice.toLocaleString()}
-                    </div>
-                    <div className="text-gray-400">per day</div>
+                    {car.dailyPrice > 0 ? (
+                      <>
+                        <div className="text-3xl font-bold text-luxury-gold">
+                          ${car.dailyPrice.toLocaleString()}
+                        </div>
+                        <div className="text-gray-400">per day</div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="text-3xl font-bold text-luxury-gold">Inquire</div>
+                        <div className="text-gray-400">for pricing</div>
+                      </>
+                    )}
                   </div>
                   <div className="text-right text-sm text-gray-400">
                     <div>Full coverage insurance required</div>
