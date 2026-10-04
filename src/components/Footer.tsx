@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-luxury font-bold text-white">
-                  Aura<span className="text-gradient">Pex</span>
+                  Aura<span className="text-luxury-gold">Pex</span>
                 </h3>
                 <p className="text-xs text-gray-400 -mt-1">RENTALS</p>
               </div>

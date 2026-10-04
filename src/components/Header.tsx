@@ -42,7 +42,8 @@ const Header: React.FC = () => {
             </div>
             <div>
               <h1 className="text-2xl font-luxury font-bold text-white">
-                Aura<span className="text-gradient">Pex</span>
+                {/* Solid gold: gradient-clipped text renders invisible in Safari inside the header's backdrop blur */}
+                Aura<span className="text-luxury-gold">Pex</span>
               </h1>
               <p className="text-xs text-gray-400 -mt-1">RENTALS</p>
             </div>
