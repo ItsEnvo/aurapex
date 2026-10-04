@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ChevronDown, Star } from 'lucide-react'
 
-const FRAME_COUNT = 253
+const FRAME_COUNT = 250
 // The film finishes here; the rest of the scroll holds the last frame under the closing CTA
 const FILM_END = 0.92
 // Widescreen frames for landscape screens, a center-cropped portrait set for phones
