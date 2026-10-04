@@ -11,7 +11,7 @@ function ScrollToTop() {
   return null
 }
 import Header from './components/Header'
-import Hero from './components/Hero'
+import ScrollStory from './components/ScrollStory'
 import Fleet from './components/Fleet'
 import HowItWorks from './components/HowItWorks'
 import About from './components/About'
@@ -36,7 +36,7 @@ import FleetYachtDetail from './pages/FleetYachtDetail'
 // Homepage component
 const HomePage = () => (
   <>
-    <Hero />
+    <ScrollStory />
     <Fleet />
     <HowItWorks />
     <About />
